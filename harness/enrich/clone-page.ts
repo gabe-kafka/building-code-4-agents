@@ -730,6 +730,79 @@ cropped.save("${outputPath}")
 }
 
 /**
+ * After cropping a figure, analyze it for structured content:
+ * - Flowcharts → extract nodes, edges, logic as structured data
+ * - Embedded tables → extract as separate table elements
+ * - Maps → extract any tabular data overlaid (e.g., territory wind speeds)
+ *
+ * Returns: { description, content, embeddedTables }
+ */
+async function extractFigureContent(
+  figurePngPath: string,
+  caption: string
+): Promise<{
+  description: string
+  content: Record<string, unknown> | null
+  embeddedTables: Array<{ title: string; columns: string[]; rows: string[][] }>
+}> {
+  const imageData = readFileSync(figurePngPath).toString('base64')
+
+  const text = await sendMessage({
+    model: models.enrichment,
+    max_tokens: 4096,
+    messages: [{
+      role: 'user',
+      content: [
+        { type: 'image', source: { type: 'base64', media_type: 'image/png', data: imageData } },
+        { type: 'text', text: `Analyze this figure: "${caption}"
+
+1. DESCRIPTION: Write 2-3 sentences describing what this figure shows and its purpose.
+
+2. STRUCTURED CONTENT: Extract the machine-readable logic:
+   - For FLOWCHARTS: extract all nodes (label, type) and edges (from, to, label)
+   - For MAPS: describe the geography, parameter, contour values
+   - For DIAGRAMS: describe dimensions, forces, variables shown
+
+3. EMBEDDED TABLES: If there is ANY tabular data visible in this figure (e.g., a "Special Wind Region" table, a lookup table, a data table overlaid on a map), extract it as a complete table with columns and rows. This is critical — tables within figures must be captured.
+
+Return ONLY valid JSON:
+{
+  "description": "...",
+  "content": {
+    "type": "flowchart|map|diagram|chart",
+    "nodes": [{"label": "...", "type": "start|process|decision|end", "details": ["..."]}],
+    "edges": [{"from": "...", "to": "...", "label": "..."}]
+  },
+  "embedded_tables": [
+    {
+      "title": "Special Wind Region",
+      "columns": ["Location", "V (mi/h)", "V (m/s)"],
+      "rows": [["American Samoa", "160", "(72)"], ...]
+    }
+  ]
+}
+
+If no structured content or tables, use: "content": null, "embedded_tables": []` },
+      ],
+    }],
+  })
+
+  const match = text.match(/\{[\s\S]*\}/)
+  if (!match) return { description: caption, content: null, embeddedTables: [] }
+
+  const raw = JSON.parse(match[0])
+  return {
+    description: String(raw.description ?? caption),
+    content: raw.content ?? null,
+    embeddedTables: (raw.embedded_tables ?? []).map((t: Record<string, unknown>) => ({
+      title: String(t.title ?? ''),
+      columns: Array.isArray(t.columns) ? t.columns.map(String) : [],
+      rows: Array.isArray(t.rows) ? (t.rows as unknown[][]).map(r => Array.isArray(r) ? r.map(String) : []) : [],
+    })),
+  }
+}
+
+/**
  * Clone one page end-to-end using split-column approach:
  * 1. Clone left column via vision
  * 2. Clone right column via vision
@@ -826,7 +899,20 @@ export async function clonePageFull(
 
   console.log(`    ${allElements.length} total (${dedupedLeft.length}L + ${dedupedRight.length}R + ${dedupedFull.length} full)`)
 
-  // Locate and crop figures with precise bbox via dedicated vision call
+  // Deduplicate figures by caption (both columns may extract the same figure)
+  const seenCaptions = new Set<string>()
+  page.elements = page.elements.filter(e => {
+    if (e.type !== 'figure') return true
+    const cap = (e.caption ?? e.text.split('\n')[0] ?? '').slice(0, 50).toLowerCase()
+    if (seenCaptions.has(cap)) {
+      console.log(`    Dedup figure: "${cap.slice(0, 40)}..."`)
+      return false
+    }
+    seenCaptions.add(cap)
+    return true
+  })
+
+  // Locate, crop, and analyze figures
   const figuresDir = resolve(paths.root, 'public', 'figures', `ch${chapter}`)
   mkdirSync(figuresDir, { recursive: true })
 
@@ -835,18 +921,50 @@ export async function clonePageFull(
     const fig = figures[i]
     const outPath = resolve(figuresDir, `page-${pageNum}-fig-${i}.png`)
     try {
-      // Get precise bbox from a dedicated vision call
+      // Get precise bbox
       const caption = fig.caption ?? fig.text.split('\n')[0] ?? ''
       console.log(`    Locating figure ${i}: "${caption.slice(0, 50)}"...`)
       const preciseBbox = await locateFigureBbox(pngPath, caption)
       fig.bbox = preciseBbox
       console.log(`    bbox: y=${preciseBbox.y_start.toFixed(2)}–${preciseBbox.y_end.toFixed(2)}`)
 
+      // Crop
       await cropFigure(pngPath, preciseBbox, outPath)
       fig.image_url = `/figures/ch${chapter}/page-${pageNum}-fig-${i}.png`
-      console.log(`    Cropped figure ${i}`)
+
+      // Analyze figure for structured content + embedded tables
+      console.log(`    Analyzing figure content...`)
+      const figContent = await extractFigureContent(outPath, caption)
+      fig.text = `${caption}\n\n${figContent.description}`
+      if (figContent.content) {
+        fig.text += `\n\n[Structured: ${JSON.stringify(figContent.content)}]`
+      }
+
+      // Create separate table elements for embedded tables
+      for (let ti = 0; ti < figContent.embeddedTables.length; ti++) {
+        const tbl = figContent.embeddedTables[ti]
+        if (tbl.columns.length === 0 || tbl.rows.length === 0) continue
+        console.log(`    Embedded table: "${tbl.title}" (${tbl.columns.length} cols, ${tbl.rows.length} rows)`)
+        const tableEl: PageElement = {
+          id: `${fig.id}-table-${ti}`,
+          type: 'table',
+          section: fig.section,
+          text: tbl.title || `Table within ${caption}`,
+          cross_references: [],
+          bbox: { ...fig.bbox, y_start: fig.bbox.y_end - 0.05 },
+          column: fig.column,
+          columns: tbl.columns,
+          rows: tbl.rows,
+          metadata: { extracted_by: 'vision-clone', qc_status: 'pending' },
+        }
+        // Insert right after the figure
+        const figIdx = page.elements.indexOf(fig)
+        page.elements.splice(figIdx + 1 + ti, 0, tableEl)
+      }
+
+      console.log(`    Done figure ${i}`)
     } catch (err) {
-      console.error(`    Failed to crop figure ${i}: ${err}`)
+      console.error(`    Failed figure ${i}: ${err}`)
     }
   }
 

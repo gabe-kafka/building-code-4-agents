@@ -84,9 +84,13 @@ If perfect: { "score": 1.0, "issues": [] }` },
     }],
   })
 
-  const match = text.match(/\{[\s\S]*?\}/)
+  const match = text.match(/\{[\s\S]*\}/)
   if (!match) return { score: 0.5, issues: ['Could not parse audit'] }
-  return JSON.parse(match[0])
+  try {
+    return JSON.parse(match[0])
+  } catch {
+    return { score: 0.5, issues: ['Audit JSON parse error'] }
+  }
 }
 
 // --- Print page summary ---

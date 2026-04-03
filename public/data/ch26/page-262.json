@@ -8,16 +8,16 @@
   ],
   "elements": [
     {
-      "id": "ASCE7-22-26-fig01",
+      "id": "ASCE7-22-26.1-figure01",
       "type": "figure",
       "section": "26.1",
-      "text": "Figure 26.1-1. Outline of process for determining wind loads.\n\nA flowchart showing the process for determining wind loads. At the top is a box titled 'Chapter 26-General Requirements' that lists basic parameters including: Basic wind speed V (Section 26.5, Figure 26.5-1), Wind directionality factor Kd (Section 26.6), Exposure category (Section 26.7), Topographic factor Kzt (Section 26.8), Ground elevation above sea level (Section 26.9), Velocity pressure (Section 26.10), Gust Effect Factor (Section 26.11), Enclosure classification (Section 26.12), Internal pressure coefficient GCpi (Section 26.13). Below this are two parallel branches: left side for MWFRS with boxes for Chapter 27 (Directional Procedure for buildings of all heights), Chapter 28 (Envelope Procedure for low-rise buildings), Chapter 29 (Directional Procedure for building appurtenances and other structures), and Chapter 31 (Wind Tunnel Procedure). Right side for C&C with Chapter 30 (Envelope Procedure in Part 1, Directional Procedure in Parts 2 and 3, Building appurtenances in Part 4, Nonbuilding structures in Part 5) and Chapter 31 (Wind Tunnel Procedure). A note at the bottom states additional outlines and User Notes are provided at the beginning of each chapter.",
+      "text": "Figure 26.1-1. Outline of process for determining wind loads.\n\nThis figure shows a flowchart outlining the process for determining wind loads on buildings and structures. It illustrates how Chapter 26 establishes general requirements and basic parameters that feed into different analytical procedures for both Main Wind Force Resisting Systems (MWFRS) and Components & Cladding (C&C).\n\n[Structured: {\"type\":\"flowchart\",\"nodes\":[{\"label\":\"Chapter 26–General Requirements\",\"type\":\"start\",\"details\":[\"Basic wind speed, V\",\"Wind directionality factor, Kd\",\"Exposure category\",\"Topographic factor, Kzt\",\"Ground elevation above sea level\",\"Velocity pressure\",\"Gust Effect Factor\",\"Enclosure classification\",\"Internal pressure coefficient, GCpi\"]},{\"label\":\"Wind loads on the MWFRS may be determined by\",\"type\":\"process\",\"details\":[]},{\"label\":\"Wind loads on the C&C may be determined by\",\"type\":\"process\",\"details\":[]},{\"label\":\"Chapter 27: Directional Procedure for buildings of all heights\",\"type\":\"process\",\"details\":[]},{\"label\":\"Chapter 28: Envelope Procedure for low-rise buildings\",\"type\":\"process\",\"details\":[]},{\"label\":\"Chapter 29: Directional Procedure for building appurtenances (roof overhangs and parapets) and other structures\",\"type\":\"process\",\"details\":[]},{\"label\":\"Chapter 31: Wind Tunnel Procedure for any building or other structure\",\"type\":\"process\",\"details\":[]},{\"label\":\"Chapter 30: Envelope Procedure in Part 1, or Directional Procedure in Parts 2 and 3; Building appurtenances (roof overhangs and parapets) in Part 4; and Nonbuilding structures in Part 5\",\"type\":\"process\",\"details\":[]},{\"label\":\"Chapter 31: Wind Tunnel Procedure for any building or other structure\",\"type\":\"process\",\"details\":[]}],\"edges\":[{\"from\":\"Chapter 26–General Requirements\",\"to\":\"Wind loads on the MWFRS may be determined by\",\"label\":\"\"},{\"from\":\"Chapter 26–General Requirements\",\"to\":\"Wind loads on the C&C may be determined by\",\"label\":\"\"},{\"from\":\"Wind loads on the MWFRS may be determined by\",\"to\":\"Chapter 27: Directional Procedure for buildings of all heights\",\"label\":\"\"},{\"from\":\"Wind loads on the MWFRS may be determined by\",\"to\":\"Chapter 28: Envelope Procedure for low-rise buildings\",\"label\":\"\"},{\"from\":\"Wind loads on the MWFRS may be determined by\",\"to\":\"Chapter 29: Directional Procedure for building appurtenances (roof overhangs and parapets) and other structures\",\"label\":\"\"},{\"from\":\"Wind loads on the MWFRS may be determined by\",\"to\":\"Chapter 31: Wind Tunnel Procedure for any building or other structure\",\"label\":\"\"},{\"from\":\"Wind loads on the C&C may be determined by\",\"to\":\"Chapter 30: Envelope Procedure in Part 1, or Directional Procedure in Parts 2 and 3; Building appurtenances (roof overhangs and parapets) in Part 4; and Nonbuilding structures in Part 5\",\"label\":\"\"},{\"from\":\"Wind loads on the C&C may be determined by\",\"to\":\"Chapter 31: Wind Tunnel Procedure for any building or other structure\",\"label\":\"\"}]}]",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
         "y_start": 0.07,
-        "y_end": 0.54
+        "y_end": 0.62
       },
       "column": "left",
       "caption": "Figure 26.1-1. Outline of process for determining wind loads.",
@@ -25,102 +25,30 @@
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
+      "_source": "left",
       "image_url": "/figures/ch26/page-262-fig-0.png"
     },
     {
-      "id": "ASCE7-22-26-fig01",
-      "type": "figure",
+      "id": "ASCE7-22-26.1-body01",
+      "type": "body",
       "section": "26.1",
-      "text": "Figure 26.1-1. Outline of process for determining wind loads.\n\nA flowchart showing the process for determining wind loads. At the top is a box titled 'Chapter 26-General Requirements' that lists basic parameters for determining wind loads on both MWFRS and C&C, including basic wind speed, wind directionality factor, exposure category, topographic factor, ground elevation above sea level, velocity pressure, gust effect factor, enclosure classification, and internal pressure coefficient. The flowchart then splits into two parallel paths: one for MWFRS (Main Wind Force Resisting System) wind loads and one for C&C (Components and Cladding) wind loads. The MWFRS path shows options for Chapter 27 (Directional Procedure for buildings of all heights), Chapter 28 (Envelope Procedure for low-rise buildings), Chapter 29 (Directional Procedure for building appurtenances and other structures), and Chapter 31 (Wind Tunnel Procedure). The C&C path shows options for Chapter 30 (Envelope Procedure in Part 1, Directional Procedure in Parts 2 and 3, Building appurtenances in Part 4, and Nonbuilding structures in Part 5) and Chapter 31 (Wind Tunnel Procedure for any building or other structure). A note at the bottom states that additional outlines and User Notes are provided at the beginning of each chapter.",
+      "text": "Note: Additional outlines and User Notes are provided at the beginning of each chapter for more detailed step-by-step procedures for determining the wind loads.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.12,
-        "y_end": 0.58
+        "x_end": 0.48,
+        "y_start": 0.46,
+        "y_end": 0.48
       },
-      "column": "full",
-      "caption": "Figure 26.1-1. Outline of process for determining wind loads.",
+      "column": "left",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
-      "image_url": "/figures/ch26/page-262-fig-1.png"
+      "_source": "left"
     },
     {
-      "id": "ASCE7-22-26-body01",
-      "type": "body",
-      "section": "26.1",
-      "text": "Ao > 4 ft² (0.37 m²) or > 0.01Agi, whichever is smaller, and Aoi/Agi ≤ 0.20",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 1,
-        "y_start": 0.48,
-        "y_end": 0.52
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "ASCE7-22-26-body02",
-      "type": "body",
-      "section": "26.1",
-      "text": "where Ao and Ag are as defined for open buildings; Aoi is the sum of the areas of openings in the building envelope (walls and roof), not including Ao, ft² (m²); and Agi is the sum of the gross surface areas of the building envelope (walls and roof), not including Ag, ft² (m²).",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 1,
-        "y_start": 0.52,
-        "y_end": 0.6
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "ASCE7-22-26-def01",
-      "type": "definition",
-      "section": "26.1",
-      "text": "**BUILDING, PARTIALLY OPEN:** A building that does not comply with the requirements for open, partially enclosed, or enclosed buildings.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 1,
-        "y_start": 0.6,
-        "y_end": 0.65
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "ASCE7-22-26-def02",
-      "type": "definition",
-      "section": "26.1",
-      "text": "**BUILDING, TORSIONALLY REGULAR UNDER WIND LOAD:** A building with the MWFRS about each principal axis proportioned so that the maximum displacement at each story under Case 2, the torsional wind load case, of Figure 27.3-8 does not exceed the maximum displacement at the same location under Case 1 of Figure 27.3-8, the basic wind load case.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 1,
-        "y_start": 0.65,
-        "y_end": 0.75
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "ASCE7-22-26-body01",
+      "id": "ASCE7-22-26.1-body02",
       "type": "body",
       "section": "26.1",
       "text": "1. Mean roof height h less than or equal to 60 ft (18 m), and\n2. Mean roof height h does not exceed the least horizontal dimension.",
@@ -128,140 +56,167 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.68,
-        "y_end": 0.73
+        "y_start": 0.49,
+        "y_end": 0.52
       },
       "column": "left",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "left"
     },
     {
-      "id": "ASCE7-22-26-def01",
+      "id": "ASCE7-22-26.1-definition01",
       "type": "definition",
       "section": "26.1",
-      "text": "**BUILDING, OPEN:** A building that has each wall at least 80% open. This condition is expressed for each wall by the equation Ao ≥ 0.8Ag",
+      "text": "**BUILDING, OPEN:** A building that has each wall at least 80% open. This condition is expressed for each wall by the equation A_o ≥ 0.8A_g where A_o is the total area of openings in a wall that receives positive external pressure, ft² (m²), and A_g is the gross area of that wall in which A_o is identified, ft² (m²).",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.74,
-        "y_end": 0.78
+        "y_start": 0.53,
+        "y_end": 0.58
       },
       "column": "left",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "left"
     },
     {
-      "id": "ASCE7-22-26-def03",
+      "id": "ASCE7-22-26.1-definition02",
       "type": "definition",
       "section": "26.1",
-      "text": "**BUILDING ENVELOPE:** Cladding, roofing, exterior walls, glazing, door assemblies, window assemblies, skylight assemblies, and other components enclosing the building.",
+      "text": "**BUILDING, PARTIALLY ENCLOSED:** A building that complies with both of the following conditions:\n\n1. Total area of openings in a wall that receives positive external pressure exceeds the sum of the areas of openings in the balance of the building envelope (walls and roof) by more than 10%.\n\n2. Total area of openings in a wall that receives positive external pressure exceeds 4 ft² (0.37 m²) or 1% of the area of that wall, whichever is smaller, and the percentage of openings in the balance of the building envelope does not exceed 20%.\n\nThese conditions are expressed by the following equations:\nA_o > 1.10A_{oi}",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.52,
-        "x_end": 1,
-        "y_start": 0.75,
-        "y_end": 0.8
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.59,
+        "y_end": 0.75
       },
-      "column": "right",
+      "column": "left",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "left"
     },
     {
-      "id": "ASCE7-22-26-body02",
+      "id": "ASCE7-22-26-body-2",
       "type": "body",
       "section": "26.1",
-      "text": "where Ao is the total area of openings in a wall that receives positive external pressure, ft² (m²), and Ag is the gross area of that wall in which Ao is identified, ft² (m²).",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.78,
-        "y_end": 0.82
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "ASCE7-22-26-def04",
-      "type": "definition",
-      "section": "26.1",
-      "text": "**BUILDING OR OTHER STRUCTURE, FLEXIBLE:** Slender buildings and other structures that have a fundamental natural frequency less than 1 Hz.",
+      "text": "where A_o is the total area of openings in a wall that receives positive external pressure, ft² (m²), and A_g is the gross area of that wall in which A_o is identified, ft² (m²).",
       "cross_references": [],
       "bbox": {
         "x_start": 0.52,
-        "x_end": 1,
-        "y_start": 0.8,
-        "y_end": 0.85
+        "x_end": 0.94,
+        "y_start": 0.64,
+        "y_end": 0.67
       },
       "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "ASCE7-22-26-def02",
-      "type": "definition",
+      "id": "ASCE7-22-26-body-3",
+      "type": "body",
       "section": "26.1",
-      "text": "**BUILDING, PARTIALLY ENCLOSED:** A building that complies with both of the following conditions:",
+      "text": "1. Total area of openings in a wall that receives positive external pressure exceeds the sum of the areas of openings in the balance of the building envelope (walls and roof) by more than 10%.\n2. Total area of openings in a wall that receives positive external pressure exceeds 4 ft² (0.37 m²) or 1% of the area of that wall, whichever is smaller, and the percentage of openings in the balance of the building envelope does not exceed 20%.",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.72,
+        "y_end": 0.81
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26-body-4",
+      "type": "body",
+      "section": "26.1",
+      "text": "These conditions are expressed by the following equations:\nA_o > 1.10A_{gi}",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
         "y_start": 0.82,
         "y_end": 0.85
       },
-      "column": "left",
+      "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "ASCE7-22-26-body03",
+      "id": "ASCE7-22-26-body-5",
       "type": "body",
       "section": "26.1",
-      "text": "1. Total area of openings in a wall that receives positive external pressure exceeds the sum of the areas of openings in the balance of the building envelope (walls and roof) by more than 10%.\n2. Total area of openings in a wall that receives positive external pressure exceeds 4 ft² (0.37 m²) or 1% of the area of that wall, whichever is smaller, and the percentage of openings in the balance of the building envelope (walls and roof) does not exceed 20%.",
+      "text": "A_o > 4 ft² (0.37 m²) or\n> 0.01A_g, whichever is smaller, and A_{oi}/A_{gi} ≤ 0.20",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.85,
-        "y_end": 0.92
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.86,
+        "y_end": 0.89
       },
-      "column": "left",
+      "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "ASCE7-22-26-body04",
+      "id": "ASCE7-22-26-body-6",
       "type": "body",
       "section": "26.1",
-      "text": "These conditions are expressed by the following equations:\nAo > 1.10Aoi",
+      "text": "where A_o and A_g are as defined for open buildings; A_{oi} is the sum of the areas of openings in the building envelope (walls and roof), not including A_o, ft² (m²); and A_{gi} is the sum of the gross surface areas of the building envelope (walls and roof), not including A_g, ft² (m²).",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.92,
-        "y_end": 0.96
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.9,
+        "y_end": 0.95
       },
-      "column": "left",
+      "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26-def-3",
+      "type": "definition",
+      "section": "26.1",
+      "text": "**BUILDING, PARTIALLY OPEN:** A building that does not comply with the requirements for open, partially enclosed, or enclosed buildings.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.96,
+        "y_end": 0.98
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
     }
   ]
 }
