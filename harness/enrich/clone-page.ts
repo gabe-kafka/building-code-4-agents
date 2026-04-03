@@ -574,6 +574,9 @@ TABLE RULES — CRITICAL:
   - Tables embedded near or below figures
   - Tables with only 3-5 rows — these are STILL tables, not body text
 - Every table MUST have "columns" (string[]) and "rows" (string[][]) with ALL data extracted exactly
+- Every row must have a value for EVERY column — no empty cells
+- If a cell spans multiple columns, repeat the value in each column it spans
+- Values like "150(67)" mean 150 mi/h and 67 m/s — split into correct columns
 - A table is NOT a figure. If it has gridlines or columnar data, it's a table element, not part of a figure.
 - If a table appears below a figure on the same page, it is a SEPARATE element from the figure.
 
@@ -811,6 +814,9 @@ async function extractFigureContent(
    - For DIAGRAMS: describe dimensions, forces, variables shown
 
 3. EMBEDDED TABLES: If there is ANY tabular data visible in this figure (e.g., a "Special Wind Region" table, a lookup table, a data table overlaid on a map), extract it as a complete table with columns and rows. This is critical — tables within figures must be captured.
+   - Every row must have a value for EVERY column. No empty cells.
+   - If a cell spans multiple columns (e.g., "ASCE Wind Design Geodatabase" spanning both V(mi/h) and V(m/s) columns), repeat the value in each column it spans.
+   - Values in parentheses like (67) are m/s values and go in the V(m/s) column. The number before is mi/h.
 
 Return ONLY valid JSON:
 {
@@ -992,16 +998,25 @@ export async function clonePageFull(
         const tbl = figContent.embeddedTables[ti]
         if (tbl.columns.length === 0 || tbl.rows.length === 0) continue
 
-        // Check if an identical table already exists on this page
-        const existingTable = page.elements.find(e =>
+        // Check if a similar table already exists on this page
+        const existingIdx = page.elements.findIndex(e =>
           e.type === 'table' && e.columns &&
           e.columns.length === tbl.columns.length &&
           e.rows && e.rows.length === tbl.rows.length &&
           e.rows[0]?.[0] === tbl.rows[0]?.[0] // same first cell
         )
-        if (existingTable) {
-          console.log(`    Embedded table "${tbl.title}" already exists — skipping`)
-          continue
+        if (existingIdx >= 0) {
+          const existing = page.elements[existingIdx]
+          // Check if existing has empty cells — if so, replace with better extraction
+          const hasEmpty = existing.rows?.some(r => r.some(c => !c.trim())) ?? false
+          if (hasEmpty) {
+            console.log(`    Replacing table with empty cells: "${existing.text?.slice(0, 40)}"`)
+            page.elements.splice(existingIdx, 1)
+            // fall through to add the new one
+          } else {
+            console.log(`    Embedded table "${tbl.title}" already exists — skipping`)
+            continue
+          }
         }
 
         console.log(`    Embedded table: "${tbl.title}" (${tbl.columns.length} cols, ${tbl.rows.length} rows)`)
