@@ -730,6 +730,53 @@ cropped.save("${outputPath}")
 }
 
 /**
+ * Complete truncated elements by sending the page image + the truncated text
+ * and asking the model to finish each one.
+ */
+async function completeTruncatedElements(
+  pagePngPath: string,
+  elements: PageElement[]
+): Promise<Array<{ id: string; text: string }>> {
+  const imageData = readFileSync(pagePngPath).toString('base64')
+
+  const truncList = elements.map(e =>
+    `ID: ${e.id} | COLUMN: ${e.column} | TRUNCATED TEXT: "${e.text.slice(-60)}..."`
+  ).join('\n')
+
+  const text = await sendMessage({
+    model: models.enrichment,
+    max_tokens: 8192,
+    messages: [{
+      role: 'user',
+      content: [
+        { type: 'image', source: { type: 'base64', media_type: 'image/png', data: imageData } },
+        { type: 'text', text: `These elements were truncated during extraction. Find each one on the page and provide the COMPLETE text.
+
+TRUNCATED ELEMENTS:
+${truncList}
+
+For each element, find where its text appears on the page and provide the FULL untruncated text.
+
+Return ONLY valid JSON:
+{
+  "completions": [
+    { "id": "...", "text": "Full complete text of this element..." }
+  ]
+}` },
+      ],
+    }],
+  })
+
+  const match = text.match(/\{[\s\S]*\}/)
+  if (!match) return []
+  const raw = JSON.parse(match[0])
+  return (raw.completions ?? []).map((c: Record<string, unknown>) => ({
+    id: String(c.id ?? ''),
+    text: String(c.text ?? ''),
+  }))
+}
+
+/**
  * After cropping a figure, analyze it for structured content:
  * - Flowcharts → extract nodes, edges, logic as structured data
  * - Embedded tables → extract as separate table elements
@@ -977,6 +1024,30 @@ export async function clonePageFull(
       console.log(`    Done figure ${i}`)
     } catch (err) {
       console.error(`    Failed figure ${i}: ${err}`)
+    }
+  }
+
+  // Fix truncated elements — detect and complete them with a targeted vision call
+  const truncated = allElements.filter(e => {
+    const t = e.text.trim()
+    if (t.length < 30) return false
+    // Doesn't end with sentence-ending punctuation
+    return !t.match(/[.,:;!?)}\]"']$/) && !t.match(/\d$/)
+  })
+
+  if (truncated.length > 0) {
+    console.log(`    Completing ${truncated.length} truncated elements...`)
+    try {
+      const completions = await completeTruncatedElements(pngPath, truncated)
+      for (const comp of completions) {
+        const el = allElements.find(e => e.id === comp.id)
+        if (el && comp.text.length > el.text.length) {
+          el.text = comp.text
+        }
+      }
+      console.log(`    Completed ${completions.length} elements`)
+    } catch (err) {
+      console.error(`    Completion failed: ${err}`)
     }
   }
 
