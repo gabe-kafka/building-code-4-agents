@@ -234,10 +234,10 @@ function normalizeRaw(
       el.text = `${el.caption ?? el.text}\n\n${desc}${content ? `\n\n[Structured content: ${JSON.stringify(content)}]` : ''}`
     }
     el.metadata = { extracted_by: 'vision-clone', qc_status: 'pending' }
-    fixBoldMarkers(el)
+    const extras = fixBoldMarkers(el)
 
-    return el
-  })
+    return [el, ...extras]
+  }).flat()
 
   const sections = [...new Set(elements.map(e => e.section))].filter(Boolean).sort()
 

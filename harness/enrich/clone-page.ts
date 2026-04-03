@@ -222,8 +222,8 @@ function normalizePage(
     }
 
     el.metadata = { extracted_by: 'vision-clone', qc_status: 'pending' }
-    fixBoldMarkers(el)
-    elements.push(el)
+    const extras = fixBoldMarkers(el)
+    elements.push(el, ...extras)
   }
 
   fixFormulas(elements)
@@ -287,38 +287,85 @@ export function fixFormulas(elements: PageElement[]): void {
   }
 }
 
-export function fixBoldMarkers(el: PageElement): void {
-  if (!el.text.includes('**')) return
+/**
+ * Fix bold markers and heading flags. Returns extra elements to insert
+ * (when a heading+body element needs to be split into two).
+ */
+export function fixBoldMarkers(el: PageElement): PageElement[] {
+  const extraElements: PageElement[] = []
 
-  // Find all bold spans
+  if (!el.text.includes('**') && !el.heading) return extraElements
+
+  // CASE 1: heading:true with body text after the bold heading
+  // Split into: heading element + body/provision element
+  if (el.heading && el.text.includes('**')) {
+    const match = el.text.match(/^\*\*([^*]+)\*\*\s*(.+)/s)
+    if (match && match[2].length > 20) {
+      // This is a heading merged with body — split them
+      el.text = match[1]  // heading gets just the title
+      el.heading = true
+
+      const bodyEl: PageElement = {
+        id: el.id + '-body',
+        type: el.type === 'provision' || match[2].toLowerCase().includes('shall') ? 'provision' : 'body',
+        section: el.section,
+        text: match[2],
+        cross_references: el.cross_references,
+        bbox: { ...el.bbox, y_start: el.bbox.y_start + 0.01 },
+        column: el.column,
+        metadata: el.metadata,
+      }
+      el.type = 'body'  // heading element is always body type
+      el.cross_references = []
+      extraElements.push(bodyEl)
+      return extraElements
+    }
+  }
+
+  // CASE 2: heading:true but NO ** markers and text is long — the model set heading on a body element
+  if (el.heading && !el.text.includes('**') && el.text.length > 80) {
+    // Check if it starts with a section number
+    const secMatch = el.text.match(/^(\d+[\d.]*\s+[A-Z][A-Za-z\s]{3,40})\s+(.+)/s)
+    if (secMatch && secMatch[2].length > 20) {
+      el.text = secMatch[1]
+      const bodyEl: PageElement = {
+        id: el.id + '-body',
+        type: secMatch[2].toLowerCase().includes('shall') ? 'provision' : 'body',
+        section: el.section,
+        text: secMatch[2],
+        cross_references: el.cross_references,
+        bbox: { ...el.bbox, y_start: el.bbox.y_start + 0.01 },
+        column: el.column,
+        metadata: el.metadata,
+      }
+      el.type = 'body'
+      el.cross_references = []
+      extraElements.push(bodyEl)
+      return extraElements
+    }
+    // Can't split — just remove heading flag
+    el.heading = false
+  }
+
+  if (!el.text.includes('**')) return extraElements
+
+  // CASE 3: Entire text wrapped in ** and long — strip markers
   const boldSpans = [...el.text.matchAll(/\*\*([^*]+)\*\*/g)]
-  if (boldSpans.length === 0) return
-
-  // Check if there's a single bold span that covers most of the text
+  if (boldSpans.length === 0) return extraElements
   const totalBoldLen = boldSpans.reduce((sum, m) => sum + m[1].length, 0)
   const textLen = el.text.replace(/\*\*/g, '').length
 
-  // If bold covers >60% of text and text is long (>80 chars), it's a bug
   if (totalBoldLen > textLen * 0.6 && textLen > 80) {
-    // Check if it starts with a section number — that's a heading merged with body
-    const match = el.text.match(/^\*\*(\d+\.\d+[\d.]*\s+[^*]{5,60})\*\*\s*(.+)/s)
-    if (match) {
-      // Split: heading portion becomes the element, rest is body
-      // Set heading flag and clean the text
-      el.heading = true
-      el.text = match[1] + '\n' + match[2]
-      return
-    }
-
-    // Check if it starts with a bold term (definition pattern) — leave short terms alone
+    // Check for short bold term at start (definition) — leave alone
     const termMatch = el.text.match(/^\*\*([A-Z][A-Z\s,]+:?)\*\*/)
     if (termMatch && termMatch[1].length < 60) {
-      return // This is a legitimate bold term, leave it
+      return extraElements
     }
-
-    // Otherwise strip all bold markers — the whole thing shouldn't be bold
+    // Strip all bold — shouldn't be entirely bold
     el.text = el.text.replace(/\*\*/g, '')
   }
+
+  return extraElements
 }
 
 function normalizeType(t: string): ElementType {
@@ -530,9 +577,9 @@ ${hintsBlock}`,
       if (Array.isArray(re.parameters)) el.parameters = re.parameters.map(String)
     }
     el.metadata = { extracted_by: 'vision-clone', qc_status: 'pending' }
-    fixBoldMarkers(el)
-    return el
-  })
+    const extras = fixBoldMarkers(el)
+    return [el, ...extras]
+  }).flat()
 }
 
 // --- Locate figure bbox precisely via a dedicated vision call ---
