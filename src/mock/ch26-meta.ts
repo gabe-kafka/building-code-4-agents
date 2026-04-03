@@ -1,0 +1,75 @@
+import type { ChapterMeta, StandardMeta } from '../types.ts'
+
+export const chapter26Meta: ChapterMeta = {
+  standard: 'ASCE 7-22',
+  title: 'Wind Load Parameters',
+  chapter: 26,
+  page_range: { start: 261, end: 280 },
+  sections: [
+    { number: '26.1', title: 'Procedures', page: 261, depth: 1 },
+    { number: '26.1.1', title: 'Scope', page: 261, depth: 2 },
+    { number: '26.1.2', title: 'Permitted Procedures', page: 261, depth: 2 },
+    { number: '26.2', title: 'Definitions', page: 262, depth: 1 },
+    { number: '26.3', title: 'Symbols', page: 264, depth: 1 },
+    { number: '26.4', title: 'General', page: 265, depth: 1 },
+    { number: '26.4.1', title: 'Shielding', page: 265, depth: 2 },
+    { number: '26.4.2', title: 'Air-Permeable Cladding', page: 265, depth: 2 },
+    { number: '26.5', title: 'Wind Hazard Map', page: 266, depth: 1 },
+    { number: '26.5.1', title: 'Basic Wind Speed', page: 266, depth: 2 },
+    { number: '26.5.2', title: 'Special Wind Regions', page: 274, depth: 2 },
+    { number: '26.6', title: 'Wind Directionality', page: 274, depth: 1 },
+    { number: '26.7', title: 'Exposure', page: 274, depth: 1 },
+    { number: '26.7.1', title: 'Wind Direction', page: 274, depth: 2 },
+    { number: '26.7.2', title: 'Surface Roughness Categories', page: 274, depth: 2 },
+    { number: '26.7.3', title: 'Exposure Categories', page: 274, depth: 2 },
+    { number: '26.8', title: 'Topographic Effects', page: 276, depth: 1 },
+    { number: '26.9', title: 'Gust Effects', page: 275, depth: 1 },
+    { number: '26.9.1', title: 'Rigid Structures', page: 275, depth: 2 },
+    { number: '26.9.2', title: 'Flexible Structures', page: 275, depth: 2 },
+    { number: '26.10', title: 'Velocity Pressure', page: 277, depth: 1 },
+    { number: '26.10.1', title: 'Velocity Pressure Exposure Coefficient', page: 277, depth: 2 },
+    { number: '26.10.2', title: 'Velocity Pressure', page: 277, depth: 2 },
+    { number: '26.11', title: 'Gust-Effect Factor', page: 278, depth: 1 },
+    { number: '26.12', title: 'Enclosure Classification', page: 279, depth: 1 },
+    { number: '26.13', title: 'Internal Pressure Coefficients', page: 279, depth: 1 },
+    { number: '26.14', title: 'Consensus Standards', page: 280, depth: 1 },
+  ],
+  element_counts: {
+    provision: 80,
+    definition: 120,
+    formula: 30,
+    table: 10,
+    figure: 8,
+    exception: 8,
+    user_note: 10,
+    body: 140,
+  },
+  extraction_score: 85,
+}
+
+export const chapter27Meta: ChapterMeta = {
+  standard: 'ASCE 7-22',
+  title: 'Wind Loads on Buildings — MWFRS (Directional Procedure)',
+  chapter: 27,
+  page_range: { start: 311, end: 346 },
+  sections: [
+    { number: '27.1', title: 'Scope', page: 311, depth: 1 },
+    { number: '27.1.1', title: 'Building Types', page: 311, depth: 2 },
+    { number: '27.1.2', title: 'Conditions', page: 311, depth: 2 },
+    { number: '27.2', title: 'General Requirements', page: 312, depth: 1 },
+    { number: '27.3', title: 'Velocity Pressure', page: 313, depth: 1 },
+    { number: '27.4', title: 'Design Wind Loads', page: 323, depth: 1 },
+    { number: '27.5', title: 'Parapets', page: 333, depth: 1 },
+    { number: '27.6', title: 'Roof Overhangs', page: 338, depth: 1 },
+  ],
+  element_counts: {
+    provision: 0, definition: 0, formula: 0, table: 0,
+    figure: 0, exception: 0, user_note: 0, body: 0,
+  },
+  extraction_score: 0,
+}
+
+export const asce722Meta: StandardMeta = {
+  name: 'ASCE 7-22',
+  chapters: [chapter26Meta, chapter27Meta],
+}

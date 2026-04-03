@@ -4,7 +4,7 @@ import './style/layout.css'
 import './style/components.css'
 
 import { state, dispatch, on, registerStandard, registerChapterPages, setChapter, setPage } from './state.ts'
-import { mockStandard } from './mock/ch26-page363.ts'
+import { asce722Meta } from './mock/ch26-meta.ts'
 import type { Page } from './types.ts'
 import { createDOMLayoutEngine } from './layout/engine.ts'
 import { SearchEngine } from './lib/search.ts'
@@ -41,7 +41,7 @@ initRouter()
 
 // Load chapter data from static JSON files
 async function loadChapter26(): Promise<void> {
-  const meta = mockStandard
+  const meta = asce722Meta
   registerStandard(meta)
 
   const ch26Pages = new Map<number, Page>()
