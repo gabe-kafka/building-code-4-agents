@@ -3,21 +3,21 @@
   "chapter": 26,
   "page": 267,
   "section_range": [
-    "26.5",
+    "26",
     "26.5"
   ],
   "elements": [
     {
-      "id": "ASCE7-22-26.5-figure1",
+      "id": "ASCE7-22-26.5-fig1A",
       "type": "figure",
       "section": "26.5",
-      "text": "Figure 26.5-1A (Continued). Basic wind speeds for Risk Category I buildings and other structures.\n\nWind speed map of the United States showing basic wind speeds for Risk Category I buildings and other structures. The map displays contour lines with wind speed values ranging from 95 mph to 170 mph across different regions. Notable features include: higher wind speeds along the Atlantic and Gulf coasts (130-170 mph), moderate speeds in the interior (95-120 mph), and special wind regions marked with dotted patterns. The map includes Alaska in the upper left corner showing speeds of 100-107 mph. Numerical values are shown both in mph and m/s in parentheses (e.g., 95(42), 100(45), etc.). Special wind regions are indicated with a dotted pattern and explained in the legend.",
+      "text": "Figure 26.5-1A (Continued). Basic wind speeds for Risk Category I buildings and other structures.\n\nThis figure shows a wind speed contour map of the United States displaying basic wind speeds for Risk Category I buildings and other structures. The map includes contour lines with wind speed values in both mph and m/s (in parentheses), special wind regions marked with crosshatched patterns, and a reference table for specific locations including U.S. territories.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States with state boundaries and county divisions\",\"parameter\":\"Basic wind speeds for Risk Category I buildings\",\"contour_values\":[\"95(43)\",\"96(43)\",\"97(43)\",\"98(44)\",\"100(45)\",\"103(46)\",\"105(47)\",\"107(48)\",\"110(49)\",\"120(54)\",\"130(58)\",\"140(63)\",\"150(67)\",\"160(72)\",\"170(76)\"],\"special_features\":[\"Special Wind Regions marked with crosshatched pattern in Appalachian Mountains and coastal areas\"]}]",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.03,
-        "y_end": 0.97
+        "y_start": 0.05,
+        "y_end": 0.95
       },
       "column": "full",
       "caption": "Figure 26.5-1A (Continued). Basic wind speeds for Risk Category I buildings and other structures.",
@@ -29,58 +29,7 @@
       "image_url": "/figures/ch26/page-267-fig-0.png"
     },
     {
-      "id": "ASCE7-22-26.5-table1",
-      "type": "table",
-      "section": "26.5",
-      "text": "Wind speed reference table for special locations",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.35,
-        "x_end": 0.65,
-        "y_start": 0.68,
-        "y_end": 0.75
-      },
-      "column": "full",
-      "columns": [
-        "Location",
-        "V (mi/h)",
-        "V (m/s)"
-      ],
-      "rows": [
-        [
-          "American Samoa",
-          "150",
-          "(67)"
-        ],
-        [
-          "Guam & Northern Mariana Islands",
-          "180",
-          "(80)"
-        ],
-        [
-          "Hawaii",
-          "ASCE Wind Design Geodatabase",
-          ""
-        ],
-        [
-          "Puerto Rico",
-          "ASCE Wind Design Geodatabase",
-          ""
-        ],
-        [
-          "U.S. Virgin Islands",
-          "ASCE Wind Design Geodatabase",
-          ""
-        ]
-      ],
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.5-provision1",
+      "id": "ASCE7-22-26.5-note5",
       "type": "provision",
       "section": "26.5",
       "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
@@ -88,8 +37,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.76,
-        "y_end": 0.78
+        "y_start": 0.86,
+        "y_end": 0.88
       },
       "column": "full",
       "metadata": {
@@ -102,13 +51,13 @@
       "id": "ASCE7-22-26.5-table1",
       "type": "table",
       "section": "26.5",
-      "text": "",
+      "text": "Table showing wind speeds for special locations",
       "cross_references": [],
       "bbox": {
         "x_start": 0.52,
         "x_end": 0.94,
-        "y_start": 0.78,
-        "y_end": 0.85
+        "y_start": 0.88,
+        "y_end": 0.93
       },
       "column": "right",
       "columns": [
@@ -150,7 +99,7 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.5-provision2",
+      "id": "ASCE7-22-26.5-note6",
       "type": "provision",
       "section": "26.5",
       "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
@@ -158,8 +107,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.78,
-        "y_end": 0.81
+        "y_start": 0.88,
+        "y_end": 0.91
       },
       "column": "full",
       "metadata": {
@@ -169,7 +118,7 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.5-body1",
+      "id": "ASCE7-22-26.5-note7",
       "type": "body",
       "section": "26.5",
       "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00333, MRI = 300 years).",
@@ -177,8 +126,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.81,
-        "y_end": 0.83
+        "y_start": 0.91,
+        "y_end": 0.93
       },
       "column": "full",
       "metadata": {
@@ -188,7 +137,7 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.5-body2",
+      "id": "ASCE7-22-26.5-note8",
       "type": "body",
       "section": "26.5",
       "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
@@ -196,10 +145,48 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.83,
-        "y_end": 0.85
+        "y_start": 0.93,
+        "y_end": 0.96
       },
       "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26-pagetitle",
+      "type": "body",
+      "section": "26",
+      "text": "Minimum Design Loads and Associated Criteria for Buildings and Other Structures",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.97,
+        "y_end": 0.98
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26-pagenum",
+      "type": "body",
+      "section": "26",
+      "text": "267",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.89,
+        "x_end": 0.94,
+        "y_start": 0.97,
+        "y_end": 0.98
+      },
+      "column": "left",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"

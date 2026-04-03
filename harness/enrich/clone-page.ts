@@ -940,10 +940,23 @@ export async function clonePageFull(
         fig.text += `\n\n[Structured: ${JSON.stringify(figContent.content)}]`
       }
 
-      // Create separate table elements for embedded tables
+      // Create separate table elements for embedded tables (if not already extracted)
       for (let ti = 0; ti < figContent.embeddedTables.length; ti++) {
         const tbl = figContent.embeddedTables[ti]
         if (tbl.columns.length === 0 || tbl.rows.length === 0) continue
+
+        // Check if an identical table already exists on this page
+        const existingTable = page.elements.find(e =>
+          e.type === 'table' && e.columns &&
+          e.columns.length === tbl.columns.length &&
+          e.rows && e.rows.length === tbl.rows.length &&
+          e.rows[0]?.[0] === tbl.rows[0]?.[0] // same first cell
+        )
+        if (existingTable) {
+          console.log(`    Embedded table "${tbl.title}" already exists — skipping`)
+          continue
+        }
+
         console.log(`    Embedded table: "${tbl.title}" (${tbl.columns.length} cols, ${tbl.rows.length} rows)`)
         const tableEl: PageElement = {
           id: `${fig.id}-table-${ti}`,
@@ -957,7 +970,6 @@ export async function clonePageFull(
           rows: tbl.rows,
           metadata: { extracted_by: 'vision-clone', qc_status: 'pending' },
         }
-        // Insert right after the figure
         const figIdx = page.elements.indexOf(fig)
         page.elements.splice(figIdx + 1 + ti, 0, tableEl)
       }
@@ -967,6 +979,19 @@ export async function clonePageFull(
       console.error(`    Failed figure ${i}: ${err}`)
     }
   }
+
+  // Final table dedup: remove duplicate tables with same columns + first row
+  const seenTableKeys = new Set<string>()
+  page.elements = page.elements.filter(e => {
+    if (e.type !== 'table' || !e.columns || !e.rows?.length) return true
+    const key = e.columns.join('|') + '||' + (e.rows[0]?.join('|') ?? '')
+    if (seenTableKeys.has(key)) {
+      console.log(`    Dedup table: "${e.text?.slice(0, 40)}..."`)
+      return false
+    }
+    seenTableKeys.add(key)
+    return true
+  })
 
   // Save
   const outDir = resolve(paths.root, 'public', 'data', `ch${chapter}`)
