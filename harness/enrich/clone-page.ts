@@ -290,16 +290,20 @@ export function normalizeLatex(expr: string): string {
   s = s.replace(/b̄/g, '\\bar{b}')
   s = s.replace(/ε̄/g, '\\bar{\\epsilon}')
 
-  // Common patterns: adjacent letter+digit without subscript → add subscript
-  // e.g., "Rn" → "R_n" if followed by space or operator, but NOT "Rn" in a word
-  // This is tricky — only do it for known ASCE variable patterns
-  s = s.replace(/\bR([nhBL])\b/g, 'R_$1')
-  s = s.replace(/\bN([1])\b/g, 'N_$1')
-  s = s.replace(/\bn([1])\b/g, 'n_$1')
-  s = s.replace(/\bK([zdtei])\b/g, 'K_$1')
-  s = s.replace(/\bq([zhp])\b/g, 'q_$1')
-  s = s.replace(/\bG([f])\b/g, 'G_$1')
-  s = s.replace(/\bC([p])\b/g, 'C_$1')
+  // Multi-letter subscripts: keep together with braces
+  // Kzt → K_{zt}, GCpi → GC_{pi}, etc.
+  // Only apply when the model wrote plain ASCII instead of LaTeX subscripts
+  // and only for known ASCE variable patterns (don't break arbitrary text)
+  if (!s.includes('_') && !s.includes('\\')) {
+    // If there's no LaTeX at all, this is plain text — apply known variable patterns
+    s = s.replace(/\bK([zdtei]{1,3})\b/g, (_, sub) => `K_{${sub}}`)
+    s = s.replace(/\bq([zhp])\b/g, (_, sub) => `q_{${sub}}`)
+    s = s.replace(/\bR([nhBL])\b/g, (_, sub) => `R_{${sub}}`)
+    s = s.replace(/\bN([1])\b/g, 'N_{1}')
+    s = s.replace(/\bn([1])\b/g, 'n_{1}')
+    s = s.replace(/\bGC([pi]{1,3})\b/g, (_, sub) => `GC_{${sub}}`)
+    s = s.replace(/\bG([f])\b/g, 'G_{f}')
+  }
 
   // ≤ ≥ → \leq \geq
   s = s.replace(/≤/g, '\\leq')
@@ -545,12 +549,14 @@ FORMULA RULES — CRITICAL:
   - "q_z = 0.00256 K_z K_{zt} K_d K_e V^2"
   - "\\bar{V}_{\\bar{z}} = \\bar{b} \\left(\\frac{\\bar{z}}{33}\\right)^{\\bar{\\alpha}} \\frac{88}{60} V"
 - Use proper LaTeX for:
-  - Subscripts: K_z not Kz, R_h not Rh, N_1 not N₁
+  - Subscripts: K_z, R_h, N_1 — the subscript is part of the variable name
+  - Multi-letter subscripts use braces: K_{zt} not K_z_t, GC_{pi} not GC_p_i
   - Superscripts: V^2, (...)^{5/3}
   - Fractions: \\frac{numerator}{denominator}
   - Greek letters: \\alpha, \\beta, \\eta, \\epsilon, \\theta, \\omega
   - Bars/hats: \\bar{b}, \\hat{\\alpha}, \\bar{z}, \\bar{V}
   - Parentheses: \\left( ... \\right)
+  - The subscript is how the variable is typeset, not a separate entity. K_{zt} IS the variable name.
 - Do NOT use Unicode subscripts/superscripts (₁, ², ᾱ). Use LaTeX notation.
 - Parameters MUST include full definitions, not just variable names.
   - BAD:  parameters: ["Rₙ", "N₁"]
