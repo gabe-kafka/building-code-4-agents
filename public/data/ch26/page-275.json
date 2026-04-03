@@ -1,0 +1,668 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 275,
+  "section_range": [
+    "26.10",
+    "26.9"
+  ],
+  "elements": [
+    {
+      "id": "26.7.3_exposure_c",
+      "type": "definition",
+      "section": "26.7.3",
+      "text": "**Exposure C.** Exposure C shall apply for all cases where Exposure B or D does not apply.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.3_exposure_d",
+      "type": "definition",
+      "section": "26.7.3",
+      "text": "**Exposure D.** Exposure D shall apply where the ground surface roughness, as defined by Surface Roughness D, prevails in the upwind direction for a distance greater than 5,000 ft (1,524 m) or 20 times the building or structure height, whichever is greater. Exposure D shall also apply where the ground surface roughness immediately upwind of the site is B or C, and the building or structure is within a distance of 600 ft (183 m) or 20 times the building or structure height, whichever is greater, from an Exposure D condition as defined in the previous sentence.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.3_transition_zone",
+      "type": "provision",
+      "section": "26.7.3",
+      "text": "For a building or structure located in the transition zone between exposure categories, the category resulting in the largest wind forces shall be used.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.3_exception",
+      "type": "exception",
+      "section": "26.7.3",
+      "text": "**EXCEPTION:** An intermediate exposure between the preceding categories is permitted in a transition zone, provided it is determined by a rational analysis method defined in the recognized literature.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4_heading",
+      "type": "body",
+      "section": "26.7.4",
+      "text": "26.7.4 Exposure Requirements",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.1_heading",
+      "type": "body",
+      "section": "26.7.4.1",
+      "text": "26.7.4.1 Directional Procedure (Chapter 27)",
+      "cross_references": [
+        "Chapter 27"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.1_provision",
+      "type": "provision",
+      "section": "26.7.4.1",
+      "text": "For each wind direction considered, wind loads for the design of the MWFRS of enclosed and partially enclosed buildings using the Directional Procedure of Chapter 27 shall be based on the exposures as defined in Section 26.7.3. Wind loads for the design of open buildings with monoslope, pitched, or troughed free roofs shall be based on the exposures, as defined in Section 26.7.3, resulting in the highest wind loads for any wind direction at the site.",
+      "cross_references": [
+        "Chapter 27",
+        "Section 26.7.3"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.2_heading",
+      "type": "body",
+      "section": "26.7.4.2",
+      "text": "26.7.4.2 Envelope Procedure (Chapter 28)",
+      "cross_references": [
+        "Chapter 28"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.2_provision",
+      "type": "provision",
+      "section": "26.7.4.2",
+      "text": "Wind loads for the design of the MWFRS for all low-rise buildings designed using the Envelope Procedure of Chapter 28 shall be based on the exposure category resulting in the highest wind loads for any wind direction at the site.",
+      "cross_references": [
+        "Chapter 28"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.3_heading",
+      "type": "body",
+      "section": "26.7.4.3",
+      "text": "26.7.4.3 Directional Procedure for Building Appurtenances and Other Structures (Chapter 29)",
+      "cross_references": [
+        "Chapter 29"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.3_provision",
+      "type": "provision",
+      "section": "26.7.4.3",
+      "text": "Wind loads for the design of building appurtenances (such as rooftop structures and equipment) and other structures (such as solid freestanding walls and freestanding signs, chimneys, tanks, open signs, single-plane open frames, and trussed towers) as specified in Chapter 29 shall be based on the appropriate exposure for each wind direction considered.",
+      "cross_references": [
+        "Chapter 29"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.4_heading",
+      "type": "body",
+      "section": "26.7.4.4",
+      "text": "26.7.4.4 Components and Cladding (Chapter 30)",
+      "cross_references": [
+        "Chapter 30"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.7.4.4_provision",
+      "type": "provision",
+      "section": "26.7.4.4",
+      "text": "Design wind pressures for C&C shall be based on the exposure category resulting in the highest wind loads for any wind direction at the site.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8_heading",
+      "type": "body",
+      "section": "26.8",
+      "text": "26.8 TOPOGRAPHIC EFFECTS",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.1_heading",
+      "type": "body",
+      "section": "26.8.1",
+      "text": "26.8.1 Wind Speed-Up over Hills, Ridges, and Escarpments",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.1_provision",
+      "type": "provision",
+      "section": "26.8.1",
+      "text": "Wind speed-up effects at isolated hills, ridges, and escarpments constituting abrupt changes in the general topography, located in any exposure category, shall be included in the determination of the wind loads when site conditions and locations of buildings and other structures meet all the following conditions:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.1_conditions",
+      "type": "body",
+      "section": "26.8.1",
+      "text": "1. The building or other structure is located as shown in Figure 26.8-1 in the upper one-half of a hill or ridge or near the crest of an escarpment.\n2. H/Lh ≥ 0.2.\n3. H is greater than or equal to 15 ft (4.5 m) for Exposures C and D and 60 ft (18 m) for Exposures B.",
+      "cross_references": [
+        "Figure 26.8-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.2_heading",
+      "type": "body",
+      "section": "26.8.2",
+      "text": "26.8.2 Topographic Factor",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.2_provision",
+      "type": "provision",
+      "section": "26.8.2",
+      "text": "The wind speed-up effect shall be included in the calculation of design wind loads by using the factor Kzt:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.2_formula",
+      "type": "formula",
+      "section": "26.8.2",
+      "text": "Kzt = (1 + K1K2K3)²",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "expression": "Kzt = (1 + K1K2K3)²",
+      "parameters": [
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.2_k_factors",
+      "type": "provision",
+      "section": "26.8.2",
+      "text": "where K1, K2, and K3 are given in Figure 26.8-1. The values for K2 and K3 shall not be less than 0. The equations for K1, K2, and K3 may be used instead of using the tabular values when increased accuracy is desired for evaluating K1 and substitute 2H for Lh for evaluating K2 and K3.",
+      "cross_references": [
+        "Figure 26.8-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.8.2_site_conditions",
+      "type": "provision",
+      "section": "26.8.2",
+      "text": "If site conditions and locations of buildings and other structures do not meet all the conditions specified in Section 26.8.1, then Kzt = 1.0.",
+      "cross_references": [
+        "Section 26.8.1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.9_heading",
+      "type": "body",
+      "section": "26.9",
+      "text": "26.9 GROUND ELEVATION FACTOR",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.9_provision",
+      "type": "provision",
+      "section": "26.9",
+      "text": "The ground elevation factor to adjust for air density, Ke, shall be determined in accordance with Table 26.9-1. It is permitted to take Ke = 1 for all elevations.",
+      "cross_references": [
+        "Table 26.9-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.9_table",
+      "type": "table",
+      "section": "26.9",
+      "text": "Table 26.9-1. Ground Elevation Factor, Ke.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "columns": [
+        "Ground Elevation above Sea Level (ft)",
+        "Ground Elevation above Sea Level (m)",
+        "Ground Elevation Factor, Ke"
+      ],
+      "rows": [
+        [
+          "<0",
+          "<0",
+          "See note 2"
+        ],
+        [
+          "0",
+          "0",
+          "1.00"
+        ],
+        [
+          "1,000",
+          "305",
+          "0.96"
+        ],
+        [
+          "2,000",
+          "610",
+          "0.93"
+        ],
+        [
+          "3,000",
+          "914",
+          "0.90"
+        ],
+        [
+          "4,000",
+          "1,219",
+          "0.86"
+        ],
+        [
+          "5,000",
+          "1,524",
+          "0.83"
+        ],
+        [
+          "6,000",
+          "1,829",
+          "0.80"
+        ],
+        [
+          ">6,000",
+          ">1,829",
+          "See note 2"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.9_notes",
+      "type": "body",
+      "section": "26.9",
+      "text": "Notes:\n1. Conservative approximation Ke = 1.00 is permitted in all cases.\n2. Factor Ke shall be determined from Table 26.9-1 using interpolation or from the following formula for all elevations: Ke = e^(-0.0000362ze) (ze = ground elevation above sea level, ft); or Ke = e^(-0.00011877ze) (ze = ground elevation above sea level, m).\n3. Ke is permitted to be taken as 1.00 in all cases.",
+      "cross_references": [
+        "Table 26.9-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.10_heading",
+      "type": "body",
+      "section": "26.10",
+      "text": "26.10 VELOCITY PRESSURE",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.10.1_heading",
+      "type": "body",
+      "section": "26.10.1",
+      "text": "26.10.1 Velocity Pressure Exposure Coefficient",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.10.1_provision",
+      "type": "provision",
+      "section": "26.10.1",
+      "text": "Based on the exposure category determined in Section 26.7.3, a velocity pressure exposure coefficient, Kz or Kh, as applicable, shall be determined from Table 26.10-1. For a site located in a transition zone between exposure categories that is near to a change in ground surface roughness, intermediate values of Kz or Kh between those shown in Table 26.10-1 are permitted provided they are determined by a rational analysis method defined in the recognized literature.",
+      "cross_references": [
+        "Section 26.7.3",
+        "Table 26.10-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.10.2_heading",
+      "type": "body",
+      "section": "26.10.2",
+      "text": "26.10.2 Velocity Pressure",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26.10.2_provision",
+      "type": "provision",
+      "section": "26.10.2",
+      "text": "Velocity pressure, qz, evaluated at height z above ground shall be calculated by the following equation:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+:root {
+  /* Surface */
+  --bg: #FFF;
+  --surface: #F5F5F5;
+  --text: #1A1A1A;
+  --muted: #6B6B6B;
+  --dim: #505050;
+  --border: #D4D4D4;
+  --subtle: #E8E8E8;
+
+  /* Accent */
+  --accent: #0057FF;
+
+  /* Semantic */
+  --red: #DC2626;
+  --amber: #D97706;
+  --green: #16A34A;
+  --cyan: #06B6D4;
+
+  /* Element type colors */
+  --el-provision: #16A34A;
+  --el-definition: #8B5CF6;
+  --el-formula: #0057FF;
+  --el-table: #06B6D4;
+  --el-figure: #D97706;
+  --el-exception: #DC2626;
+  --el-user_note: #6B6B6B;
+  --el-body: #505050;
+
+  /* Element type backgrounds (3% opacity tints) */
+  --el-provision-bg: rgba(22, 163, 74, 0.03);
+  --el-definition-bg: rgba(139, 92, 246, 0.03);
+  --el-formula-bg: rgba(0, 87, 255, 0.03);
+  --el-table-bg: rgba(6, 182, 212, 0.03);
+  --el-figure-bg: rgba(217, 119, 6, 0.03);
+  --el-exception-bg: rgba(220, 38, 38, 0.03);
+  --el-user_note-bg: rgba(107, 107, 107, 0.03);
+  --el-body-bg: transparent;
+
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Berkeley Mono', 'SF Mono', 'IBM Plex Mono', 'Courier Prime', monospace;
+  --fs-tag: 7px;
+  --fs-label: 8px;
+  --fs-data: 10px;
+  --fs-status: 10px;
+  --fs-body: 11px;
+  --fs-heading: 12px;
+  --fs-kpi-value: 18px;
+  --lh: 1.5;
+  --ls-label: 0.08em;
+
+  /* Spacing — 8px grid */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 16px;
+  --sp-4: 24px;
+  --sp-5: 32px;
+
+  /* Layout */
+  --status-h: 24px;
+  --kpi-h: 48px;
+  --search-h: 32px;
+  --sidebar-w: 200px;
+  --nav-h: 32px;
+
+  /* Misc */
+  --radius: 2px;
+  --transition: 150ms ease-out;
+
+  /* Hover */
+  --hover-bg: rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --text: #E5E5E5;
+    --muted: #808080;
+    --dim: #606060;
+    --border: #2A2A2A;
+    --subtle: #1A1A1A;
+    --accent: #3B82F6;
+    --hover-bg: rgba(255, 255, 255, 0.03);
+  }
+}
+
+body {
+  font-family: var(--font-mono);
+  font-size: var(--fs-body);
+  line-height: var(--lh);
+  color: var(--text);
+  background: var(--bg);
+  font-feature-settings: 'tnum' 1;
+}

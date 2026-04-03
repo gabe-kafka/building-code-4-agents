@@ -1,0 +1,673 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 276,
+  "section_range": [
+    "26.8",
+    "26.8"
+  ],
+  "elements": [
+    {
+      "id": "fig_26_8_1",
+      "type": "figure",
+      "section": "26.8",
+      "text": "Figure 26.8-1. Topographic factor, Kzt.\n\nThe figure shows two topographic profiles: on the left is an ESCARPMENT with labeled dimensions including H (height), Lh (horizontal distance), x (distance from crest), z (height above ground), and speed-up zone. On the right is a 2-D RIDGE OR 3-D AXISYMMETRICAL HILL with similar dimensional labeling showing the wind flow and speed-up characteristics over the topographic feature.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "image_url": "/figures/ch26/page-276-fig-0.png"
+    },
+    {
+      "id": "topo_multipliers_heading",
+      "type": "body",
+      "section": "26.8",
+      "text": "**Topographic Multipliers**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "topo_multipliers_table",
+      "type": "table",
+      "section": "26.8",
+      "text": "Topographic Multipliers table with K₁, K₂, and K₃ multiplier values for various H/Lh, x/Lh, and z/Lh ratios.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "columns": [
+        "H/Lh",
+        "K₁ Multiplier 2D Ridge",
+        "K₁ Multiplier 2D Escarpment",
+        "K₁ Multiplier 3D Axisymmetrical Hill",
+        "x/Lh",
+        "K₂ Multiplier 2D Escarpment",
+        "K₂ Multiplier All Other Cases",
+        "z/Lh",
+        "K₃ Multiplier 2D Ridge",
+        "K₃ Multiplier 3D Escarpment",
+        "K₃ Multiplier 3D Axisymmetrical Hill"
+      ],
+      "rows": [
+        [
+          "0.20",
+          "0.29",
+          "0.17",
+          "0.21",
+          "0.00",
+          "1.00",
+          "1.00",
+          "0.00",
+          "1.00",
+          "1.00",
+          "1.00"
+        ],
+        [
+          "0.25",
+          "0.36",
+          "0.21",
+          "0.26",
+          "0.50",
+          "0.88",
+          "1.00",
+          "0.10",
+          "0.74",
+          "0.78",
+          "1.00"
+        ],
+        [
+          "0.30",
+          "0.43",
+          "0.26",
+          "0.32",
+          "1.00",
+          "0.75",
+          "0.67",
+          "0.20",
+          "0.55",
+          "0.61",
+          "0.67"
+        ],
+        [
+          "0.35",
+          "0.51",
+          "0.30",
+          "0.37",
+          "1.50",
+          "0.63",
+          "0.00",
+          "0.30",
+          "0.41",
+          "0.47",
+          "0.30"
+        ],
+        [
+          "0.40",
+          "0.58",
+          "0.34",
+          "0.42",
+          "2.00",
+          "0.50",
+          "0.00",
+          "0.40",
+          "0.30",
+          "0.37",
+          "0.20"
+        ],
+        [
+          "0.45",
+          "0.65",
+          "0.38",
+          "0.47",
+          "2.50",
+          "0.38",
+          "0.00",
+          "0.50",
+          "0.22",
+          "0.29",
+          "0.14"
+        ],
+        [
+          "0.50",
+          "0.72",
+          "0.43",
+          "0.53",
+          "3.00",
+          "0.25",
+          "0.00",
+          "0.60",
+          "0.17",
+          "0.22",
+          "0.09"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3.50",
+          "0.13",
+          "0.00",
+          "0.70",
+          "0.12",
+          "0.17",
+          "0.06"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4.00",
+          "0.00",
+          "0.00",
+          "0.80",
+          "0.09",
+          "0.14",
+          "0.04"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "0.90",
+          "0.07",
+          "0.11",
+          "0.03"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1.00",
+          "0.05",
+          "0.08",
+          "0.02"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1.50",
+          "0.01",
+          "0.02",
+          "0.00"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "2.00",
+          "0.00",
+          "0.00",
+          "0.00"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "footnote_a",
+      "type": "body",
+      "section": "26.8",
+      "text": "ᵃFor values of H/Lh, x/Lh, and z/Lh other than those shown, linear interpolation is permitted.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "footnote_b",
+      "type": "body",
+      "section": "26.8",
+      "text": "ᵇFor H/Lh > 0.5, assume that H/Lh = 0.5 for evaluating K₁ and substitute 2H for Lh for evaluating K₂ and K₃.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "footnote_c",
+      "type": "body",
+      "section": "26.8",
+      "text": "ᶜMultipliers are based on the assumption that wind approaches the hill or escarpment along the direction of maximum slope.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "footnote_d",
+      "type": "body",
+      "section": "26.8",
+      "text": "ᵈMultipliers shall be used for any exposure.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_heading",
+      "type": "body",
+      "section": "26.8",
+      "text": "**Notation**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_h",
+      "type": "body",
+      "section": "26.8",
+      "text": "**H** = Height of hill or escarpment relative to the upwind terrain, ft (m);",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_k1",
+      "type": "body",
+      "section": "26.8",
+      "text": "**K₁** = Factor to account for shape of topographic feature and maximum speed-up effect;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_k2",
+      "type": "body",
+      "section": "26.8",
+      "text": "**K₂** = Factor to account for reduction in speed-up with distance upwind or downwind of crest;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_k3",
+      "type": "body",
+      "section": "26.8",
+      "text": "**K₃** = Factor to account for reduction in speed-up with height above local terrain;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_lh",
+      "type": "body",
+      "section": "26.8",
+      "text": "**Lh** = Distance upwind of crest to where the difference in ground elevation is half the height of hill or escarpment, ft (m);",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_x",
+      "type": "body",
+      "section": "26.8",
+      "text": "**x** = Distance (upwind or downwind) from the crest to the site of the building or other structure, ft (m);",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_z",
+      "type": "body",
+      "section": "26.8",
+      "text": "**z** = Height above ground surface at the site of the building or other structure, ft (m);",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_mu",
+      "type": "body",
+      "section": "26.8",
+      "text": "**μ** = Horizontal attenuation factor;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "notation_gamma",
+      "type": "body",
+      "section": "26.8",
+      "text": "**γ** = Height attenuation factor.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "equations_heading",
+      "type": "body",
+      "section": "26.8",
+      "text": "**Equations**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "kzt_equation",
+      "type": "formula",
+      "section": "26.8",
+      "text": "Kzt = (1 + K₁K₂K₃)²",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "expression": "Kzt = (1 + K₁K₂K₃)²",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "k1_determination",
+      "type": "body",
+      "section": "26.8",
+      "text": "K₁ = Determined from table above",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "k2_equation",
+      "type": "formula",
+      "section": "26.8",
+      "text": "K₂ = (1 - |x|/μLh)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "expression": "K₂ = (1 - |x|/μLh)",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "k3_equation",
+      "type": "formula",
+      "section": "26.8",
+      "text": "K₃ = e^(-γz/Lh)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "expression": "K₃ = e^(-γz/Lh)",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "parameters_heading",
+      "type": "body",
+      "section": "26.8",
+      "text": "**Parameters for Speed-Up over Hills and Escarpments**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "parameters_table",
+      "type": "table",
+      "section": "26.8",
+      "text": "Parameters for Speed-Up over Hills and Escarpments showing K₁/(H/Lh) values and attenuation factors μ and γ for different hill shapes and exposures.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "full",
+      "columns": [
+        "Hill Shape",
+        "K₁/(H/Lh) Exposure B",
+        "K₁/(H/Lh) Exposure C",
+        "K₁/(H/Lh) Exposure D",
+        "K₁/(H/Lh) γ",
+        "μ Upwind of Crest",
+        "μ Downwind of Crest"
+      ],
+      "rows": [
+        [
+          "2D ridge (or valley) with negative H in K₁/(H/Lh)",
+          "1.30",
+          "1.45",
+          "1.55",
+          "3",
+          "1.5",
+          "1.5"
+        ],
+        [
+          "2D escarpment",
+          "0.75",
+          "0.85",
+          "0.95",
+          "2.5",
+          "1.5",
+          "4"
+        ],
+        [
+          "3D axisymmetrical hill",
+          "0.95",
+          "1.05",
+          "1.15",
+          "4",
+          "1.5",
+          "1.5"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}

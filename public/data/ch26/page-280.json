@@ -1,0 +1,211 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 280,
+  "section_range": [
+    "26.13",
+    "26.14"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-26.13-table1",
+      "type": "table",
+      "section": "26.13",
+      "text": "Table 26.13-1. Main Wind Force Resisting System and Components and Cladding (All Heights): Internal Pressure Coefficient, (GCpi), for Enclosed, Partially Enclosed, Partially Open, and Open Buildings (Walls and Roof).\n\nEnclosure Classification | Criteria for Enclosure Classification | Internal Pressure | Internal Pressure Coefficient (GCpi)\n\nEnclosed buildings | Ao is less than the smaller of 0.01Ag or 4 ft² (0.37 m²), and Aoi/Ag ≤ 0.2 | Moderate | +0.18, -0.18\n\nPartially enclosed buildings | Ao > 1.1Aoi, and Ao > the lesser of 0.01Ag or 4 ft² (0.37 m²), and Aoi/Ag ≤ 0.2 | High | +0.55, -0.55\n\nPartially open buildings | A building that does not comply with Enclosed, Partially Enclosed, or Open classifications | Moderate | +0.18, -0.18\n\nOpen buildings | Each wall is at least 80% open | Negligible | 0.00\n\nNotes:\n1. Plus and minus signs signify pressures acting toward and away from the internal surfaces, respectively.\n2. Values of (GCpi) shall be used with qz or qh as specified.\n3. Two cases shall be considered to determine the critical load requirements for the appropriate condition:\n(a) A positive value of (GCpi) applied to all internal surfaces, or\n(b) A negative value of (GCpi) applied to all internal surfaces.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.48
+      },
+      "column": "left",
+      "columns": [
+        "Enclosure Classification",
+        "Criteria for Enclosure Classification",
+        "Internal Pressure",
+        "Internal Pressure Coefficient (GCpi)"
+      ],
+      "rows": [
+        [
+          "Enclosed buildings",
+          "Ao is less than the smaller of 0.01Ag or 4 ft² (0.37 m²), and Aoi/Ag ≤ 0.2",
+          "Moderate",
+          "+0.18, -0.18"
+        ],
+        [
+          "Partially enclosed buildings",
+          "Ao > 1.1Aoi, and Ao > the lesser of 0.01Ag or 4 ft² (0.37 m²), and Aoi/Ag ≤ 0.2",
+          "High",
+          "+0.55, -0.55"
+        ],
+        [
+          "Partially open buildings",
+          "A building that does not comply with Enclosed, Partially Enclosed, or Open classifications",
+          "Moderate",
+          "+0.18, -0.18"
+        ],
+        [
+          "Open buildings",
+          "Each wall is at least 80% open",
+          "Negligible",
+          "0.00"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.14-body1",
+      "type": "body",
+      "section": "26.14",
+      "text": "Pressure, Door and Access Systems Manufacturers Association International, 2017.\nCited in: Sections 26.12.3.2, C26.12.\nASTM E330, Standard Test Method for Structural Performance of Exterior Windows, Doors, Skylights, and Curtain Walls by Uniform Static Air Pressure Difference, ASTM International, 2014.\nCited in: Section C26.5.1\nASTM E1886, Standard Test Method for Performance of Exterior Windows, Curtain Walls, Doors, and Impact Protective Systems Impacted by Missile(s) and Exposed to Cyclic Pressure Differentials, ASTM, 2019.\nCited in: Sections 26.12.3.2, C26.12\nASTM E1996, Standard Specification for Performance of Exterior Windows, Curtain Walls, Doors and Impact Protective Systems Impacted by Windborne Debris in Hurricanes, ASTM International, 2020.\nCited in: Sections 26.12.3.2, C26.12\nCAN/CSA A123.21, Standard Test Method for the Dynamic Wind Uplift Resistance of Membrane-Roofing Systems, CSA Group, 2014.\nCited in: Section C26.5.1",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 1,
+        "y_start": 0.1,
+        "y_end": 0.8
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.13-body1",
+      "type": "body",
+      "section": "26.13",
+      "text": "unpartitioned large volume, the internal pressure coefficient, (GCpi), shall be multiplied by the reduction factor, Ri:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.48,
+        "y_end": 0.52
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.13-formula1",
+      "type": "formula",
+      "section": "26.13",
+      "text": "Ri = 1.0 or Ri = 0.5(1 + √(1/(1 + 23.8/√Aog))) < 1.0 (26.13-1)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.52,
+        "y_end": 0.58
+      },
+      "column": "left",
+      "expression": "Ri = 1.0 or Ri = 0.5(1 + √(1/(1 + 23.8/√Aog))) < 1.0",
+      "parameters": [
+        "Ri: reduction factor",
+        "Aog: total area of openings in the building envelope"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.13-body2",
+      "type": "body",
+      "section": "26.13",
+      "text": "where Aog is the total area of openings in the building envelope [walls and roof (ft²)], and Vi is the unpartitioned internal volume (ft³).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.58,
+        "y_end": 0.62
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.14-heading1",
+      "type": "body",
+      "section": "26.14",
+      "text": "**26.14 CONSENSUS STANDARDS AND OTHER REFERENCED DOCUMENTS**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.65,
+        "y_end": 0.68
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.14-provision1",
+      "type": "provision",
+      "section": "26.14",
+      "text": "This section lists the consensus standards and other documents that shall be considered part of this standard to the extent referenced in this chapter.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.68,
+        "y_end": 0.72
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.14-body1",
+      "type": "body",
+      "section": "26.14",
+      "text": "**ANSI A58.1**, *Minimum Design Loads for Buildings and Other Structures*, American National Standards Institute, 1982.\nCited in: Section C26.5.2.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.72,
+        "y_end": 0.76
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.14-body2",
+      "type": "body",
+      "section": "26.14",
+      "text": "**ANSI/DASMA 115**, *Standard Method for Testing Sectional Doors, Rolling Doors, and Flexible Doors: Determination of Structural Performance under Missile Impact and Cyclic Wind*",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.76,
+        "y_end": 0.82
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}

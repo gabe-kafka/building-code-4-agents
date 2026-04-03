@@ -1,0 +1,4 @@
+node_modules/
+dist/
+harness/artifacts/
+.env

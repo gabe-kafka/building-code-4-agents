@@ -1,0 +1,1177 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 265,
+  "section_range": [
+    "26",
+    "26.5.1"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-26-def01",
+      "type": "definition",
+      "section": "26",
+      "text": "Ns = Reduced frequency for ground-mounted solar panels",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.07
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def001",
+      "type": "definition",
+      "section": "26.4",
+      "text": "zmin = Exposure constant from Table 26.11-1",
+      "cross_references": [
+        "Table 26.11-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.05,
+        "y_end": 0.06
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def002",
+      "type": "definition",
+      "section": "26.4",
+      "text": "α = 3-s gust-speed power law exponent from Table 26.11-1",
+      "cross_references": [
+        "Table 26.11-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.06,
+        "y_end": 0.07
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def02",
+      "type": "definition",
+      "section": "26",
+      "text": "n = Lowest natural frequency for ground-mounted solar panels, Hz",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.07,
+        "y_end": 0.09
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def003",
+      "type": "definition",
+      "section": "26.4",
+      "text": "α̂ = Reciprocal of α from Table 26.11-1",
+      "cross_references": [
+        "Table 26.11-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.07,
+        "y_end": 0.08
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def004",
+      "type": "definition",
+      "section": "26.4",
+      "text": "ᾱ = Mean hourly wind-speed power law exponent in Equation (26.11-16) from Table 26.11-1",
+      "cross_references": [
+        "Equation (26.11-16)",
+        "Table 26.11-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.08,
+        "y_end": 0.09
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def03",
+      "type": "definition",
+      "section": "26",
+      "text": "η1 = Fundamental natural frequency, Hz",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.09,
+        "y_end": 0.11
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def005",
+      "type": "definition",
+      "section": "26.4",
+      "text": "β = Damping ratio, percent critical for buildings or other structures",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.09,
+        "y_end": 0.1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def006",
+      "type": "definition",
+      "section": "26.4",
+      "text": "γc = Panel chord factor for use with rooftop solar panels in Equation (29.4-5)",
+      "cross_references": [
+        "Equation (29.4-5)"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.1,
+        "y_end": 0.11
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def04",
+      "type": "definition",
+      "section": "26",
+      "text": "ηu = Approximate lower bound natural frequency from Section 26.11.2, Hz",
+      "cross_references": [
+        "26.11.2"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.11,
+        "y_end": 0.13
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def007",
+      "type": "definition",
+      "section": "26.4",
+      "text": "γE = Array edge factor for use with rooftop solar panels in Figure 29.4-7 and Equations (29.4-4) and (29.4-5)",
+      "cross_references": [
+        "Figure 29.4-7",
+        "Equations (29.4-4)",
+        "(29.4-5)"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.11,
+        "y_end": 0.12
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def008",
+      "type": "definition",
+      "section": "26.4",
+      "text": "γp = Parapet height factor for use with rooftop solar panels in Equation (29.4-5)",
+      "cross_references": [
+        "Equation (29.4-5)"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.12,
+        "y_end": 0.13
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def05",
+      "type": "definition",
+      "section": "26",
+      "text": "p = Design pressure to be used in determination of wind loads for buildings, lb/ft² (N/m²)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.13,
+        "y_end": 0.16
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def009",
+      "type": "definition",
+      "section": "26.4",
+      "text": "ε = Ratio of solid area to gross area for solid freestanding wall, solid sign, open sign, face of a trussed tower, or lattice structure",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.13,
+        "y_end": 0.15
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def010",
+      "type": "definition",
+      "section": "26.4",
+      "text": "ε̄ = Integral length scale power law exponent in Equation (26.11-9) from Table 26.11-1",
+      "cross_references": [
+        "Equation (26.11-9)",
+        "Table 26.11-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.15,
+        "y_end": 0.16
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def06",
+      "type": "definition",
+      "section": "26",
+      "text": "PL = Wind pressure acting on leeward face in Figure 27.3-8, lb/ft² (N/m²)",
+      "cross_references": [
+        "27.3-8"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.16,
+        "y_end": 0.19
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def011",
+      "type": "definition",
+      "section": "26.4",
+      "text": "η = Value used in Equations (26.11-15a) and (26.1115b); see Section 26.11.4",
+      "cross_references": [
+        "Equations (26.11-15a)",
+        "(26.11-15b)",
+        "Section 26.11.4"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.16,
+        "y_end": 0.17
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def012",
+      "type": "definition",
+      "section": "26.4",
+      "text": "θ = Angle of plane of roof from horizontal, degrees",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.17,
+        "y_end": 0.18
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def013",
+      "type": "definition",
+      "section": "26.4",
+      "text": "ν = Height-to-width ratio for solid signs",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.18,
+        "y_end": 0.19
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def07",
+      "type": "definition",
+      "section": "26",
+      "text": "Q = Background response factor from Equation (26.11-8)",
+      "cross_references": [
+        "26.11-8"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.19,
+        "y_end": 0.21
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-def014",
+      "type": "definition",
+      "section": "26.4",
+      "text": "ω = Angle that the solar panel makes with the roof surface in Figure 29.4-7, or that a groundmounted solar panel makes with the ground in Figure 29.4-9, degrees",
+      "cross_references": [
+        "Figure 29.4-7",
+        "Figure 29.4-9"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.19,
+        "y_end": 0.22
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def08",
+      "type": "definition",
+      "section": "26",
+      "text": "q = Velocity pressure, lb/ft² (N/m)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.21,
+        "y_end": 0.23
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def09",
+      "type": "definition",
+      "section": "26",
+      "text": "qh = Velocity pressure evaluated at height z = h, lb/ft² (N/m²)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.23,
+        "y_end": 0.26
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4-heading001",
+      "type": "body",
+      "section": "26.4",
+      "text": "26.4 GENERAL",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.23,
+        "y_end": 0.24
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4.1-heading001",
+      "type": "body",
+      "section": "26.4.1",
+      "text": "26.4.1 Sign Convention",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.24,
+        "y_end": 0.25
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4.1-body001",
+      "type": "body",
+      "section": "26.4.1",
+      "text": "Positive pressure acts toward the surface, and negative pressure acts away from the surface.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.25,
+        "y_end": 0.26
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def10",
+      "type": "definition",
+      "section": "26",
+      "text": "qi = Velocity pressure for internal pressure determination, lb/ft² (N/m²)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.26,
+        "y_end": 0.29
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4.2-heading001",
+      "type": "body",
+      "section": "26.4.2",
+      "text": "26.4.2 Critical Load Condition",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.27,
+        "y_end": 0.28
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4.2-provision001",
+      "type": "provision",
+      "section": "26.4.2",
+      "text": "Values of external and internal pressures shall be combined algebraically to determine the most critical load.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.28,
+        "y_end": 0.29
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def11",
+      "type": "definition",
+      "section": "26",
+      "text": "qp = Velocity pressure at top of parapet, lb/ft² (N/m²)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.29,
+        "y_end": 0.31
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4.3-heading001",
+      "type": "body",
+      "section": "26.4.3",
+      "text": "26.4.3 Wind Pressures Acting on Opposite Faces of Each Building Surface",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.3,
+        "y_end": 0.31
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def12",
+      "type": "definition",
+      "section": "26",
+      "text": "qz = Velocity pressure evaluated at height z above ground, lb/ft² (N/m²)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.31,
+        "y_end": 0.34
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.4.3-provision001",
+      "type": "provision",
+      "section": "26.4.3",
+      "text": "In the calculation of design wind loads for the MWFRS and for C&C for buildings, the algebraic sum of the pressures acting on opposite faces of each building surface shall be taken into account.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.31,
+        "y_end": 0.33
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def13",
+      "type": "definition",
+      "section": "26",
+      "text": "R = Resonant response factor from Equation (26.11-12)",
+      "cross_references": [
+        "26.11-12"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.34,
+        "y_end": 0.36
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5-heading001",
+      "type": "body",
+      "section": "26.5",
+      "text": "26.5 WIND HAZARD MAP",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.34,
+        "y_end": 0.35
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-heading001",
+      "type": "body",
+      "section": "26.5.1",
+      "text": "26.5.1 Basic Wind Speed",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.35,
+        "y_end": 0.36
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def14",
+      "type": "definition",
+      "section": "26",
+      "text": "r = Rise-to-span ratio for arched roofs",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.36,
+        "y_end": 0.38
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-provision001",
+      "type": "provision",
+      "section": "26.5.1",
+      "text": "The basic wind speed, V, used in the determination of design wind loads on buildings and other structures shall be determined from Figure 26.5-1 as follows, except as provided in Sections 26.5.2 and 26.5.3:",
+      "cross_references": [
+        "Figure 26.5-1",
+        "Sections 26.5.2",
+        "26.5.3"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.36,
+        "y_end": 0.38
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def15",
+      "type": "definition",
+      "section": "26",
+      "text": "Rh, RL, RE = Values from Equations (26.11-15a) and (26.11-15b)",
+      "cross_references": [
+        "26.11-15a",
+        "26.11-15b"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.38,
+        "y_end": 0.41
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-body001",
+      "type": "body",
+      "section": "26.5.1",
+      "text": "For Risk Category I buildings and structures, use Figure 26.5-1A.\nFor Risk Category II buildings and structures, use Figure 26.5-1B.\nFor Risk Category III buildings and structures, use Figure 26.5-1C.\nFor Risk Category IV buildings and structures, use Figure 26.5-1D.",
+      "cross_references": [
+        "Figure 26.5-1A",
+        "Figure 26.5-1B",
+        "Figure 26.5-1C",
+        "Figure 26.5-1D"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.39,
+        "y_end": 0.43
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def16",
+      "type": "definition",
+      "section": "26",
+      "text": "Ri = Reduction factor from Equation (26.13-1)",
+      "cross_references": [
+        "26.13-1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.41,
+        "y_end": 0.43
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def17",
+      "type": "definition",
+      "section": "26",
+      "text": "Rn = Value from Equation (26.11-13)",
+      "cross_references": [
+        "26.11-13"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.43,
+        "y_end": 0.45
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-provision002",
+      "type": "provision",
+      "section": "26.5.1",
+      "text": "Alternatively, it shall be permitted to use the basic wind speeds from the ASCE Wind Design Geodatabase for the contiguous United States, Alaska, and selected special wind regions.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.44,
+        "y_end": 0.46
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def18",
+      "type": "definition",
+      "section": "26",
+      "text": "S = Center-to-center row spacing for ground-mounted solar panels in Figure 29.4-9, ft (m)",
+      "cross_references": [
+        "29.4-9"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.45,
+        "y_end": 0.48
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def19",
+      "type": "definition",
+      "section": "26",
+      "text": "SL = Open distance in longitudinal direction for ground-mounted solar panels in Figure 29.4-9, ft (m)",
+      "cross_references": [
+        "29.4-9"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.48,
+        "y_end": 0.52
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def20",
+      "type": "definition",
+      "section": "26",
+      "text": "ST = Open distance in transverse direction for ground-mounted solar panels in Figure 29.4-9, ft (m)",
+      "cross_references": [
+        "29.4-9"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.52,
+        "y_end": 0.55
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def21",
+      "type": "definition",
+      "section": "26",
+      "text": "s = Vertical dimension of the solid freestanding wall or solid sign from Figure 29.3-1, ft (m)",
+      "cross_references": [
+        "29.3-1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.55,
+        "y_end": 0.58
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def22",
+      "type": "definition",
+      "section": "26",
+      "text": "sp = Gap between adjacent panels for ground-mounted solar panels in Figure 29.4-9, ft (m)",
+      "cross_references": [
+        "29.4-9"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.58,
+        "y_end": 0.61
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def23",
+      "type": "definition",
+      "section": "26",
+      "text": "V = Basic wind speed obtained from Figures 26.5-1A through 26.5-1D, mi/h (m/s); the basic wind speed corresponds to a 3 s gust speed at 33 ft (10 m) above the ground in Exposure Category C",
+      "cross_references": [
+        "26.5-1A",
+        "26.5-1D"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.61,
+        "y_end": 0.66
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def24",
+      "type": "definition",
+      "section": "26",
+      "text": "Vi = Unpartitioned internal volume, in ft³ (m³)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.66,
+        "y_end": 0.68
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def25",
+      "type": "definition",
+      "section": "26",
+      "text": "Vz = Mean hourly wind speed at height z, in ft/s (m/s)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.68,
+        "y_end": 0.7
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def26",
+      "type": "definition",
+      "section": "26",
+      "text": "W = Width of building in Figures 30.3-3, 30.3-5A, and 30.3-5B and width of span in Figures 30.3-4 and 30.3-6, ft (m)",
+      "cross_references": [
+        "30.3-3",
+        "30.3-5A",
+        "30.3-5B",
+        "30.3-4",
+        "30.3-6"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.7,
+        "y_end": 0.74
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def27",
+      "type": "definition",
+      "section": "26",
+      "text": "Ws = Shortest row length for ground-mounted solar panels in Figure 29.4-9, ft (m)",
+      "cross_references": [
+        "29.4-9"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.74,
+        "y_end": 0.76
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def28",
+      "type": "definition",
+      "section": "26",
+      "text": "WL = Width of a building on its longest side in Figure 29.4-7, ft (m)",
+      "cross_references": [
+        "29.4-7"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.76,
+        "y_end": 0.78
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def29",
+      "type": "definition",
+      "section": "26",
+      "text": "WS = Width of a building on its shortest side in Figure 29.4-7, ft (m)",
+      "cross_references": [
+        "29.4-7"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.78,
+        "y_end": 0.8
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def30",
+      "type": "definition",
+      "section": "26",
+      "text": "x = Distance upwind or downwind of crest in Figure 26.8-1, ft (m)",
+      "cross_references": [
+        "26.8-1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.8,
+        "y_end": 0.82
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def31",
+      "type": "definition",
+      "section": "26",
+      "text": "z = Height above ground level, ft (m)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.82,
+        "y_end": 0.84
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def32",
+      "type": "definition",
+      "section": "26",
+      "text": "z̃ = Equivalent height of structure, ft (m)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.84,
+        "y_end": 0.86
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def33",
+      "type": "definition",
+      "section": "26",
+      "text": "zg = Ground elevation above sea level, ft (m)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.86,
+        "y_end": 0.88
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-def34",
+      "type": "definition",
+      "section": "26",
+      "text": "zg = Nominal height of the atmospheric boundary layer used in this standard (values appear in Table 26.11-1)",
+      "cross_references": [
+        "26.11-1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.88,
+        "y_end": 0.91
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}

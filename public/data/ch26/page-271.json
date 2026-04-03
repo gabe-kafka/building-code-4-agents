@@ -1,0 +1,195 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 271,
+  "section_range": [
+    "26.5",
+    "26.5.1"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-26-F26.5-1C",
+      "type": "figure",
+      "section": "26.5",
+      "text": "Figure 26.5-1C (Continued). Basic wind speeds for Risk Category III buildings and other structures.\n\nWind speed map of the United States showing basic wind speeds for Risk Category III buildings and other structures. The map displays contour lines with wind speed values in mph and m/s in parentheses. Wind speeds range from 110(49) in interior regions to higher values toward coastal areas. The map shows wind speed contours including 110(49), 115(51), 117(53), 120(54), 122(54) across various regions of the continental United States. Special Wind Region areas are indicated with a dotted pattern. The western portion shows a large enclosed area with values 120(54) and 122(54). A table within the figure lists locations and their corresponding wind speeds: American Samoa 170 (76), Guam & Northern Mariana Islands 210 (94), Hawaii ASCE Wind Design Geodatabase, Puerto Rico ASCE Wind Design Geodatabase, U.S. Virgin Islands ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.02,
+        "y_end": 0.97
+      },
+      "column": "left",
+      "caption": "Figure 26.5-1C (Continued). Basic wind speeds for Risk Category III buildings and other structures.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "image_url": "/figures/ch26/page-271-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-26.5.1-fig1c",
+      "type": "figure",
+      "section": "26.5.1",
+      "text": "Figure 26.5-1C (Continued). Basic wind speeds for Risk Category III buildings and other structures.\n\nThis figure shows the continuation of the basic wind speed map for Risk Category III buildings, focusing on the eastern United States. The map displays contour lines with wind speed values ranging from 110(49) in the upper regions to 200(89) in the southeastern coastal areas, particularly Florida. Numbers in parentheses appear to be metric conversions. There is a shaded region marked as 'Special Wind Region' in the northeastern area. The figure includes a table showing wind speeds for various locations: American Samoa (170 mi/h, 76 m/s), Guam & Northern Mariana Islands (210 mi/h, 94 m/s), Hawaii (ASCE Wind Design Geodatabase), Puerto Rico (ASCE Wind Design Geodatabase), and U.S. Virgin Islands (ASCE Wind Design Geodatabase).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.07,
+        "y_end": 0.97
+      },
+      "column": "right",
+      "caption": "Figure 26.5-1C (Continued). Basic wind speeds for Risk Category III buildings and other structures.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "image_url": "/figures/ch26/page-271-fig-1.png"
+    },
+    {
+      "id": "ASCE7-22-26-N1",
+      "type": "body",
+      "section": "26.5",
+      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.86,
+        "y_end": 0.88
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-note5",
+      "type": "body",
+      "section": "26.5.1",
+      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.86,
+        "y_end": 0.88
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-N2",
+      "type": "body",
+      "section": "26.5",
+      "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.88,
+        "y_end": 0.91
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-note6",
+      "type": "body",
+      "section": "26.5.1",
+      "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.88,
+        "y_end": 0.91
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-N3",
+      "type": "body",
+      "section": "26.5",
+      "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00588, MRI = 1,700 years).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.91,
+        "y_end": 0.93
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-note7",
+      "type": "body",
+      "section": "26.5.1",
+      "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00588, MRI = 1,700 years).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.91,
+        "y_end": 0.93
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-N4",
+      "type": "body",
+      "section": "26.5",
+      "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.93,
+        "y_end": 0.95
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5.1-note8",
+      "type": "body",
+      "section": "26.5.1",
+      "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.93,
+        "y_end": 0.95
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}

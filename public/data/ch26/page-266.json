@@ -1,0 +1,89 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 266,
+  "section_range": [
+    "26",
+    "26.5"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-26-fig1",
+      "type": "figure",
+      "section": "26.5",
+      "text": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.\n\nA map of the western United States showing basic wind speed contours for Risk Category I buildings. The map includes wind speed values in mi/h with corresponding m/s values in parentheses. Contour lines show wind speeds including 85(38), 90(40), 95(42), 100(45), 105(47), 110(49), 120(54), 130(58), 140(63), and 150(67). The higher wind speeds (140-150 mi/h) appear concentrated in southern California coastal areas and parts of the Gulf Coast. Hatched/shaded areas indicate special wind regions or mountainous terrain. The map covers states including California, Nevada, Utah, Colorado, Arizona, New Mexico, Wyoming, Montana, Idaho, Oregon, and Washington, with state boundaries clearly marked.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.02,
+        "y_end": 0.94
+      },
+      "column": "full",
+      "caption": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "image_url": "/figures/ch26/page-266-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-26-fig1",
+      "type": "figure",
+      "section": "26.5",
+      "text": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.\n\nWind speed contour map of the western United States showing basic wind speeds for Risk Category I buildings. The map displays various wind speed values in mph with corresponding m/s values in parentheses. Contour lines show wind speeds of 85(38), 90(40), 95(42), and 100(45) mph. Special high-wind regions along coastlines and mountainous areas are indicated with crosshatched patterns. The map includes state boundaries and coastlines. Notes below the map indicate: 1. Values are 3 s gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C. 2. Linear interpolation is permitted between contours. Point values are provided to aid with interpolation. 3. Islands, coastal areas, and land boundaries outside the last contour shall use the last wind speed contour. 4. Location-specific basic wind speeds shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.06,
+        "y_end": 0.96
+      },
+      "column": "right",
+      "caption": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "image_url": "/figures/ch26/page-266-fig-1.png"
+    },
+    {
+      "id": "ASCE7-22-26-body1",
+      "type": "body",
+      "section": "26.5",
+      "text": "Figure in Section 26.14",
+      "cross_references": [
+        "26.14"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.93,
+        "y_end": 0.95
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26-page1",
+      "type": "body",
+      "section": "26",
+      "text": "266",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.12,
+        "y_start": 0.96,
+        "y_end": 0.98
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}

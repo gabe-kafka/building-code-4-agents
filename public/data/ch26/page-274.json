@@ -1,0 +1,558 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 26,
+  "page": 274,
+  "section_range": [
+    "26.5",
+    "26.7.3"
+  ],
+  "elements": [
+    {
+      "id": "26_274_1",
+      "type": "provision",
+      "section": "26.5",
+      "text": "Basic wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined by using the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_2",
+      "type": "body",
+      "section": "26.5",
+      "text": "The ASCE Wind Design Geodatabase is available at the ASCE 7 Hazard Tool (https://asce7hazardtool.online), or approved equivalent.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_3",
+      "type": "provision",
+      "section": "26.5",
+      "text": "The wind shall be assumed to come from any horizontal direction. The basic wind speed shall be increased where records or experience indicate that the wind speeds are higher than those reflected in Figure 26.5-1.",
+      "cross_references": [
+        "Figure 26.5-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_4",
+      "type": "body",
+      "section": "26.5.2",
+      "text": "**26.5.2 Special Wind Regions**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_5",
+      "type": "provision",
+      "section": "26.5.2",
+      "text": "Mountainous terrain, gorges, and special wind regions shown in Figure 26.5-1 shall be examined for unusual wind conditions. The Authority Having Jurisdiction shall, if necessary, adjust the values given in Figure 26.5-1 to account for higher local wind speeds. Such adjustment shall be based on meteorological information and an estimate of the basic wind speed obtained in accordance with the provisions of Section 26.5.3.",
+      "cross_references": [
+        "Figure 26.5-1",
+        "Section 26.5.3"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_6",
+      "type": "body",
+      "section": "26.5.2",
+      "text": "Site-specific values for select special wind regions in the contiguous United States have been included in the ASCE 7 Wind Design Geodatabase. It shall be permitted to use the wind speed values for Special Wind Regions from the ASCE 7 Wind Design Geodatabase (https://asce7hazardtool.online/).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_7",
+      "type": "body",
+      "section": "26.5.3",
+      "text": "**26.5.3 Estimation of Basic Wind Speeds from Regional Climatic Data**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_8",
+      "type": "provision",
+      "section": "26.5.3",
+      "text": "In areas outside hurricane-prone regions, regional climatic data shall only be used in lieu of the basic wind speeds given in Figure 26.5-1 when the period of record, sampling error, anemometer height, data quality, and terrain exposure of the anemometer have been taken into account. Reduction in basic wind speed below that of Figure 26.5-1 shall be permitted.",
+      "cross_references": [
+        "Figure 26.5-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_9",
+      "type": "provision",
+      "section": "26.5.3",
+      "text": "In hurricane-prone regions, wind speeds derived from simulation techniques shall only be used in lieu of the basic wind speeds given in Figure 26.5-1 when approved simulation and extreme-value statistical analysis procedures have been used. The use of regional wind-speed data obtained from anemometers is not permitted to define the hurricane wind-speed risk along the Gulf and Atlantic coasts, the Caribbean, or Hawaii.",
+      "cross_references": [
+        "Figure 26.5-1"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_10",
+      "type": "provision",
+      "section": "26.5.3",
+      "text": "When the basic wind speed is estimated from regional climatic data or simulation, the estimate shall correspond to the applicable mean recurrence interval, and the estimate shall be adjusted for equivalence to a 3 s gust wind speed at 33 ft (10 m) above ground in Exposure C.",
+      "cross_references": [
+        "Exposure C"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_11",
+      "type": "body",
+      "section": "26.6",
+      "text": "**26.6 WIND DIRECTIONALITY FACTOR**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_12",
+      "type": "provision",
+      "section": "26.6",
+      "text": "The wind directionality factor, Kd, shall be determined from Table 26.6-1 and shall be included in the wind loads calculated in Chapters 27 through 30. The effect of wind directionality in determining wind loads in accordance with Chapter 31 shall be based on a rational analysis of the wind speeds conforming to the requirements of Section 26.5.3 and of Section 31.4.3.",
+      "cross_references": [
+        "Table 26.6-1",
+        "Chapters 27 through 30",
+        "Chapter 31",
+        "Section 26.5.3",
+        "Section 31.4.3"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_13",
+      "type": "body",
+      "section": "26.7",
+      "text": "**26.7 EXPOSURE**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_14",
+      "type": "provision",
+      "section": "26.7",
+      "text": "For each wind direction considered, the upwind exposure shall be based on ground surface roughness that is determined from natural topography, vegetation, and constructed facilities.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_15",
+      "type": "body",
+      "section": "26.7.1",
+      "text": "**26.7.1 Wind Directions and Sectors**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_16",
+      "type": "provision",
+      "section": "26.7.1",
+      "text": "For each selected wind direction at which the wind loads are to be determined, the exposure of the building or structure shall be determined for the two upwind sectors extending 45 degrees on either side of the selected wind direction. The exposure in these two sectors shall be determined in accordance with Sections 26.7.2 and 26.7.3, and the exposure the use of which would result in the highest wind loads shall be used to represent the winds from that direction.",
+      "cross_references": [
+        "Sections 26.7.2",
+        "26.7.3"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_17",
+      "type": "table",
+      "section": "26.6",
+      "text": "Table 26.6-1. Wind Directionality Factor, Kd.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "columns": [
+        "Structure Type",
+        "Directionality Factor Kd"
+      ],
+      "rows": [
+        [
+          "Buildings",
+          ""
+        ],
+        [
+          "Main wind force resisting system",
+          "0.85"
+        ],
+        [
+          "Components and cladding",
+          "0.85"
+        ],
+        [
+          "Arched roofs",
+          "0.85"
+        ],
+        [
+          "Circular domes",
+          "1.0ᵃ"
+        ],
+        [
+          "Chimneys, tanks, and similar structures",
+          ""
+        ],
+        [
+          "Square",
+          "0.90"
+        ],
+        [
+          "Hexagonal",
+          "0.95"
+        ],
+        [
+          "Octagonal",
+          "1.0ᵃ"
+        ],
+        [
+          "Round",
+          "1.0ᵃ"
+        ],
+        [
+          "Solid freestanding walls, roof top equipment, and solid freestanding and attached signs",
+          "0.85"
+        ],
+        [
+          "Open signs and single-plane open frames",
+          "0.85"
+        ],
+        [
+          "Trussed towers",
+          ""
+        ],
+        [
+          "Triangular, square, or rectangular",
+          "0.85"
+        ],
+        [
+          "All other cross sections",
+          "0.95"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_18",
+      "type": "body",
+      "section": "26.6",
+      "text": "ᵃDirectionality factor Kd = 0.95 shall be permitted for round or octagonal structures with nonaxisymmetric structural systems.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_19",
+      "type": "body",
+      "section": "26.7.2",
+      "text": "**26.7.2 Surface Roughness Categories**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_20",
+      "type": "provision",
+      "section": "26.7.2",
+      "text": "A ground surface roughness within each 45 degree sector shall be determined for a distance upwind of the site, as defined in Section 26.7.3, from the categories defined in the following text. The purpose of assigning an exposure category as defined in Section 26.7.3 is:",
+      "cross_references": [
+        "Section 26.7.3"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_21",
+      "type": "definition",
+      "section": "26.7.2",
+      "text": "**Surface Roughness B.** Urban and suburban areas, wooded areas, or other terrain with numerous, closely spaced obstructions that have the size of single-family dwellings or larger.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_22",
+      "type": "definition",
+      "section": "26.7.2",
+      "text": "**Surface Roughness C.** Open terrain with scattered obstructions that have heights generally less than 30 ft (9.1 m). This category includes flat, open country and grasslands.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_23",
+      "type": "definition",
+      "section": "26.7.2",
+      "text": "**Surface Roughness D.** Flat, unobstructed areas and water surfaces. This category includes smooth mud flats, salt flats, and unbroken ice.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_24",
+      "type": "body",
+      "section": "26.7.3",
+      "text": "**26.7.3 Exposure Categories**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "26_274_25",
+      "type": "definition",
+      "section": "26.7.3",
+      "text": "**Exposure B.** For buildings or other structures with a mean roof height less than or equal to 30 ft (9.1 m), Exposure B shall apply where the ground surface roughness, as defined by Surface Roughness B, prevails in the upwind direction for a distance greater than 1,500 ft (457 m). For buildings and structures with a mean roof height greater than 30 ft (9.1 m), Exposure B shall apply where Surface Roughness B prevails in the upwind direction for a distance greater than 2,600 ft (792 m) or 20 times the height of the building or structure, whichever is greater.",
+      "cross_references": [
+        "Surface Roughness B"
+      ],
+      "bbox": {
+        "x_start": 0,
+        "x_end": 1,
+        "y_start": 0,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    }
+  ]
+}
