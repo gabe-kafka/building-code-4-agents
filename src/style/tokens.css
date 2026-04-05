@@ -18,20 +18,20 @@
   --cyan: #06B6D4;
 
   /* Element type colors */
-  --el-provision: #16A34A;
   --el-definition: #8B5CF6;
   --el-formula: #0057FF;
   --el-table: #06B6D4;
+  --el-procedure: #16A34A;
   --el-figure: #D97706;
   --el-exception: #DC2626;
   --el-user_note: #6B6B6B;
   --el-body: #505050;
 
   /* Element type backgrounds (3% opacity tints) */
-  --el-provision-bg: rgba(22, 163, 74, 0.03);
   --el-definition-bg: rgba(139, 92, 246, 0.03);
   --el-formula-bg: rgba(0, 87, 255, 0.03);
   --el-table-bg: rgba(6, 182, 212, 0.03);
+  --el-procedure-bg: rgba(22, 163, 74, 0.03);
   --el-figure-bg: rgba(217, 119, 6, 0.03);
   --el-exception-bg: rgba(220, 38, 38, 0.03);
   --el-user_note-bg: rgba(107, 107, 107, 0.03);

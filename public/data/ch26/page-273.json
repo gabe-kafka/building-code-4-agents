@@ -3,20 +3,20 @@
   "chapter": 26,
   "page": 273,
   "section_range": [
-    "26",
+    "26.5",
     "26.5"
   ],
   "elements": [
     {
-      "id": "ASCE7-22-26.5-fig1D",
+      "id": "ASCE7-22-26.5-fig1",
       "type": "figure",
       "section": "26.5",
-      "text": "Figure 26.5-1D (Continued). Basic wind speeds for Risk Category IV buildings and other structures.\n\nThis figure shows a wind speed map of the United States displaying basic wind speeds for Risk Category IV buildings and other structures. The map contains contour lines with wind speed values in mph (and m/s in parentheses), ranging from 115 mph in interior regions to 200 mph along the Gulf Coast, with special wind regions marked by dotted patterns.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States\",\"parameter\":\"Basic wind speeds for Risk Category IV buildings\",\"contour_values\":[\"115(51)\",\"120(54)\",\"125(56)\",\"127(57)\",\"130(58)\",\"140(63)\",\"150(67)\",\"160(72)\",\"170(76)\",\"180(80)\",\"190(85)\",\"200(89)\"],\"special_features\":[\"Special Wind Region marked with dotted pattern\",\"Higher wind speeds concentrated along Gulf Coast and Eastern seaboard\",\"Lower wind speeds in interior continental regions\"]}]",
+      "text": "Figure 26.5-1D (Continued). Basic wind speeds for Risk Category IV buildings and other structures.\n\nThis figure shows a wind speed map of the United States displaying basic wind speeds for Risk Category IV buildings and other structures. The map contains contour lines with wind speed values in both mph and m/s (in parentheses), with higher wind speeds concentrated along coastal areas, particularly the Gulf Coast and Atlantic seaboard.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States\",\"parameter\":\"Basic wind speeds for Risk Category IV buildings\",\"contour_values\":[\"115(51)\",\"120(54)\",\"125(56)\",\"127(57)\",\"130(58)\",\"140(63)\",\"150(67)\",\"160(72)\",\"170(76)\",\"180(80)\",\"190(85)\",\"200(89)\"],\"special_features\":[\"Special Wind Region marked with crosshatch pattern\",\"Highest values along Gulf Coast and Atlantic seaboard\",\"Lower values in interior regions\"]}]",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.03,
+        "y_start": 0.06,
         "y_end": 0.96
       },
       "column": "full",
@@ -29,33 +29,33 @@
       "image_url": "/figures/ch26/page-273-fig-0.png"
     },
     {
-      "id": "ASCE7-22-26.5-fig1D-table-0",
+      "id": "ASCE7-22-26.5-table1",
       "type": "table",
       "section": "26.5",
-      "text": "Special Wind Region",
+      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.\n6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.\n7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00033, MRI = 3,000 years).\n8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.9099999999999999,
-        "y_end": 0.96
+        "y_start": 0.68,
+        "y_end": 0.75
       },
       "column": "full",
       "columns": [
         "Location",
-        "V (mi/h)",
+        "V (m/h)",
         "V (m/s)"
       ],
       "rows": [
         [
           "American Samoa",
           "180",
-          "(80)"
+          "80"
         ],
         [
           "Guam & Northern Mariana Islands",
           "220",
-          "(98)"
+          "98"
         ],
         [
           "Hawaii",
@@ -76,43 +76,6 @@
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
-    },
-    {
-      "id": "ASCE7-22-26.5-prov1",
-      "type": "provision",
-      "section": "26.5",
-      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.78,
-        "y_end": 0.81
-      },
-      "column": "full",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.5-prov2",
-      "type": "provision",
-      "section": "26.5",
-      "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.82,
-        "y_end": 0.85
-      },
-      "column": "full",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
       },
       "_source": "left"
     },
@@ -120,13 +83,13 @@
       "id": "ASCE7-22-26.5-body1",
       "type": "body",
       "section": "26.5",
-      "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00033, MRI = 3,000 years).",
+      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.86,
-        "y_end": 0.88
+        "y_start": 0.76,
+        "y_end": 0.78
       },
       "column": "full",
       "metadata": {
@@ -139,13 +102,13 @@
       "id": "ASCE7-22-26.5-body2",
       "type": "body",
       "section": "26.5",
-      "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
+      "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site- specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.89,
-        "y_end": 0.91
+        "y_start": 0.78,
+        "y_end": 0.82
       },
       "column": "full",
       "metadata": {
@@ -155,19 +118,18 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26-heading1",
+      "id": "ASCE7-22-26.5-body3",
       "type": "body",
-      "section": "26",
-      "text": "Minimum Design Loads and Associated Criteria for Buildings and Other Structures",
+      "section": "26.5",
+      "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00033, MRI = 3,000 years).",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.94,
-        "y_end": 0.96
+        "x_end": 0.94,
+        "y_start": 0.82,
+        "y_end": 0.84
       },
-      "column": "left",
-      "heading": true,
+      "column": "full",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
@@ -175,23 +137,74 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26-page1",
+      "id": "ASCE7-22-26.5-body4",
       "type": "body",
-      "section": "26",
-      "text": "273",
+      "section": "26.5",
+      "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.88,
+        "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.94,
-        "y_end": 0.96
+        "y_start": 0.84,
+        "y_end": 0.86
       },
-      "column": "left",
+      "column": "full",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
       "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26-table01",
+      "type": "table",
+      "section": "26.5",
+      "text": "Location                           V (mph)     V (m/s)\nAmerican Samoa                     180         (80)\nGuam & Northern Mariana Islands    220         (98)\nHawaii                            ASCE Wind Design Geodatabase\nPuerto Rico                       ASCE Wind Design Geodatabase\nU.S. Virgin Islands               ASCE Wind Design Geodatabase",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 1,
+        "y_start": 0.86,
+        "y_end": 0.92
+      },
+      "column": "right",
+      "columns": [
+        "Location",
+        "V (mph)",
+        "V (m/s)"
+      ],
+      "rows": [
+        [
+          "American Samoa",
+          "180",
+          "80"
+        ],
+        [
+          "Guam & Northern Mariana Islands",
+          "220",
+          "98"
+        ],
+        [
+          "Hawaii",
+          "ASCE Wind Design Geodatabase",
+          "ASCE Wind Design Geodatabase"
+        ],
+        [
+          "Puerto Rico",
+          "ASCE Wind Design Geodatabase",
+          "ASCE Wind Design Geodatabase"
+        ],
+        [
+          "U.S. Virgin Islands",
+          "ASCE Wind Design Geodatabase",
+          "ASCE Wind Design Geodatabase"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
     }
   ]
 }

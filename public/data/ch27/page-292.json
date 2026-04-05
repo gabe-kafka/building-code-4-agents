@@ -1,0 +1,257 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 292,
+  "section_range": [
+    "27.3.5",
+    "27.4"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27.3.5-heading1",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "27.3.5 Design Wind Load Cases",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.15
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-body1",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "where",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.05,
+        "y_end": 0.08
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-heading1-body",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "The MWFRS of buildings of all heights, the wind loads of which have been determined under the provisions of this standard, shall be designed for the wind load cases as defined in Figure 27.3-8.",
+      "cross_references": [
+        "Figure 27.3-8"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.060000000000000005,
+        "y_end": 0.15
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-body2",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "eQ = Eccentricity e as determined for rigid buildings in Figure 27.3-8; and\neR = Distance between the elastic shear center and center of mass of each floor, and Ixx, gQ, Q, gR, and R shall be as defined in Section 26.11.",
+      "cross_references": [
+        "Figure 27.3-8"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.08,
+        "y_end": 0.12
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-body3",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "eR = Distance between the elastic shear center and center of mass of each floor, and Izx, gQy, Qx, gR, and R shall be as defined in Section 26.11.",
+      "cross_references": [
+        "Section 26.11"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.12,
+        "y_end": 0.18
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-provision1",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "**EXCEPTION:** Buildings meeting the requirements of Section D.1 of Appendix D need only be designed for Case 1 and Case 3 of Figure 27.3-8.",
+      "cross_references": [
+        "Section D.1",
+        "Appendix D",
+        "Figure 27.3-8"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.15,
+        "y_end": 0.2
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-provision2",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "The eccentricity e for rigid buildings shall be measured from the geometric center of the building face and shall be considered for each principal axis (ex, ey). The eccentricity e for flexible buildings shall be determined from the following equation and shall be considered for each principal axis (ex, ey):",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.2,
+        "y_end": 0.3
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.4-heading1",
+      "type": "body",
+      "section": "27.4",
+      "text": "27.4 CONSENSUS STANDARDS AND OTHER REFERENCED DOCUMENTS",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.24,
+        "y_end": 0.28
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-formula1",
+      "type": "formula",
+      "section": "27.3.5",
+      "text": "",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.3,
+        "y_end": 0.35
+      },
+      "column": "left",
+      "expression": "e = \\frac{e_Q + 1.7 I_z \\sqrt{(q_Q Q_{eY})^2 + (g_R Re_R)^2}}{1 + 1.7 I_z \\sqrt{(q_Q Q)^2 + (g_R R)^2}}",
+      "parameters": [
+        "e_Q = Eccentricity e as determined for rigid buildings in Figure 27.3-8",
+        "c_R = Distance between the elastic shear center and center of mass of each floor, and I_z, g_Q, Q, g_R, and R shall be as defined in Section 26.11"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.5-body1",
+      "type": "body",
+      "section": "27.3.5",
+      "text": "The sign of the eccentricity e shall be plus or minus, whichever causes the more severe load effect.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.35,
+        "y_end": 0.38
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.4-heading1",
+      "type": "body",
+      "section": "27.4",
+      "text": "**27.4 CONSENSUS STANDARDS AND OTHER REFERENCED DOCUMENTS**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.4,
+        "y_end": 0.43
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.4-body1",
+      "type": "body",
+      "section": "27.4",
+      "text": "No consensus standards and other documents that shall be considered part of this standard are referenced in this chapter.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.43,
+        "y_end": 0.47
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    }
+  ]
+}

@@ -275,5 +275,5 @@ Each code/chapter is an independent database + schema + API. They don't need to 
 ## Related
 
 - V1 repo: `gabe-kafka/bldg-code-2-json`
-- V2 repo: `gabe-kafka/building-code-4-agents`
-- Vault notes: `Projects/building-code-4-agent.md`, `Projects/building-code-4-agent-v2.md`
+- V2 repo: `gabe-kafka/bldg-code-4-agents`
+- Vault notes: `Projects/bldg-code-4-agent.md`, `Projects/bldg-code-4-agent-v2.md`

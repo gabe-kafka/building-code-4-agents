@@ -3,10 +3,10 @@ import { state, on, setFilterType } from '../state.ts'
 import type { ElementType } from '../types.ts'
 
 const KPI_TYPES: { type: ElementType; label: string }[] = [
-  { type: 'provision', label: 'Provisions' },
   { type: 'definition', label: 'Definitions' },
   { type: 'formula', label: 'Formulas' },
   { type: 'table', label: 'Tables' },
+  { type: 'procedure', label: 'Procedures' },
   { type: 'figure', label: 'Figures' },
 ]
 

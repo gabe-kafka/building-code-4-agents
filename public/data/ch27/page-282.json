@@ -1,0 +1,373 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 282,
+  "section_range": [
+    "26.7.3",
+    "27.3.1.1.2"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27.2-PR1",
+      "type": "procedure",
+      "section": "27.2",
+      "text": "Table 27.2-1. Steps to Determine MWFRS Wind Loads for Enclosed, Partially Enclosed, Partially Open, and Open Buildings of All Heights.",
+      "cross_references": [
+        "Table 1.5-1",
+        "Figure 26.5-1",
+        "Section 26.6",
+        "Table 26.6-1",
+        "Section 26.7",
+        "Section 26.8",
+        "Figure 26.8-1",
+        "Section 26.9",
+        "Section 26.11",
+        "Section 26.12",
+        "Section 26.13",
+        "Table 26.13-1",
+        "Table 26.10-1",
+        "Equation (26.10-1)",
+        "Figure 27.3-1",
+        "Figure 27.3-2",
+        "Figure 27.3-3",
+        "Figure 27.3-4",
+        "Figure 27.3-5",
+        "Figure 27.3-6",
+        "Figure 27.3-7",
+        "Equation (27.3-1)",
+        "Equation (27.3-2)",
+        "Section 27.3.5",
+        "Figure 27.3-8"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.85
+      },
+      "column": "left",
+      "columns": [
+        "Step",
+        "Description"
+      ],
+      "rows": [
+        ["Step 1:", "Determine Risk Category of building; see Table 1.5-1."],
+        ["Step 2:", "Determine the basic wind speed, V, for the applicable risk category; see Figure 26.5-1."],
+        ["Step 3:", "Determine wind load parameters:\n• Wind directionality factor, Kd; see Section 26.6 and Table 26.6-1.\n• Exposure category; see Section 26.7.\n• Topographic factor, Kzt; see Section 26.8 and table in Figure 26.8-1.\n• Ground elevation factor, Ke; see Section 26.9.\n• Gust-effect factor, G or Gf; see Section 26.11.\n• Enclosure classification; see Section 26.12.\n• Internal pressure coefficient, (GCpi); see Section 26.13 and Table 26.13-1."],
+        ["Step 4:", "Determine velocity pressure exposure coefficient, Kz or Kh; see Table 26.10-1."],
+        ["Step 5:", "Determine velocity pressure qz or qh, Equation (26.10-1)."],
+        ["Step 6:", "Determine external pressure coefficient, Cp or CN:\n• Figure 27.3-1 for walls and flat, gable, hip, monoslope, or mansard roofs;\n• Figure 27.3-2 for domed roofs;\n• Figure 27.3-3 for arched roofs;\n• Figure 27.3-4 for monoslope roof, open building;\n• Figure 27.3-5 for pitched roof, open building;\n• Figure 27.3-6 for troughed roof, open building; and\n• Figure 27.3-7 for along-ridge/valley wind load case for monoslope, pitched, or troughed roof, open building."],
+        ["Step 7:", "Calculate wind pressure, p, on each building surface:\n• Equation (27.3-1) for rigid and flexible buildings, and\n• Equation (27.3-2) for open buildings."],
+        ["Step 8:", "Evaluate wind load cases according to Section 27.3.5 and Figure 27.3-8."]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.7.3-provision1",
+      "type": "body",
+      "section": "26.7.3",
+      "text": "Both q and qi shall be evaluated using exposure defined in Section 26.7.3. Pressure shall be applied simultaneously on windward and leeward walls and on roof surfaces, as defined in Figures 27.3-1, 27.3-2, and 27.3-3.",
+      "cross_references": [
+        "Section 26.7.3",
+        "Figures 27.3-1",
+        "27.3-2",
+        "27.3-3"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.05,
+        "y_end": 0.12
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-heading1",
+      "type": "body",
+      "section": "27.3.1.1",
+      "text": "**27.3.1.1 Elevated Buildings** The MWFRS loads for rigid or flexible elevated buildings meeting both of the following geometric limitations, for any principal wind direction, shall be determined in accordance with this section for that principal direction.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.12,
+        "y_end": 0.2
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-provision1",
+      "type": "body",
+      "section": "27.3.1.1",
+      "text": "1. The sum of the cross-sectional areas of the supporting structural elements and any enclosed or partially enclosed spaces beneath the building, as seen in a horizontal cross-section through the space under the building, does not exceed the indicated percentage of the plan gross-sectional area of the aforementioned building for the indicated L/B ratio (linear interpolation is allowed):",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.2,
+        "y_end": 0.32
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-body1",
+      "type": "body",
+      "section": "27.3.1.1",
+      "text": "The sum of the cross-sectional areas of the supporting structural elements and any enclosed or partially enclosed spaces beneath the building, as seen in a horizontal cross-section through the space under the building, does not exceed the indicated percentage of the plan cross-sectional area of the aforementioned building for the indicated L/B ratio (linear interpolation is allowed):\nL/B Ratio Percentage of Plan Area of Building Blocked by Elements or Enclosures Beneath the Building\n\nL/B         Plan Area Blocked\n<2.5        50%\n3.0         45%\n3.5         40%\n4.0         36%\n4.5         33%\n5.0         30%",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.32,
+        "y_end": 0.36
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-table1",
+      "type": "table",
+      "section": "27.3.1.1",
+      "text": "L/B Plan Area Blocked",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.36,
+        "y_end": 0.5
+      },
+      "column": "right",
+      "columns": [
+        "L/B",
+        "Plan Area Blocked"
+      ],
+      "rows": [
+        [
+          "<2.5",
+          "50%"
+        ],
+        [
+          "3.0",
+          "45%"
+        ],
+        [
+          "3.5",
+          "40%"
+        ],
+        [
+          "4.0",
+          "36%"
+        ],
+        [
+          "4.5",
+          "33%"
+        ],
+        [
+          "5.0",
+          "30%"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-provision2",
+      "type": "body",
+      "section": "27.3.1.1",
+      "text": "2. The sum of the areas of the supporting structural elements and any enclosed, partially enclosed or partially open spaces, as projected onto a vertical plane normal to the wind direction, does not exceed 75% of the projected area outlined by the height of these elements and the projected width of the building above.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.5,
+        "y_end": 0.62
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-body2",
+      "type": "body",
+      "section": "27.3.1.1",
+      "text": "For buildings that do not meet both of these criteria for a particular principal wind direction, wind loads for that direction shall be determined using Section 27.3.1. The wind loads on the portion of the building including the structural elements, and enclosed or partially enclosed spaces beneath the elevated building shall be calculated assuming the wind is unable to pass beneath the building and that portion of the building has no openings.",
+      "cross_references": [
+        "Section 27.3.1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.62,
+        "y_end": 0.75
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1-body3",
+      "type": "body",
+      "section": "27.3.1.1",
+      "text": "For buildings that meet both of these criteria for a particular principal direction, the overall lateral MWFRS loads shall include the combined effects of wind loads determined for the elevated building (Section 27.3.1.1.1) and for the supporting structural elements including any enclosed, partially enclosed, or partially open spaces below the elevated building (Section 27.3.1.1.2). MWFRS wind loads for the bottom surface of the elevated building shall not be used to reduce the effects of wind loads on overturning moments.",
+      "cross_references": [
+        "Section 27.3.1.1.1",
+        "Section 27.3.1.1.2"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.75,
+        "y_end": 0.88
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-formula1",
+      "type": "formula",
+      "section": "27.3",
+      "text": "qi = qh For windward walls, sidewalls, leeward walls, and roofs of enclosed buildings, partially open buildings, and for negative internal pressure evaluation in partially enclosed buildings;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.85,
+        "y_end": 0.9
+      },
+      "column": "left",
+      "expression": "q_i = q_h",
+      "parameters": [
+        "q_i = velocity pressure for internal pressure evaluation",
+        "q_h = velocity pressure evaluated at mean roof height h"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.1-body1",
+      "type": "body",
+      "section": "27.3.1.1.1",
+      "text": "**27.3.1.1.1 Elevated Building Loads** Wind loads on the roof and walls of the elevated building shall be calculated using the methods and pressure coefficients defined in Section 27.3.1.",
+      "cross_references": [
+        "Section 27.3.1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.88,
+        "y_end": 0.94
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-formula2",
+      "type": "formula",
+      "section": "27.3",
+      "text": "qi = qz For positive internal pressure evaluation in partially enclosed buildings, where height z is defined as the level of the highest opening in the building that could affect the positive internal pressure; For buildings sited in wind-borne debris regions, the enclosure classification with respect to glazed openings shall be in accordance with Section 26.12.3, and for positive internal pressure evaluation, qi may conservatively be evaluated at height h(qi = qh);",
+      "cross_references": [
+        "Section 26.12.3"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.9,
+        "y_end": 0.98
+      },
+      "column": "left",
+      "expression": "q_i = q_z",
+      "parameters": [
+        "q_i = velocity pressure for internal pressure evaluation",
+        "q_z = velocity pressure evaluated at height z",
+        "z = height level of the highest opening in the building that could affect the positive internal pressure",
+        "h = mean roof height"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.2-body1",
+      "type": "body",
+      "section": "27.3.1.1.2",
+      "text": "Lateral wind loads on elements below the elevated building shall be calculated using\n\n1. Projected areas of all the structural elements below the elevated building perpendicular to the wind direction being considered, neglecting potential shielding;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.94,
+        "y_end": 0.98
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.2-provision1",
+      "type": "body",
+      "section": "27.3.1.1.2",
+      "text": "1. Projected areas of all the structural elements below the elevated building perpendicular to the wind direction being considered, neglecting potential shielding;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.98,
+        "y_end": 1
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

@@ -374,19 +374,19 @@
 
 .element:hover { background: var(--hover-bg); }
 
-.element.provision    { border-color: var(--el-provision);  background: var(--el-provision-bg); }
 .element.definition   { border-color: var(--el-definition); background: var(--el-definition-bg); }
 .element.formula      { border-color: var(--el-formula);    background: var(--el-formula-bg); }
 .element.table        { border-color: var(--el-table);      background: var(--el-table-bg); }
+.element.procedure    { border-color: var(--el-procedure);  background: var(--el-procedure-bg); }
 .element.figure       { border-color: var(--el-figure);     background: var(--el-figure-bg); }
 .element.exception    { border-color: var(--el-exception);  background: var(--el-exception-bg); }
 .element.user_note    { border-color: var(--el-user_note);  background: var(--el-user_note-bg); }
 .element.body   { border-color: var(--el-body); background: var(--el-body-bg); }
 
-.element:hover.provision  { background: rgba(22, 163, 74, 0.06); }
 .element:hover.definition { background: rgba(139, 92, 246, 0.06); }
 .element:hover.formula    { background: rgba(0, 87, 255, 0.06); }
 .element:hover.table      { background: rgba(6, 182, 212, 0.06); }
+.element:hover.procedure  { background: rgba(22, 163, 74, 0.06); }
 .element:hover.figure     { background: rgba(217, 119, 6, 0.06); }
 .element:hover.exception  { background: rgba(220, 38, 38, 0.06); }
 .element:hover.user_note  { background: rgba(107, 107, 107, 0.06); }
@@ -403,10 +403,10 @@
   border-radius: var(--radius);
 }
 
-.tag-provision    { border-color: var(--el-provision);  color: var(--el-provision); }
 .tag-definition   { border-color: var(--el-definition); color: var(--el-definition); }
 .tag-formula      { border-color: var(--el-formula);    color: var(--el-formula); }
 .tag-table        { border-color: var(--el-table);      color: var(--el-table); }
+.tag-procedure    { border-color: var(--el-procedure);  color: var(--el-procedure); }
 .tag-figure       { border-color: var(--el-figure);     color: var(--el-figure); }
 .tag-exception    { border-color: var(--el-exception);  color: var(--el-exception); }
 .tag-user_note    { border-color: var(--el-user_note);  color: var(--el-user_note); }
@@ -495,7 +495,7 @@
   margin: var(--sp-3) 0 var(--sp-2);
 }
 
-/* Bold term labels within definitions/provisions (inline bold) */
+/* Bold term labels within definitions (inline bold) */
 .el-bold {
   font-weight: 700;
 }

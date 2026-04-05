@@ -151,7 +151,7 @@
     },
     {
       "id": "consensus_standards_intro_26_14",
-      "type": "provision",
+      "type": "body",
       "section": "26.14",
       "text": "This section lists the consensus standards and other documents that shall be considered part of this standard to the extent referenced in this chapter.",
       "cross_references": [],

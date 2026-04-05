@@ -1,0 +1,511 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 284,
+  "section_range": [
+    "27.3",
+    "27.3"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-table1",
+      "type": "table",
+      "section": "27.3",
+      "text": "Wall Pressure Coefficients, Cp\n\nSurface: Windward wall, L/B: All values, Cp: 0.8, Use with: qz\n\nSurface: [blank], L/B: 0-1, Cp: -0.5, Use with: qh\nSurface: Leeward wall, L/B: 2, Cp: -0.3, Use with: qh\nSurface: [blank], L/B: ≥4, Cp: -0.2, Use with: qh\n\nSurface: Sidewall, L/B: All values, Cp: -0.7, Use with: qh\n\nSurface: Parapet, L/B: All values, Cp: See Section 27.3.4 for GCpn, Use with: qp",
+      "cross_references": [
+        "27.3.4"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.35
+      },
+      "column": "left",
+      "columns": [
+        "Surface",
+        "L/B",
+        "Cp",
+        "Use with"
+      ],
+      "rows": [
+        [
+          "Windward wall",
+          "All values",
+          "0.8",
+          "qz"
+        ],
+        [
+          "",
+          "0-1",
+          "-0.5",
+          "qh"
+        ],
+        [
+          "Leeward wall",
+          "2",
+          "-0.3",
+          "qh"
+        ],
+        [
+          "",
+          "≥4",
+          "-0.2",
+          "qh"
+        ],
+        [
+          "Sidewall",
+          "All values",
+          "-0.7",
+          "qh"
+        ],
+        [
+          "Parapet",
+          "All values",
+          "See Section 27.3.4 for GCpn",
+          "qp"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-table2",
+      "type": "table",
+      "section": "27.3",
+      "text": "Roof Pressure Coefficients, Cp, for use with qh\n\nWindward section:\nWind Direction: Normal to Ridge for θ ≤ 10°\nh/L: ≤0.25, Angles 10°: -0.7, 15°: -0.5, 20°: -0.3, 25°: -0.2, 30°: -0.2, 35°: 0.0°, 45°: [blank], 60°: [blank], 60° < θ ≤ 80°: [blank], >80: [blank]\n[blank]: [blank], Angles 10°: -0.18, 15°: 0.0°, 20°: 0.2, 25°: 0.3, 30°: 0.3, 35°: 0.4, 45°: 0.4, 60°: 0.6, 60° < θ ≤ 80°: 0.01 θ, >80: 0.8\n\nh/L: 0.5, Angles 10°: -0.9, 15°: -0.7, 20°: -0.4, 25°: -0.3, 30°: -0.2, 35°: -0.2, 45°: 0.0°, 60°: [blank], 60° < θ ≤ 80°: [blank], >80: [blank]\n[blank]: [blank], Angles 10°: -0.18, 15°: -0.18, 20°: 0.0°, 25°: 0.2, 30°: 0.2, 35°: 0.3, 45°: 0.4, 60°: 0.6, 60° < θ ≤ 80°: 0.01 θ, >80: 0.8\n\nh/L: ≥1.0, Angles 10°: -1.3°, 15°: -1.0, 20°: -0.7, 25°: -0.5, 30°: -0.3, 35°: -0.2, 45°: 0.0°, 60°: [blank], 60° < θ ≤ 80°: [blank], >80: [blank]\n[blank]: [blank], Angles 10°: -0.18, 15°: -0.18, 20°: -0.18, 25°: 0.0°, 30°: 0.2, 35°: 0.2, 45°: 0.3, 60°: 0.6, 60° < θ ≤ 80°: 0.01 θ, >80: 0.8\n\nLeeward section:\nAngles 10°: -0.3, 15°: -0.5, ≥20°: -0.6\nAngles 10°: -0.5, 15°: -0.5, ≥20°: -0.6\nAngles 10°: -0.7, 15°: -0.6, ≥20°: -0.6",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.35,
+        "y_end": 0.65
+      },
+      "column": "left",
+      "columns": [
+        "Wind Direction",
+        "h/L",
+        "10°",
+        "15°",
+        "20°",
+        "25°",
+        "30°",
+        "35°",
+        "45°",
+        "60°",
+        "60° < θ ≤ 80°",
+        ">80",
+        "10°",
+        "15°",
+        "≥20°"
+      ],
+      "rows": [
+        [
+          "Normal to Ridge for θ ≤ 10°",
+          "≤0.25",
+          "-0.7",
+          "-0.5",
+          "-0.3",
+          "-0.2",
+          "-0.2",
+          "0.0°",
+          "",
+          "",
+          "",
+          "",
+          "-0.3",
+          "-0.5",
+          "-0.6"
+        ],
+        [
+          "",
+          "",
+          "-0.18",
+          "0.0°",
+          "0.2",
+          "0.3",
+          "0.3",
+          "0.4",
+          "0.4",
+          "0.6",
+          "0.01 θ",
+          "0.8",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "0.5",
+          "-0.9",
+          "-0.7",
+          "-0.4",
+          "-0.3",
+          "-0.2",
+          "-0.2",
+          "0.0°",
+          "",
+          "",
+          "",
+          "-0.5",
+          "-0.5",
+          "-0.6"
+        ],
+        [
+          "",
+          "",
+          "-0.18",
+          "-0.18",
+          "0.0°",
+          "0.2",
+          "0.2",
+          "0.3",
+          "0.4",
+          "0.6",
+          "0.01 θ",
+          "0.8",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "≥1.0",
+          "-1.3°",
+          "-1.0",
+          "-0.7",
+          "-0.5",
+          "-0.3",
+          "-0.2",
+          "0.0°",
+          "",
+          "",
+          "",
+          "-0.7",
+          "-0.6",
+          "-0.6"
+        ],
+        [
+          "",
+          "",
+          "-0.18",
+          "-0.18",
+          "-0.18",
+          "0.0°",
+          "0.2",
+          "0.2",
+          "0.3",
+          "0.6",
+          "0.01 θ",
+          "0.8",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-table-3",
+      "type": "table",
+      "section": "27.3",
+      "text": "Wind Direction ML: Normal to Ridge ≤ 0.5 for θ < 10° and Parallel to Ridge for all θ - Horizontal Distance from Windward Edge: 0 to h/2 (Cp: -0.9, -0.18), h/2 to h (Cp: -0.9, -0.18), h to 2h (Cp: -0.5, -0.18), > 2h (Cp: -0.3, -0.18); ≥ 1.0: 0 to h/2 (Cp: -1.3ᵇ, -0.18), > h/2 (Cp: -0.7, -0.18)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.46,
+        "y_end": 0.58
+      },
+      "column": "right",
+      "columns": [
+        "Wind Direction",
+        "ML",
+        "Horizontal Distance from Windward Edge",
+        "Cp"
+      ],
+      "rows": [
+        [
+          "Normal to Ridge for θ ≤ 10° and Parallel to Ridge for all θ",
+          "≤ 0.5",
+          "0 to h/2",
+          "-0.9, -0.18"
+        ],
+        [
+          "",
+          "",
+          "h/2 to h",
+          "-0.9, -0.18"
+        ],
+        [
+          "",
+          "",
+          "h to 2h",
+          "-0.5, -0.18"
+        ],
+        [
+          "",
+          "",
+          "> 2h",
+          "-0.3, -0.18"
+        ],
+        [
+          "",
+          "≥ 1.0",
+          "0 to h/2",
+          "-1.3*, -0.18"
+        ],
+        [
+          "",
+          "",
+          "> h/2",
+          "-0.7, -0.18"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body-1",
+      "type": "body",
+      "section": "27.3",
+      "text": "*Value is provided for interpolation purposes.\n**Value can be reduced linearly, with area over which it is applicable as follows:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.59,
+        "y_end": 0.63
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-table-4",
+      "type": "table",
+      "section": "27.3",
+      "text": "Area reduction factors",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.64,
+        "y_end": 0.7
+      },
+      "column": "right",
+      "columns": [
+        "Area, ft² (m²)",
+        "Reduction Factor"
+      ],
+      "rows": [
+        [
+          "≤ 100 (9.3)",
+          "1.0"
+        ],
+        [
+          "250 (23.2)",
+          "0.9"
+        ],
+        [
+          "≥ 1,000 (92.9)",
+          "0.8"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-table3",
+      "type": "table",
+      "section": "27.3",
+      "text": "Wind Direction: M.L.\nNormal to Ridge ≤ 0.5 for θ ≤ 10° and Parallel to Ridge for all θ\n\nHorizontal Distance from Windward Edge: 0 to h/2, Cp: -0.18\nHorizontal Distance from Windward Edge: h/2 to h, Cp: -0.9, -0.18\nHorizontal Distance from Windward Edge: h to 2h, Cp: -0.5, -0.18\nHorizontal Distance from Windward Edge: > 2h, Cp: -0.3, -0.18\n\n≥ 1.0\nHorizontal Distance from Windward Edge: 0 to h/2, Cp: -1.3°, -0.18\nHorizontal Distance from Windward Edge: > h/2, Cp: -0.7, -0.18",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.65,
+        "y_end": 0.78
+      },
+      "column": "left",
+      "columns": [
+        "Wind Direction",
+        "M.L.",
+        "Horizontal Distance from Windward Edge",
+        "Cp"
+      ],
+      "rows": [
+        [
+          "Normal to Ridge ≤ 0.5 for θ ≤ 10° and Parallel to Ridge for all θ",
+          "",
+          "0 to h/2",
+          "-0.18"
+        ],
+        [
+          "",
+          "",
+          "h/2 to h",
+          "-0.9, -0.18"
+        ],
+        [
+          "",
+          "",
+          "h to 2h",
+          "-0.5, -0.18"
+        ],
+        [
+          "",
+          "",
+          "> 2h",
+          "-0.3, -0.18"
+        ],
+        [
+          "≥ 1.0",
+          "",
+          "0 to h/2",
+          "-1.3°, -0.18"
+        ],
+        [
+          "",
+          "",
+          "> h/2",
+          "-0.7, -0.18"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-body1",
+      "type": "body",
+      "section": "27.3",
+      "text": "ᵃValue is provided for interpolation purposes.\nᵇValue can be reduced linearly, with area over which it is applicable as follows:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.78,
+        "y_end": 0.82
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-table4",
+      "type": "table",
+      "section": "27.3",
+      "text": "Area, ft² (m²): ≤100 (9.3), Reduction Factor: 1.0\nArea, ft² (m²): 250 (23.2), Reduction Factor: 0.9\nArea, ft² (m²): ≥1,000 (92.9), Reduction Factor: 0.8",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.82,
+        "y_end": 0.88
+      },
+      "column": "left",
+      "columns": [
+        "Area, ft² (m²)",
+        "Reduction Factor"
+      ],
+      "rows": [
+        [
+          "≤100 (9.3)",
+          "1.0"
+        ],
+        [
+          "250 (23.2)",
+          "0.9"
+        ],
+        [
+          "≥1,000 (92.9)",
+          "0.8"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-body2",
+      "type": "body",
+      "section": "27.3",
+      "text": "**Notes:**\n1. Plus and minus signs signify pressures acting toward and away from the surfaces, respectively.\n\n2. Linear interpolation is permitted for values of L / B₁, h / L₁, and θ other than shown. Interpolation shall only be carried out between values of the same sign. Where no value of the same sign is given, assume 0.0 for interpolation purposes.\n\n3. Where two values of Cp are listed, this indicates that the windward roof slope is subjected to either positive or negative pressures and the roof structure shall be designed for both conditions. Interpolation for intermediate ratios of h / L₁ shall only be carried out between Cp values of like sign.\n\n4. Parapets are shown only on the flat roof elevation but may occur on any roof type shown.\n\n5. For mansard roofs, the top horizontal surface and leeward inclined surface shall be treated as leeward surfaces according to the table.\n\n6. Except for MWFRSs at the roof consisting of moment-resisting frames, the total horizontal shear shall not be less than that determined by neglecting wind forces on roof surfaces",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.88,
+        "y_end": 0.98
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-body-3",
+      "type": "body",
+      "section": "27.3",
+      "text": "Figure 27.3-1 *(Continued)*. Main wind force resisting system: external pressure coefficients, Cp, for enclosed, partially enclosed, and partially open buildings—walls and roofs.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.89,
+        "y_end": 0.92
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body-4",
+      "type": "body",
+      "section": "27.3",
+      "text": "284                                                    STANDARD ASCE/SEI 7-22",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.93,
+        "y_end": 0.95
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

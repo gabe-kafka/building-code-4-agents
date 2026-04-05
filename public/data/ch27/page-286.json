@@ -1,0 +1,435 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 286,
+  "section_range": [
+    "27.3",
+    "27.3.4"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27.3-body1",
+      "type": "body",
+      "section": "27.3",
+      "text": "2. Net force coefficient of 1.3 applied to the projected area of all the elements; and,",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.08
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-P1",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "K_d = Wind directionality factor (see Section 26.6);\nG = Gust-effect factor from Section 26.11; and\nC_N = Net pressure coefficient determined from Figures 27.3-4 through 27.3-7.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.055,
+        "y_end": 0.095
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3-body2",
+      "type": "body",
+      "section": "27.3",
+      "text": "3. qz where z is set equal to the height above grade of the bottom horizontal surface of the elevated portion of the building plus 25% of the distance from the bottom of the elevated portion of the building to the mean roof height.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.08,
+        "y_end": 0.13
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-P2",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "Net pressure coefficients, C_N, include contributions from top and bottom surfaces. All load cases shown for each roof angle shall be investigated. Plus and minus signs signify pressure acting toward and away from the top surface of the roof, respectively.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.095,
+        "y_end": 0.145
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-heading1",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "27.3.1.1.3 External Loads on Horizontal Bottom Surfaces of the Elevated Building",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.13,
+        "y_end": 0.18
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-heading1-body",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "Surfaces of the Elevated Building Vertical wind loads on the bottom surfaces of the elevated building shall be calculated using",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.14,
+        "y_end": 0.18
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-P3",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "For free roofs with an angle of plane of roof from horizontal θ less than or equal to 5 degrees and containing fascia panels, the fascia panel shall be considered to be an inverted parapet. The contribution of loads on the fascia to the MWFRS loads shall be determined using Equation 27.3.5, with q_f equal to q_h for open or partially enclosed building with transverse frames and a pitched roof (θ ≤ 45°), an additional horizontal force in the longitudinal direction (parallel to the ridge) that acts in combination with the roof load calculated in Section 27.3.3 shall be determined in accordance with Section 28.3.5.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.145,
+        "y_end": 0.235
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-provision1",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "1. Roof pressure coefficients for the wind direction \"normal to the ridge for θ < 10°\" and parallel to ridge for all θ\" provided in Figure 27.3-1. Negative roof pressure coefficients denote downward loading on the bottom floor assembly, while positive roof pressure coefficients denote upward loading.",
+      "cross_references": [
+        "Figure 27.3-1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.18,
+        "y_end": 0.26
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.3-H1",
+      "type": "body",
+      "section": "27.3.3",
+      "text": "27.3.3 Roof Overhangs",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.235,
+        "y_end": 0.265
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.3-H1-body",
+      "type": "body",
+      "section": "27.3.3",
+      "text": "The positive external pressure on the bottom surface of windward roof overhangs shall be determined using C_p = 0.8 and combined with the top surface pressures determined using Figure 27.3-1.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.245,
+        "y_end": 0.265
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-provision2",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "2. Value of h, used to define the distance from the windward edge, shall be taken as the height of the top of the overhangs below the elevated building; and,",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.26,
+        "y_end": 0.3
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.4-H1",
+      "type": "body",
+      "section": "27.3.4",
+      "text": "27.3.4 Parapets",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.265,
+        "y_end": 0.295
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.4-H1-body",
+      "type": "body",
+      "section": "27.3.4",
+      "text": "The design wind pressure for the effect of parapets on the MWFRS of rigid or flexible buildings in lbf/ft² (N/m²) shall be determined by Equation (27.3-3):",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.275,
+        "y_end": 0.295
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.4-F1",
+      "type": "formula",
+      "section": "27.3.4",
+      "text": "p_p = q_p K_d (GC_{pm})",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.295,
+        "y_end": 0.375
+      },
+      "column": "right",
+      "expression": "p_p = q_p K_d (GC_{pm})",
+      "parameters": [
+        "p_p = Combined net pressure on the parapet caused by the combination of the net pressures from the front and back parapet surfaces in which plus (and minus) signs signify net pressure acting toward (and away from) the front (exterior) side of the parapet",
+        "q_p = Velocity pressure evaluated at the top of the parapet",
+        "K_d = Wind directionality factor (see Section 26.6)",
+        "(GC_{pm}) = Combined net pressure coefficient, which is +1.5 for windward parapet or -1.0 for leeward parapet"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1.1.3-provision3",
+      "type": "body",
+      "section": "27.3.1.1.3",
+      "text": "3. Velocity pressure, used to calculate external pressures on this floor, shall be qz, where z is set equal to the height above grade of the bottom horizontal surface of the elevated portion of the building plus 25% of the distance from the bottom of the elevated portion of the building to the mean roof height.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.3,
+        "y_end": 0.37
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.2-heading1",
+      "type": "body",
+      "section": "27.3.2",
+      "text": "27.3.2 Open Buildings with",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.37,
+        "y_end": 0.44
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.2-heading1-body",
+      "type": "body",
+      "section": "27.3.2",
+      "text": "Monoslope, Pitched, or Troughed Free Roofs The net design pressure for the MWFRS of open buildings with monoslope, pitched, or troughed free roofs, in lbf/ft² (N/m²), shall be determined by Equation (27.3-2):",
+      "cross_references": [
+        "Equation (27.3-2)"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.38,
+        "y_end": 0.44
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.2-formula1",
+      "type": "formula",
+      "section": "27.3.2",
+      "text": "p = q_h K_d G C_N",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.44,
+        "y_end": 0.47
+      },
+      "column": "left",
+      "expression": "p = q_h K_d G C_N",
+      "parameters": [
+        "p = net design pressure",
+        "q_h = velocity pressure evaluated at mean roof height, h",
+        "K_d = wind directionality factor",
+        "G = gust-effect factor",
+        "C_N = net pressure coefficient"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.2-body1",
+      "type": "body",
+      "section": "27.3.2",
+      "text": "where",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.47,
+        "y_end": 0.49
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.2-body2",
+      "type": "body",
+      "section": "27.3.2",
+      "text": "qh = Velocity pressure evaluated at mean roof height, h, using the exposure as defined in Section 26.7.3 that results in the highest wind loads for any wind direction at the site;",
+      "cross_references": [
+        "Section 26.7.3"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.49,
+        "y_end": 0.54
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.2-body3",
+      "type": "body",
+      "section": "27.3.2",
+      "text": "286",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.92,
+        "y_end": 0.95
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    }
+  ]
+}

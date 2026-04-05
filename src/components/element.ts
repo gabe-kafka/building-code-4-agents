@@ -1,5 +1,5 @@
 import { el } from '../lib/dom.ts'
-import { highlightEl, setOverlay, setPage, resolveElementPage } from '../state.ts'
+import { highlightEl, setOverlay, setPage, resolveReference } from '../state.ts'
 import type { PageElement } from '../types.ts'
 import katex from 'katex'
 import 'katex/dist/katex.min.css'
@@ -28,6 +28,7 @@ export function createElement(data: PageElement): HTMLElement {
       renderFormula(wrapper, data)
       break
     case 'table':
+    case 'procedure':
       renderTable(wrapper, data)
       break
     case 'figure':
@@ -37,24 +38,23 @@ export function createElement(data: PageElement): HTMLElement {
       renderText(wrapper, data)
   }
 
-  // Cross-references
-  if (data.cross_references.length > 0) {
-    const refs = el('div', { className: 'xref-list' })
-    for (const ref of data.cross_references) {
-      const targetPage = resolveElementPage(ref)
-      const isResolved = targetPage !== null
+  // Resolve cross-references once, reuse in both xref-list and metadata
+  const resolved = data.cross_references.map((ref) => ({ ref, target: resolveReference(ref) }))
 
+  if (resolved.length > 0) {
+    const refs = el('div', { className: 'xref-list' })
+    for (const { ref, target } of resolved) {
       const link = el('span', {
-        className: `xref${!isResolved ? ' xref-broken' : ''}`,
+        className: `xref${!target ? ' xref-broken' : ''}`,
       }, [
-        `\u2192 ${ref}${!isResolved ? ' [unresolved]' : ''}`,
+        `\u2192 ${ref}${!target ? ' [unresolved]' : ''}`,
       ])
 
-      if (isResolved) {
+      if (target) {
         link.addEventListener('click', (e) => {
           e.stopPropagation()
-          setPage(targetPage)
-          highlightEl(ref)
+          setPage(target.page)
+          if (target.elementId) highlightEl(target.elementId)
         })
       }
       refs.append(link)
@@ -63,7 +63,7 @@ export function createElement(data: PageElement): HTMLElement {
   }
 
   // Metadata (hidden until expanded)
-  if (data.metadata || data.cross_references.length > 0) {
+  if (data.metadata || resolved.length > 0) {
     const metaParts: string[] = [`ID: ${data.id}`]
     if (data.metadata) {
       metaParts.push(`Extracted: ${data.metadata.extracted_by}`)
@@ -72,25 +72,23 @@ export function createElement(data: PageElement): HTMLElement {
 
     const meta = el('div', { className: 'el-meta' }, [metaParts.join(' | ')])
 
-    // Show all xrefs as clickable links in expanded metadata
-    if (data.cross_references.length > 0) {
+    if (resolved.length > 0) {
       const refsLine = el('div', { className: 'el-meta-refs' })
       refsLine.append(document.createTextNode('Refs: '))
-      for (let i = 0; i < data.cross_references.length; i++) {
-        const ref = data.cross_references[i]
-        const targetPage = resolveElementPage(ref)
+      for (let i = 0; i < resolved.length; i++) {
+        const { ref, target } = resolved[i]
         const link = el('span', {
-          className: `xref${targetPage === null ? ' xref-broken' : ''}`,
+          className: `xref${!target ? ' xref-broken' : ''}`,
         }, [ref])
-        if (targetPage !== null) {
+        if (target) {
           link.addEventListener('click', (e) => {
             e.stopPropagation()
-            setPage(targetPage)
-            highlightEl(ref)
+            setPage(target.page)
+            if (target.elementId) highlightEl(target.elementId)
           })
         }
         refsLine.append(link)
-        if (i < data.cross_references.length - 1) refsLine.append(document.createTextNode(', '))
+        if (i < resolved.length - 1) refsLine.append(document.createTextNode(', '))
       }
       meta.append(refsLine)
     }

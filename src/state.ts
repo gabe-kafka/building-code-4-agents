@@ -100,6 +100,8 @@ export function setChapter(standard: string, chapter: number): void {
   state.treeExpanded.add(standard)
   state.treeExpanded.add(key)
 
+  buildReferenceIndex()
+
   dispatch('chapter')
   dispatch('page')
 }
@@ -148,10 +150,117 @@ export function toggleTreeNode(nodeId: string): void {
   dispatch('tree')
 }
 
-/** Check if an element ID exists in any loaded page */
-export function resolveElementPage(elementId: string): number | null {
-  for (const [pageNum, page] of state.pages) {
-    if (page.elements.some((el) => el.id === elementId)) return pageNum
+// --- Ch26 reference resolution ---
+
+interface RefTarget {
+  page: number
+  elementId: string | null
+}
+
+const refIndex = new Map<string, RefTarget>()
+const negativeCache = new Set<string>()
+
+/** Build reference index from current chapter's metadata and elements. Call after pages load. */
+export function buildReferenceIndex(): void {
+  refIndex.clear()
+  negativeCache.clear()
+  if (!state.chapterMeta) return
+
+  const chapter = state.chapterMeta.chapter
+  const prefix = `${chapter}.`
+
+  refIndex.set(`${chapter}`, { page: state.chapterMeta.page_range.start, elementId: null })
+  for (const sec of state.chapterMeta.sections) {
+    const target = { page: sec.page, elementId: null }
+    refIndex.set(sec.number, target)
+    refIndex.set(`Section ${sec.number}`, target)
+    refIndex.set(`Sections ${sec.number}`, target)
+    refIndex.set(`C${sec.number}`, target)
   }
-  return null
+
+  // Scan elements: index figures, tables, formulas, and subsections not in metadata
+  for (const [pageNum, page] of state.pages) {
+    for (const el of page.elements) {
+      if (!el.section.startsWith(prefix) && el.section !== `${chapter}`) continue
+
+      if (el.type === 'figure') {
+        const caption = el.caption || el.text
+        const figMatch = caption.match(/Figure\s+(\d+\.\d[\w\-]*)/)
+        if (figMatch) {
+          const num = figMatch[1]
+          const target = { page: pageNum, elementId: el.id }
+          if (!refIndex.has(`Figure ${num}`)) refIndex.set(`Figure ${num}`, target)
+          if (!refIndex.has(`Figures ${num}`)) refIndex.set(`Figures ${num}`, target)
+          if (!refIndex.has(num)) refIndex.set(num, target)
+          const baseMatch = num.match(/^(.+\d)[A-Z]$/)
+          if (baseMatch) {
+            const base = baseMatch[1]
+            if (!refIndex.has(`Figure ${base}`)) refIndex.set(`Figure ${base}`, target)
+            if (!refIndex.has(base)) refIndex.set(base, target)
+          }
+        }
+      }
+
+      if (el.type === 'table') {
+        const title = el.text.replace(/\*\*/g, '')
+        const tableMatch = title.match(/Table\s+(\d+\.\d[\w\-]*)/)
+        if (tableMatch) {
+          const num = tableMatch[1]
+          const target = { page: pageNum, elementId: el.id }
+          if (!refIndex.has(`Table ${num}`)) refIndex.set(`Table ${num}`, target)
+          if (num.includes('-') && !refIndex.has(num)) refIndex.set(num, target)
+        }
+      }
+
+      if (el.type === 'formula') {
+        const eqMatch = (el.text || '').match(/\((\d+\.\d[\w.\-]*)\)/)
+        if (eqMatch) {
+          const num = eqMatch[1]
+          const target = { page: pageNum, elementId: el.id }
+          if (!refIndex.has(`Equation (${num})`)) refIndex.set(`Equation (${num})`, target)
+          if (!refIndex.has(`Equations (${num})`)) refIndex.set(`Equations (${num})`, target)
+          if (!refIndex.has(`(${num})`)) refIndex.set(`(${num})`, target)
+          if (!refIndex.has(num)) refIndex.set(num, target)
+        }
+      }
+
+      // Subsections not in chapter metadata
+      if (!refIndex.has(el.section)) {
+        const target = { page: pageNum, elementId: null }
+        refIndex.set(el.section, target)
+        refIndex.set(`Section ${el.section}`, target)
+      }
+    }
+  }
+}
+
+/** Resolve a cross-reference string to a page (and optionally element). Ch26-only. */
+export function resolveReference(ref: string): RefTarget | null {
+  const direct = refIndex.get(ref)
+  if (direct) return direct
+  if (negativeCache.has(ref)) return null
+
+  if (!state.chapterMeta) return null
+  const ch = `${state.chapterMeta.chapter}`
+
+  // Fallback: extract parent section from equation-style refs
+  // e.g. "Equation (26.11-16)" → 26.11, "26.11-15a" → 26.11, "(26.11-15b)" → 26.11
+  let secNum: string | null = null
+
+  const eqMatch = ref.match(/^Equations?\s+\((\d+\.\d+)/)
+  if (eqMatch && eqMatch[1].startsWith(`${ch}.`)) secNum = eqMatch[1]
+
+  if (!secNum) {
+    const parenMatch = ref.match(/^\((\d+\.\d+)/)
+    if (parenMatch && parenMatch[1].startsWith(`${ch}.`)) secNum = parenMatch[1]
+  }
+
+  if (!secNum) {
+    const bareMatch = ref.match(/^(\d+\.\d+)-/)
+    if (bareMatch && bareMatch[1].startsWith(`${ch}.`)) secNum = bareMatch[1]
+  }
+
+  const result = secNum ? refIndex.get(secNum) ?? null : null
+  if (!result) negativeCache.add(ref)
+  return result
 }

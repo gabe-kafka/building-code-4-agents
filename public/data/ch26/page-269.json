@@ -8,113 +8,39 @@
   ],
   "elements": [
     {
-      "id": "ASCE7-22-26.5-page-footer",
-      "type": "body",
+      "id": "ASCE7-22-26.5-figure-1B",
+      "type": "figure",
       "section": "26.5",
-      "text": "Minimum Design Loads and Associated Criteria for Buildings and Other Structures                269",
+      "text": "Figure 26.5-1B (Continued). Basic wind speeds for Risk Category II buildings and other structures.\n\nThis figure shows a wind speed map of the United States displaying basic wind speeds for Risk Category II buildings and other structures. The map contains contour lines with wind speed values in both mph and m/s (in parentheses), ranging from 102 mph in some interior regions to 180 mph along coastal areas, with special wind regions marked by crosshatched patterns.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States\",\"parameter\":\"Basic wind speeds for Risk Category II buildings\",\"contour_values\":[\"102(46)\",\"104(46)\",\"104(47)\",\"105(47)\",\"107(48)\",\"110(49)\",\"114(51)\",\"115(51)\",\"120(54)\",\"130(58)\",\"140(63)\",\"150(67)\",\"160(72)\",\"170(76)\",\"180(80)\"],\"special_features\":[\"Special Wind Region marked with crosshatched pattern in southeastern coastal areas\"]}]",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.02,
-        "y_end": 0.05
+        "x_end": 0.94,
+        "y_start": 0.05,
+        "y_end": 0.96
       },
-      "column": "left",
+      "column": "full",
+      "caption": "Figure 26.5-1B (Continued). Basic wind speeds for Risk Category II buildings and other structures.",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
-      "_source": "left"
+      "_source": "right",
+      "image_url": "/figures/ch26/page-269-fig-0.png"
     },
     {
-      "id": "ASCE7-22-26.5-fig1B-note8",
-      "type": "body",
-      "section": "26.5",
-      "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.09,
-        "y_end": 0.13
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.5-fig1B-note7",
-      "type": "body",
-      "section": "26.5",
-      "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00143, MRI = 700 years).",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.13,
-        "y_end": 0.17
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.5-fig1B-note6",
-      "type": "provision",
-      "section": "26.5",
-      "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.17,
-        "y_end": 0.21
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.5-fig1B-notes",
-      "type": "provision",
-      "section": "26.5",
-      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.21,
-        "y_end": 0.24
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26-fig_26_5_1b_table_1",
+      "id": "ASCE7-22-26.5-figure-1B-table-0",
       "type": "table",
       "section": "26.5",
-      "text": "Location, V (mi/h), V (m/s); American Samoa, 160, (72); Guam & Northern Mariana Islands, 195, (87); Hawaii, ASCE Wind Design Geodatabase; Puerto Rico, ASCE Wind Design Geodatabase; U.S. Virgin Islands, ASCE Wind Design Geodatabase",
+      "text": "Location Wind Speeds",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.58,
+        "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.52,
-        "y_end": 0.62
+        "y_start": 0.9099999999999999,
+        "y_end": 0.96
       },
-      "column": "right",
+      "column": "full",
       "columns": [
         "Location",
         "V (mi/h)",
@@ -150,19 +76,96 @@
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-26.5-note-5",
+      "type": "body",
+      "section": "26.5",
+      "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.82,
+        "y_end": 0.85
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
       },
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.5-fig1B-cont-caption",
+      "id": "ASCE7-22-26.5-note-6",
       "type": "body",
       "section": "26.5",
-      "text": "Figure 26.5-1B (Continued). Basic wind speeds for Risk Category II buildings and other structures.",
+      "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
-        "x_end": 0.48,
+        "x_end": 0.94,
+        "y_start": 0.85,
+        "y_end": 0.89
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.5-note-7",
+      "type": "body",
+      "section": "26.5",
+      "text": "7. Wind speeds correspond to approximately a 15% probability of exceedance in 50 years (Annual Exceedance Probability = 0.00143, MRI = 700 years).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.89,
+        "y_end": 0.92
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.5-note-8",
+      "type": "body",
+      "section": "26.5",
+      "text": "8. The ASCE Wind Design Geodatabase can be accessed at the ASCE 7 Hazard Tool (https://asce7hazardtool.online) or approved equivalent.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
         "y_start": 0.92,
+        "y_end": 0.95
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.14-body01",
+      "type": "body",
+      "section": "26.14",
+      "text": "Figure in Section 26.14",
+      "cross_references": [
+        "26.14"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.93,
         "y_end": 0.95
       },
       "column": "left",
@@ -171,27 +174,6 @@
         "qc_status": "pending"
       },
       "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26-body_4",
-      "type": "body",
-      "section": "26.14",
-      "text": "Figure in Section 26.14",
-      "cross_references": [
-        "26.14"
-      ],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.96,
-        "y_end": 0.98
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
     }
   ]
 }

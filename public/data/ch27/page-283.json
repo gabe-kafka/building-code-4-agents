@@ -1,0 +1,51 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 283,
+  "section_range": [
+    "27",
+    "27.3"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-fig1",
+      "type": "figure",
+      "section": "27.3",
+      "text": "Figure 27.3-1. Main wind force resisting system: external pressure coefficients, Cp, for enclosed, partially enclosed, and partially open buildings—walls and roofs.\n\nThis figure illustrates wind pressure coefficient diagrams for the main wind force resisting system of buildings with different roof types. It shows plan and elevation views with pressure coefficient notations (qₕGCₚ) for flat/gable/hip roofs, monoslope roofs, and mansard roofs, indicating how wind forces are distributed on walls and roof surfaces.\n\n[Structured: {\"type\":\"diagram\",\"roof_types\":[{\"type\":\"flat_gable_hip\",\"views\":[\"plan\",\"elevation_flat_roof\",\"elevation_sloped_roof\"],\"pressure_locations\":[\"walls\",\"roof_surfaces\",\"windward\",\"leeward\"]},{\"type\":\"monoslope\",\"views\":[\"plan\",\"elevation_windward_pressure\",\"elevation_leeward_pressure\"],\"pressure_locations\":[\"walls\",\"sloped_roof_surface\"]},{\"type\":\"mansard\",\"views\":[\"plan\",\"elevation\"],\"pressure_locations\":[\"walls\",\"lower_roof_slope\",\"upper_roof_slope\"]}],\"variables\":[{\"symbol\":\"B\",\"description\":\"Horizontal dimension of building, ft (m), measured normal to wind direction\"},{\"symbol\":\"L\",\"description\":\"Horizontal dimension of building, ft (m), measured parallel to wind direction\"},{\"symbol\":\"h\",\"description\":\"Mean roof height, ft (m), except that eave height shall be used for θ ≤ 10 degrees\"},{\"symbol\":\"z\",\"description\":\"Height above ground, ft (m)\"},{\"symbol\":\"G\",\"description\":\"Gust-effect factor\"},{\"symbol\":\"qz, qh, qr\",\"description\":\"Velocity pressure, lb/ft² (N/m²), evaluated at respective height\"},{\"symbol\":\"θ\",\"description\":\"Angle of plane of roof from horizontal, degrees\"},{\"symbol\":\"Cp\",\"description\":\"External pressure coefficient\"},{\"symbol\":\"GCpn\",\"description\":\"Combined net pressure coefficient for a parapet\"}]}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.02,
+        "y_end": 0.94
+      },
+      "column": "full",
+      "caption": "Figure 27.3-1. Main wind force resisting system: external pressure coefficients, Cp, for enclosed, partially enclosed, and partially open buildings—walls and roofs.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left",
+      "image_url": "/figures/ch27/page-283-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27-body-1",
+      "type": "body",
+      "section": "27",
+      "text": "Minimum Design Loads and Associated Criteria for Buildings and Other Structures                    283",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.11,
+        "x_end": 0.89,
+        "y_start": 0.91,
+        "y_end": 0.93
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

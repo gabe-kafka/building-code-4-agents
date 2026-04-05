@@ -80,7 +80,7 @@
     },
     {
       "id": "ASCE7-22-26.5-PRO01",
-      "type": "provision",
+      "type": "body",
       "section": "26.5",
       "text": "5. Wind speeds for Hawaii, US Virgin Islands, and Puerto Rico shall be determined from the ASCE Wind Design Geodatabase.",
       "cross_references": [],
@@ -99,7 +99,7 @@
     },
     {
       "id": "ASCE7-22-26.5-PRO02",
-      "type": "provision",
+      "type": "body",
       "section": "26.5",
       "text": "6. Mountainous terrain, gorges, ocean promontories, and special wind regions shall be examined for unusual wind conditions. Site-specific values for selected special wind regions shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
       "cross_references": [],

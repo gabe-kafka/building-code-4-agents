@@ -1,0 +1,535 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 287,
+  "section_range": [
+    "27.3",
+    "27.3.4"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-diagram-1",
+      "type": "figure",
+      "section": "27.3",
+      "text": "\n\nThis figure shows net pressure coefficients (CN) for monoslope free roofs on open buildings, with diagrams illustrating wind direction and roof geometry. It provides design values for different roof angles, wind directions, and flow conditions to determine wind loads on main wind force resisting systems.\n\n[Structured: {\"type\":\"diagram\",\"nodes\":[{\"label\":\"Monoslope roof with wind at γ = 0°\",\"type\":\"diagram\",\"details\":[\"Shows windward (CWW) and leeward (CNL) surfaces\",\"Dimensions marked as 0.5L segments\",\"Height h and angle θ labeled\"]},{\"label\":\"Monoslope roof with wind at γ = 180°\",\"type\":\"diagram\",\"details\":[\"Shows reversed wind direction\",\"Same dimensional layout\",\"Wind direction arrow pointing left\"]}],\"edges\":[]}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.02,
+        "y_end": 0.99
+      },
+      "column": "full",
+      "caption": "",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left",
+      "image_url": "/figures/ch27/page-287-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27-diagram-1-table-0",
+      "type": "table",
+      "section": "27.3",
+      "text": "Net Pressure Coefficient, CN",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.94,
+        "y_end": 0.99
+      },
+      "column": "full",
+      "columns": [
+        "Roof Angle θ",
+        "Load Case",
+        "Wind Direction γ = 0° Clear Wind Flow CWW",
+        "Wind Direction γ = 0° Clear Wind Flow CNL",
+        "Wind Direction γ = 0° Obstructed Wind Flow CWW",
+        "Wind Direction γ = 0° Obstructed Wind Flow CNL",
+        "Wind Direction γ = 180° Clear Wind Flow CWW",
+        "Wind Direction γ = 180° Clear Wind Flow CNL",
+        "Wind Direction γ = 180° Obstructed Wind Flow CWW",
+        "Wind Direction γ = 180° Obstructed Wind Flow CNL"
+      ],
+      "rows": [
+        [
+          "<7.5°",
+          "A",
+          "-0.5",
+          "0.3",
+          "-0.5",
+          "-1.2",
+          "1.2",
+          "0.3",
+          "-0.5",
+          "-1.2"
+        ],
+        [
+          "<7.5°",
+          "B",
+          "-1.1",
+          "-0.1",
+          "-1.1",
+          "-0.6",
+          "-1.1",
+          "-0.1",
+          "-1.1",
+          "-0.6"
+        ],
+        [
+          "7.5°",
+          "A",
+          "-0.6",
+          "-1.0",
+          "-1.0",
+          "-1.5",
+          "0.9",
+          "1.5",
+          "-0.2",
+          "-1.2"
+        ],
+        [
+          "7.5°",
+          "B",
+          "-1.4",
+          "0.0",
+          "-1.7",
+          "-0.8",
+          "1.6",
+          "0.3",
+          "0.8",
+          "-0.3"
+        ],
+        [
+          "15°",
+          "A",
+          "-0.9",
+          "-1.3",
+          "-1.1",
+          "-1.5",
+          "1.3",
+          "1.6",
+          "0.4",
+          "-1.1"
+        ],
+        [
+          "15°",
+          "B",
+          "-1.9",
+          "0.0",
+          "-2.1",
+          "-0.6",
+          "1.8",
+          "0.6",
+          "1.2",
+          "-0.3"
+        ],
+        [
+          "22.5°",
+          "A",
+          "-1.5",
+          "-1.6",
+          "-1.5",
+          "-1.7",
+          "1.7",
+          "1.8",
+          "0.5",
+          "-1.0"
+        ],
+        [
+          "22.5°",
+          "B",
+          "-2.4",
+          "-0.3",
+          "-2.3",
+          "-0.9",
+          "2.2",
+          "0.7",
+          "1.3",
+          "0.0"
+        ],
+        [
+          "30°",
+          "A",
+          "-1.8",
+          "-1.8",
+          "-1.5",
+          "-1.8",
+          "2.1",
+          "2.1",
+          "0.6",
+          "-1.0"
+        ],
+        [
+          "30°",
+          "B",
+          "-2.5",
+          "-0.5",
+          "-2.3",
+          "-1.1",
+          "2.6",
+          "1.0",
+          "1.6",
+          "0.1"
+        ],
+        [
+          "37.5°",
+          "A",
+          "-1.8",
+          "-1.8",
+          "-1.5",
+          "-1.8",
+          "2.1",
+          "2.2",
+          "0.7",
+          "-0.9"
+        ],
+        [
+          "37.5°",
+          "B",
+          "-2.4",
+          "-0.6",
+          "-2.2",
+          "-1.1",
+          "2.7",
+          "1.1",
+          "1.9",
+          "0.3"
+        ],
+        [
+          "45°",
+          "A",
+          "-1.6",
+          "-1.8",
+          "-1.3",
+          "-1.8",
+          "2.2",
+          "2.5",
+          "0.8",
+          "-0.9"
+        ],
+        [
+          "45°",
+          "B",
+          "-2.3",
+          "-0.7",
+          "-1.9",
+          "-1.2",
+          "2.6",
+          "1.4",
+          "2.1",
+          "0.4"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-27-body-1",
+      "type": "body",
+      "section": "27.3",
+      "text": "**Notation**\nL = Horizontal dimension of roof, measured in the along-wind direction, ft (m).\nh = Mean roof height, ft (m).\nγ = Direction of wind, degrees.\nθ = Angle of plane of roof from horizontal, degrees.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.25,
+        "y_end": 0.35
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-table16",
+      "type": "table",
+      "section": "27.3.4",
+      "text": "Net Pressure Coefficient, CN table for wind directions γ = 0° and γ = 180°, showing coefficients for different roof angles and load cases under clear and obstructed wind flow conditions",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.32,
+        "y_end": 0.72
+      },
+      "column": "right",
+      "columns": [
+        "Wind Direction, γ = 0°",
+        "Clear Wind Flow CNW",
+        "Clear Wind Flow CNL",
+        "Obstructed Wind Flow CNW",
+        "Obstructed Wind Flow CNL",
+        "Wind Direction, γ = 180°",
+        "Clear Wind Flow CNW",
+        "Clear Wind Flow CNL",
+        "Obstructed Wind Flow CNW",
+        "Obstructed Wind Flow CNL"
+      ],
+      "rows": [
+        [
+          "< 7.5°",
+          "1.2",
+          "0.3",
+          "-0.5",
+          "-1.2",
+          "1.2",
+          "0.3",
+          "-0.5",
+          "-1.2"
+        ],
+        [
+          "A",
+          "-1.1",
+          "-0.1",
+          "-1.1",
+          "-0.6",
+          "-1.1",
+          "-0.1",
+          "-1.1",
+          "-0.6"
+        ],
+        [
+          "7.5°",
+          "-0.6",
+          "-1.0",
+          "-1.0",
+          "-1.5",
+          "0.9",
+          "1.5",
+          "-0.2",
+          "-1.2"
+        ],
+        [
+          "B",
+          "-1.4",
+          "0.0",
+          "-1.7",
+          "-0.8",
+          "1.6",
+          "0.3",
+          "0.8",
+          "-0.3"
+        ],
+        [
+          "15°",
+          "-0.9",
+          "-1.3",
+          "-1.1",
+          "-1.5",
+          "1.3",
+          "1.6",
+          "0.4",
+          "-1.1"
+        ],
+        [
+          "A",
+          "-1.9",
+          "0.0",
+          "-2.1",
+          "-0.6",
+          "1.8",
+          "0.6",
+          "1.2",
+          "-0.3"
+        ],
+        [
+          "22.5°",
+          "-1.5",
+          "-1.6",
+          "-1.5",
+          "-1.7",
+          "1.7",
+          "1.8",
+          "0.5",
+          "-1.0"
+        ],
+        [
+          "B",
+          "-2.4",
+          "-0.3",
+          "-2.3",
+          "-0.9",
+          "2.2",
+          "0.7",
+          "1.3",
+          "0.0"
+        ],
+        [
+          "30°",
+          "-1.8",
+          "-1.8",
+          "-1.5",
+          "-1.8",
+          "2.1",
+          "2.1",
+          "0.6",
+          "-1.0"
+        ],
+        [
+          "B",
+          "-2.5",
+          "-0.5",
+          "-2.3",
+          "-1.1",
+          "2.6",
+          "1.0",
+          "1.6",
+          "0.1"
+        ],
+        [
+          "37.5°",
+          "-1.8",
+          "-1.8",
+          "-1.5",
+          "-1.8",
+          "2.1",
+          "2.2",
+          "0.7",
+          "-0.9"
+        ],
+        [
+          "A",
+          "-2.4",
+          "-0.6",
+          "-2.2",
+          "-1.1",
+          "2.7",
+          "1.1",
+          "1.9",
+          "0.3"
+        ],
+        [
+          "45°",
+          "-1.6",
+          "-1.8",
+          "-1.3",
+          "-1.8",
+          "2.2",
+          "2.5",
+          "0.8",
+          "-0.9"
+        ],
+        [
+          "B",
+          "-2.3",
+          "-0.7",
+          "-1.9",
+          "-1.2",
+          "2.6",
+          "1.4",
+          "2.1",
+          "0.4"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body-2",
+      "type": "body",
+      "section": "27.3",
+      "text": "**Net Pressure Coefficient, CN**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.35,
+        "y_end": 0.38
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-body17",
+      "type": "body",
+      "section": "27.3.4",
+      "text": "**Notes** 1. CNW and CNL denote net pressures (contributions from top and bottom surfaces) for windward and leeward half of roof surfaces, respectively. 2. Clear wind flow denotes relatively unobstructed wind flow with blockage less than or equal to 50%. Obstructed wind flow denotes objects below roof inhibiting wind flow (>50% blockage). 3. For values of θ between 7.5 and 45 degrees, linear interpolation is permitted. 4. For free roofs with 0.05 ≤ h/L < 0.25 and θ < 5 degrees, use Figure 27.3-7. 5. Plus and minus signs signify pressures acting toward and away from the top roof surface, respectively. 6. All load cases shown for each roof angle shall be investigated.",
+      "cross_references": [
+        "Figure 27.3-7"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.73,
+        "y_end": 0.88
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body18",
+      "type": "body",
+      "section": "27.3.4",
+      "text": "Figure 27.3-4. Main wind force resisting system (0.25 ≤ h/L ≤ 1.0): net pressure coefficient, CN, for open buildings with monoslope free roofs (θ ≤ 45°, γ = 0°, 180°).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.89,
+        "y_end": 0.92
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body19",
+      "type": "body",
+      "section": "",
+      "text": "**Minimum Design Loads and Associated Criteria for Buildings and Other Structures**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.95,
+        "y_end": 0.97
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body20",
+      "type": "body",
+      "section": "",
+      "text": "287",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.9,
+        "x_end": 0.94,
+        "y_start": 0.98,
+        "y_end": 0.99
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 289,
+  "section_range": [
+    "27.3.6",
+    "27.3.6"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-figure-27.3-6",
+      "type": "figure",
+      "section": "27.3.6",
+      "text": "Figure 27.3-6. Main wind force resisting system (0.25 ≤ h/L ≤ 1.0): net pressure coefficient, CN, for open buildings with troughed free roofs (θ ≤ 45°, γ = 0°, 180°).\n\nThis figure provides net pressure coefficients (CN) for the main wind force resisting system of open buildings with troughed free roofs. It includes a diagram showing the roof geometry and wind direction, along with a comprehensive table of pressure coefficients for different roof angles, load cases, and wind flow conditions.\n\n[Structured: {\"type\":\"diagram\",\"nodes\":[{\"label\":\"Troughed roof structure\",\"type\":\"process\",\"details\":[\"V-shaped roof with angle θ\",\"Horizontal dimension L\",\"Mean roof height h\",\"Wind direction γ = 0°\"]}],\"edges\":[]}]",
+      "cross_references": [
+        "27.3.4"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.05,
+        "y_end": 0.97
+      },
+      "column": "full",
+      "caption": "Figure 27.3-6. Main wind force resisting system (0.25 ≤ h/L ≤ 1.0): net pressure coefficient, CN, for open buildings with troughed free roofs (θ ≤ 45°, γ = 0°, 180°).",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left",
+      "image_url": "/figures/ch27/page-289-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27-table1",
+      "type": "table",
+      "section": "27.3.6",
+      "text": "Net Pressure Coefficient, CN table for various roof angles and load cases under clear and obstructed wind flow conditions",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.35,
+        "y_end": 0.65
+      },
+      "column": "right",
+      "columns": [
+        "Roof Angle, θ",
+        "Load Case",
+        "Clear Wind Flow CNWF",
+        "Clear Wind Flow CNL",
+        "Obstructed Wind Flow CNWF",
+        "Obstructed Wind Flow CNL"
+      ],
+      "rows": [
+        [
+          "7.5°",
+          "A",
+          "−1.1",
+          "0.3",
+          "−1.6",
+          "0.5"
+        ],
+        [
+          "7.5°",
+          "B",
+          "−0.2",
+          "1.2",
+          "−0.9",
+          "−0.8"
+        ],
+        [
+          "15°",
+          "A",
+          "−1.1",
+          "0.4",
+          "−1.2",
+          "−0.5"
+        ],
+        [
+          "15°",
+          "B",
+          "0.1",
+          "1.1",
+          "−0.6",
+          "−0.8"
+        ],
+        [
+          "22.5°",
+          "A",
+          "−1.1",
+          "−0.1",
+          "−1.2",
+          "−0.6"
+        ],
+        [
+          "22.5°",
+          "B",
+          "−0.1",
+          "0.8",
+          "−0.8",
+          "−0.8"
+        ],
+        [
+          "30°",
+          "A",
+          "−1.3",
+          "−0.3",
+          "−1.4",
+          "−0.4"
+        ],
+        [
+          "30°",
+          "B",
+          "0.1",
+          "0.9",
+          "−0.2",
+          "−0.5"
+        ],
+        [
+          "37.5°",
+          "A",
+          "−1.3",
+          "−0.6",
+          "−1.4",
+          "−0.3"
+        ],
+        [
+          "37.5°",
+          "B",
+          "0.2",
+          "0.6",
+          "−0.3",
+          "−0.4"
+        ],
+        [
+          "45°",
+          "A",
+          "−1.1",
+          "−0.9",
+          "−1.2",
+          "−0.3"
+        ],
+        [
+          "45°",
+          "B",
+          "0.3",
+          "0.5",
+          "−0.3",
+          "−0.4"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body1",
+      "type": "body",
+      "section": "27.3.6",
+      "text": "**Notes**\n1. **CNWF** and **CNL** denote net pressures (contributions from top and bottom surfaces) for windward and leeward half of roof surfaces, respectively.\n2. Clear wind flow denotes relatively unobstructed wind flow with blockage less than, or equal to, 50%. Obstructed wind flow denotes objects below roof inhibiting wind flow (greater than 50% blockage).\n3. For values of θ between 7.5 and 45 degrees, linear interpolation is permitted. For values of θ less than 7.5 degrees, use CN from Figure 27.3-4.\n4. Plus and minus signs signify pressures acting toward and away from the top roof surface, respectively.\n5. All load cases shown for each roof angle shall be investigated.",
+      "cross_references": [
+        "Figure 27.3-4"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.65,
+        "y_end": 0.85
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

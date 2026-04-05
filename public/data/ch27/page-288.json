@@ -1,0 +1,293 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 288,
+  "section_range": [
+    "27",
+    "27.3"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-body001",
+      "type": "body",
+      "section": "27",
+      "text": "Diagrams",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.07,
+        "x_end": 0.15,
+        "y_start": 0.02,
+        "y_end": 0.03
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-figure001",
+      "type": "figure",
+      "section": "27",
+      "text": "\n\nThis figure shows wind pressure coefficients for open buildings with pitched free roofs, providing net pressure coefficient values (CN) for different roof angles and wind conditions. It includes a diagram of a pitched roof structure and a comprehensive table of pressure coefficients for various roof angles under different wind flow conditions.\n\n[Structured: {\"type\":\"diagram\",\"nodes\":[{\"label\":\"Pitched Roof Structure\",\"type\":\"structure\",\"details\":[\"Shows roof with angle θ\",\"Length L\",\"Height h\",\"Wind direction γ = 0°\",\"Windward side CNW\",\"Leeward side CNL\"]}],\"edges\":[]}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.08,
+        "y_end": 0.97
+      },
+      "column": "left",
+      "caption": "",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left",
+      "image_url": "/figures/ch27/page-288-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27-figure001-table-0",
+      "type": "table",
+      "section": "27",
+      "text": "Net Pressure Coefficient, CN",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.9199999999999999,
+        "y_end": 0.97
+      },
+      "column": "left",
+      "columns": [
+        "Roof Angle θ",
+        "Load Case",
+        "CNW (Clear Wind Flow)",
+        "CNL (Clear Wind Flow)",
+        "CNW (Obstructed Wind Flow)",
+        "CNL (Obstructed Wind Flow)"
+      ],
+      "rows": [
+        [
+          "7.5°",
+          "A",
+          "1.1",
+          "-0.3",
+          "1.6",
+          "1.0"
+        ],
+        [
+          "7.5°",
+          "B",
+          "0.2",
+          "-1.2",
+          "-0.9",
+          "-1.7"
+        ],
+        [
+          "15°",
+          "A",
+          "1.1",
+          "-0.4",
+          "-1.2",
+          "-1.0"
+        ],
+        [
+          "15°",
+          "B",
+          "0.1",
+          "-1.1",
+          "-0.6",
+          "-1.6"
+        ],
+        [
+          "22.5°",
+          "A",
+          "1.1",
+          "0.1",
+          "-1.2",
+          "1.2"
+        ],
+        [
+          "22.5°",
+          "B",
+          "-0.1",
+          "-0.8",
+          "-0.8",
+          "-1.7"
+        ],
+        [
+          "30°",
+          "A",
+          "1.3",
+          "0.3",
+          "-0.7",
+          "-0.7"
+        ],
+        [
+          "30°",
+          "B",
+          "-0.1",
+          "-0.9",
+          "-0.2",
+          "-1.1"
+        ],
+        [
+          "37.5°",
+          "A",
+          "1.3",
+          "0.6",
+          "-0.6",
+          "-0.6"
+        ],
+        [
+          "37.5°",
+          "B",
+          "-0.2",
+          "-0.6",
+          "-0.3",
+          "0.9"
+        ],
+        [
+          "45°",
+          "A",
+          "1.1",
+          "0.9",
+          "0.5",
+          "0.5"
+        ],
+        [
+          "45°",
+          "B",
+          "-0.3",
+          "-0.5",
+          "-0.3",
+          "-0.7"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-27.3-figure1",
+      "type": "figure",
+      "section": "27.3",
+      "text": "Figure 27.3-5. Main wind force resisting system (0.25 ≤ h/L ≤ 1.0): net pressure coefficient, C_N, for open buildings with pitched free roofs (θ ≤ 45°, γ = 0°, 180°).\n\nThis figure provides net pressure coefficients (CN) for designing main wind force resisting systems for open buildings with pitched free roofs. It includes a diagram showing the roof geometry and wind direction, along with a comprehensive table of pressure coefficients for different roof angles, load cases, and wind flow conditions.\n\n[Structured: {\"type\":\"diagram\",\"nodes\":[{\"label\":\"Pitched roof structure\",\"type\":\"structure\",\"details\":[\"Shows windward (CWW) and leeward (CNL) surfaces\",\"Roof angle θ from horizontal\",\"Horizontal dimension L\",\"Mean roof height h\",\"Wind direction γ\"]}],\"edges\":[]}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.03,
+        "y_end": 0.98
+      },
+      "column": "full",
+      "caption": "Figure 27.3-5. Main wind force resisting system (0.25 ≤ h/L ≤ 1.0): net pressure coefficient, C_N, for open buildings with pitched free roofs (θ ≤ 45°, γ = 0°, 180°).",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right",
+      "image_url": "/figures/ch27/page-288-fig-1.png"
+    },
+    {
+      "id": "ASCE7-22-27.3-body1",
+      "type": "body",
+      "section": "27.3",
+      "text": "Obstructed Wind Flow\nC_NW      C_NL\n-1.6       -1.0\n0.9        -1.7\n-1.2       -1.0\n0.6        -1.6\n-1.2       -1.2\n-0.8       -1.7\n-0.7       -0.7\n-0.2       -1.1\n-0.6       -0.6\n-0.3       -0.9\n-0.5       -0.5\n-0.3       -0.7",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.21,
+        "y_end": 0.52
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body002",
+      "type": "body",
+      "section": "27",
+      "text": "**Notation**\nL = Horizontal dimension of roof, measured in the along-wind direction, ft (m).\nh = Mean roof height, ft (m).\nγ = Direction of wind, degrees.\nθ = Angle of plane of roof from horizontal, degrees.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.07,
+        "x_end": 0.62,
+        "y_start": 0.24,
+        "y_end": 0.32
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3-body2",
+      "type": "body",
+      "section": "27.3",
+      "text": "**Notes**\n1. C_NW and C_NL denote net pressures (contributions from top and bottom surfaces) for windward and leeward half of roof surfaces, respectively.\n2. Clear wind flow denotes relatively unobstructed wind flow with blockage less than, or equal to, 50%. Obstructed wind flow denotes objects below roof inhibiting wind flow (>50% blockage).\n3. For values of θ between 7.5 and 45 degrees, linear interpolation is permitted. For values of θ less than 7.5 degrees, use C_N from Figure 27.3-4.\n4. Plus and minus signs signify pressures acting toward and away from the top roof surface, respectively.\n5. All load cases shown for each roof angle shall be investigated.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.53,
+        "y_end": 0.78
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-body003",
+      "type": "body",
+      "section": "27",
+      "text": "**Notes**\n1. CNW and CNL denote net pressures (contributions from top and bottom surfaces) for windward and leeward half of roof surfaces, respectively.\n\n2. Clear wind flow denotes relatively unobstructed wind flow with blockage less than, or equal to, 50%. Obstructed wind flow denotes objects below roof inhibiting wind flow (> 50% blockage).\n\n3. For values of θ between 7.5 and 45 degrees, linear interpolation is permitted. For values of θ less than 7.5 degrees, use CN from Figure 27.3-4.\n\n4. Plus and minus signs signify pressures acting toward and away from the top roof surface, respectively.\n\n5. All load cases shown for each roof angle shall be investigated.",
+      "cross_references": [
+        "Figure 27.3-4"
+      ],
+      "bbox": {
+        "x_start": 0.07,
+        "x_end": 0.62,
+        "y_start": 0.58,
+        "y_end": 0.72
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3-body3",
+      "type": "body",
+      "section": "27.3",
+      "text": "288                                                    STANDARD ASCE/SEI 7-22",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.92,
+        "y_end": 0.96
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

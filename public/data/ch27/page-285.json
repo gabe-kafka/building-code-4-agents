@@ -1,0 +1,110 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 285,
+  "section_range": [
+    "27",
+    "27.3"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-diagrams1",
+      "type": "body",
+      "section": "27",
+      "text": "Diagrams",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.12,
+        "x_end": 0.18,
+        "y_start": 0.06,
+        "y_end": 0.08
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-figure1",
+      "type": "figure",
+      "section": "27",
+      "text": "Figure 27.3-2. Main wind force resisting system: external pressure coefficients, Cp, for enclosed, partially enclosed, and partially open buildings and structures—domed roofs with a circular base.\n\nThis figure provides external pressure coefficients (Cp) for determining wind loads on domed roofs with circular bases. It includes both elevation and plan view diagrams showing key geometric parameters, and a graph plotting pressure coefficients against the ratio of rise to diameter for different positions on the dome and various height-to-diameter ratios.\n\n[Structured: {\"type\":\"diagram\",\"components\":[{\"type\":\"elevation_view\",\"parameters\":[\"D (diameter)\",\"f (dome rise)\",\"hb (height to base)\",\"θ (angle from horizontal)\",\"points A, B, C\"]},{\"type\":\"plan_view\",\"parameters\":[\"wind direction\",\"points A, B, C around circular base\"]},{\"type\":\"pressure_coefficient_graph\",\"x_axis\":\"Ratio of Rise to Diameter, f/D (0 to 0.5)\",\"y_axis\":\"External Pressure Coefficient, Cp (-1.8 to +0.8)\",\"curves\":[\"A (hb/D = 0.25)\",\"A (hb/D = 0)\",\"A (hb/D ≥ 1.0)\",\"C (hb/D = 0)\",\"C (hb/D ≥ 0.5)\",\"B (hb/D = 0)\",\"B (hb/D ≥ 0.5)\"]}]}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.05,
+        "y_end": 0.96
+      },
+      "column": "full",
+      "caption": "Figure 27.3-2. Main wind force resisting system: external pressure coefficients, Cp, for enclosed, partially enclosed, and partially open buildings and structures—domed roofs with a circular base.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left",
+      "image_url": "/figures/ch27/page-285-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27.3-body1",
+      "type": "body",
+      "section": "27.3",
+      "text": "Notes\n1. Two load cases shall be considered:\nCase A: Cp values between A and B and between B and C shall be determined by linear interpolation along arcs on the dome parallel to the wind direction.\nCase B: Cp shall be the constant value of A for θ ≤ 25° and shall be determined by linear interpolation from 25 degrees to B and from B to C.\n2. Values denote Cp to be used with q(h0+f), where h0+f is the height at the top of the dome.\n3. Plus and minus signs signify pressures acting toward and away from the surfaces, respectively.\n4. Cp is constant on the dome surface for arcs of circles perpendicular to the wind direction; for example, the arc passing through B—B—B and all arcs parallel to B—B—B\n5. For values of h0/D between those listed on the graph curves, linear interpolation shall be permitted.\n6. θ = 0 degrees on dome springline θ = 90 degrees at dome center top point. f is measured from springline to top.\n7. The total horizontal shear shall not be less than that determined by neglecting wind forces on roof surfaces.\n8. For f/D values less than 0.05, use Figure 27.3-1.",
+      "cross_references": [
+        "27.3-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.45,
+        "y_end": 0.85
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-notation1",
+      "type": "body",
+      "section": "27",
+      "text": "Notation\nf = Dome rise, ft (m)\nh₀ = Height to base of dome, ft (m)\nD = Diameter, ft (m)\nθ = Angle of plane of roof from horizontal, degrees",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.12,
+        "x_end": 0.88,
+        "y_start": 0.63,
+        "y_end": 0.71
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-footer",
+      "type": "body",
+      "section": "27",
+      "text": "Minimum Design Loads and Associated Criteria for Buildings and Other Structures                    285",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.95,
+        "y_end": 0.98
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

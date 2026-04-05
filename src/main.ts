@@ -3,7 +3,7 @@ import './style/tokens.css'
 import './style/layout.css'
 import './style/components.css'
 
-import { state, dispatch, on, registerStandard, registerChapterPages, setChapter, setPage } from './state.ts'
+import { state, dispatch, on, registerStandard, registerChapterPages, setChapter, setPage, buildReferenceIndex } from './state.ts'
 import { asce722Meta } from './mock/ch26-meta.ts'
 import type { Page } from './types.ts'
 import { createDOMLayoutEngine } from './layout/engine.ts'
@@ -40,30 +40,43 @@ initKeyboard()
 initRouter()
 
 // Load chapter data from static JSON files
-async function loadChapter26(): Promise<void> {
-  const meta = asce722Meta
-  registerStandard(meta)
+async function loadChapterPages(chapter: number): Promise<Map<number, Page>> {
+  const meta = asce722Meta.chapters.find((c) => c.chapter === chapter)
+  if (!meta) return new Map()
 
-  const ch26Pages = new Map<number, Page>()
-  const start = meta.chapters[0].page_range.start
-  const end = meta.chapters[0].page_range.end
-
-  // Fetch all pages in parallel
+  const pages = new Map<number, Page>()
   const fetches = []
-  for (let p = start; p <= end; p++) {
+  for (let p = meta.page_range.start; p <= meta.page_range.end; p++) {
     fetches.push(
-      fetch(`/data/ch${meta.chapters[0].chapter}/page-${p}.json`)
+      fetch(`/data/ch${chapter}/page-${p}.json`)
         .then((r) => r.ok ? r.json() as Promise<Page> : null)
-        .then((page) => { if (page) ch26Pages.set(p, page) })
+        .then((page) => { if (page) pages.set(p, page) })
         .catch(() => { /* page doesn't exist, skip */ })
     )
   }
   await Promise.all(fetches)
+  return pages
+}
 
-  registerChapterPages('ASCE 7-22', 26, ch26Pages)
-  setChapter('ASCE 7-22', 26)
+async function init(): Promise<void> {
+  registerStandard(asce722Meta)
 
-  // Build search index across all loaded pages
+  // Load all chapters in parallel
+  const loads = asce722Meta.chapters.map(async (ch) => {
+    const pages = await loadChapterPages(ch.chapter)
+    if (pages.size > 0) registerChapterPages('ASCE 7-22', ch.chapter, pages)
+  })
+  await Promise.all(loads)
+
+  // Default to first chapter with data
+  const firstLoaded = asce722Meta.chapters.find(
+    (ch) => (state.chapterPages.get(`ASCE 7-22:${ch.chapter}`)?.size ?? 0) > 0
+  )
+  if (firstLoaded) {
+    setChapter('ASCE 7-22', firstLoaded.chapter)
+    buildReferenceIndex()
+  }
+
   const searchEngine = new SearchEngine()
   searchEngine.buildIndex(state.pages)
   setSearchEngine(searchEngine)
@@ -71,7 +84,7 @@ async function loadChapter26(): Promise<void> {
   dispatch('init')
 }
 
-loadChapter26()
+init()
 
 // Harness hook — allows Puppeteer to inject page data and trigger renders
 ;(window as unknown as Record<string, unknown>).__harness = {

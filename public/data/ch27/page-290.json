@@ -1,0 +1,120 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 290,
+  "section_range": [
+    "27.3.7",
+    "27.3.7"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27.3.7-F1",
+      "type": "figure",
+      "section": "27.3.7",
+      "text": "Figure 27.3-7. Main wind force resisting system: net pressure coefficient, CN, for open buildings with free roofs (θ ≤ 45°, γ = 90°, 270°).\n\nThis figure provides net pressure coefficients (CN) for main wind force resisting systems in open buildings with free roofs at low angles (θ ≤ 45°) when wind direction is perpendicular to the ridge (γ = 90°, 270°). It shows three roof configurations (monoslope, pitched, trough) with corresponding pressure coefficient values based on horizontal distance from windward edge and roof angle.\n\n[Structured: {\"type\":\"diagram\",\"nodes\":[{\"label\":\"Monoslope Roof\",\"type\":\"diagram\",\"details\":[\"Shows roof with length L, height h, angle θ, wind direction γ = 90°\"]},{\"label\":\"Pitched Roof\",\"type\":\"diagram\",\"details\":[\"Shows pitched roof with length L, height h, angle θ, wind direction γ = 90°\"]},{\"label\":\"Trough Roof\",\"type\":\"diagram\",\"details\":[\"Shows trough configuration with length L, height h, angle θ, wind direction γ = 90°\"]}],\"edges\":[]}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.04,
+        "y_end": 0.91
+      },
+      "column": "full",
+      "caption": "Figure 27.3-7. Main wind force resisting system: net pressure coefficient, CN, for open buildings with free roofs (θ ≤ 45°, γ = 90°, 270°).",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left",
+      "image_url": "/figures/ch27/page-290-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27.3.7-F1-table-0",
+      "type": "table",
+      "section": "27.3.7",
+      "text": "Net Pressure Coefficient, CN",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.86,
+        "y_end": 0.91
+      },
+      "column": "full",
+      "columns": [
+        "Horizontal Distance from Windward Edge",
+        "Roof Angle θ",
+        "Load Case",
+        "Clear Wind Flow CN",
+        "Obstructed Wind Flow CN"
+      ],
+      "rows": [
+        [
+          "≤ h",
+          "All shapes",
+          "A",
+          "−0.8",
+          "−1.2"
+        ],
+        [
+          "> h, ≤ 2h",
+          "0 ≤ 45°",
+          "B",
+          "0.8",
+          "0.5"
+        ],
+        [
+          "> h, ≤ 2h",
+          "All shapes",
+          "A",
+          "−0.6",
+          "−0.9"
+        ],
+        [
+          "> h, ≤ 2h",
+          "0 ≤ 45°",
+          "B",
+          "0.5",
+          "0.5"
+        ],
+        [
+          "> 2h",
+          "All shapes",
+          "A",
+          "−0.3",
+          "−0.6"
+        ],
+        [
+          "> 2h",
+          "0 ≤ 45°",
+          "B",
+          "0.3",
+          "0.3"
+        ]
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      }
+    },
+    {
+      "id": "ASCE7-22-27.3.7-N1",
+      "type": "body",
+      "section": "27.3.7",
+      "text": "**Notes** 1. CN denotes net pressures (contributions from top and bottom surfaces). 2. Clear wind flow denotes relatively unobstructed wind flow with blockage less than or equal to 50%. Obstructed wind flow denotes objects below roof inhibiting wind flow (>50% blockage). 3. Plus and minus signs signify pressures acting toward and away from the top roof surface, respectively. 4. All load cases shown for each roof angle shall be investigated.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.85,
+        "y_end": 0.95
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    }
+  ]
+}

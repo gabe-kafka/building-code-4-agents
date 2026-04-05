@@ -17,7 +17,27 @@
         "x_start": 0.52,
         "x_end": 0.94,
         "y_start": 0.05,
-        "y_end": 0.09
+        "y_end": 0.08
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.1.2.2-body1-body",
+      "type": "body",
+      "section": "26.1.2.2",
+      "text": "C&C on all buildings and other structures shall be designed using one of the following procedures:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.060000000000000005,
+        "y_end": 0.08
       },
       "column": "right",
       "metadata": {
@@ -27,30 +47,10 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.1-heading1",
-      "type": "body",
-      "section": "26.1",
-      "text": "26.1 PROCEDURES",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.09,
-        "y_end": 0.11
-      },
-      "column": "left",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
       "id": "ASCE7-22-26.1.2.2-body2",
       "type": "body",
       "section": "26.1.2.2",
-      "text": "1. Analytical Procedures provided in Parts 1 through 5, as appropriate, of Chapter 30; or 2. Wind Tunnel Procedure as specified in Chapter 31.",
+      "text": "1. Analytical Procedures provided in Parts 1 through 5, as appropriate, of Chapter 30; or\n2. Wind Tunnel Procedure as specified in Chapter 31.",
       "cross_references": [
         "Chapter 30",
         "Chapter 31"
@@ -58,8 +58,8 @@
       "bbox": {
         "x_start": 0.52,
         "x_end": 0.94,
-        "y_start": 0.09,
-        "y_end": 0.15
+        "y_start": 0.08,
+        "y_end": 0.12
       },
       "column": "right",
       "metadata": {
@@ -69,16 +69,16 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.1.1-heading2",
+      "id": "ASCE7-22-26.1-H1",
       "type": "body",
-      "section": "26.1.1",
-      "text": "26.1.1 Scope",
+      "section": "26.1",
+      "text": "26.1 PROCEDURES",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.12,
-        "y_end": 0.14
+        "y_start": 0.1,
+        "y_end": 0.12
       },
       "column": "left",
       "heading": true,
@@ -89,10 +89,52 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.1.1-provision1",
-      "type": "provision",
+      "id": "ASCE7-22-26.1.3-body1",
+      "type": "body",
+      "section": "26.1.3",
+      "text": "26.1.3 Performance-Based Procedures Wind design of buildings and other structures using performance-based procedures shall be permitted subject to the approval of the Authority Having Jurisdiction. The performance-based wind design procedures used shall, at a minimum, conform to Section 1.3.1.3.",
+      "cross_references": [
+        "Section 1.3.1.3"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.12,
+        "y_end": 0.16
+      },
+      "column": "right",
+      "heading": false,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.1.1-H2",
+      "type": "body",
       "section": "26.1.1",
-      "text": "Buildings and other structures, including the main wind force resisting system (MWFRS) and all components and cladding (C&C) thereof, shall be designed and constructed to resist the wind loads determined in accordance with Chapters 26 through 31.",
+      "text": "26.1.1 Scope Buildings and other structures, including the main wind force resisting system (MWFRS) and all components and cladding (C&C) thereof, shall be designed and constructed to resist the wind loads determined in accordance with Chapters 26 through 31.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.13,
+        "y_end": 0.2
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.1.1-H2-body",
+      "type": "body",
+      "section": "26.1.1",
+      "text": "structures, including the main wind force resisting system (MWFRS) and all components and cladding (C&C) thereof, shall be designed and constructed to resist the wind loads determined in accordance with Chapters 26 through 31.",
       "cross_references": [
         "26",
         "27",
@@ -105,110 +147,7 @@
         "x_start": 0.06,
         "x_end": 0.48,
         "y_start": 0.14,
-        "y_end": 0.19
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.1.3-heading1",
-      "type": "body",
-      "section": "26.1.3",
-      "text": "26.1.3 Performance-Based Procedures Wind design of buildings and other structures using performance-based procedures shall be permitted subject to the approval of the Authority Having Jurisdiction. The performance-based wind design procedures used shall, at a minimum, conform to Section 1.3.1.3.",
-      "cross_references": [
-        "Section 1.3.1.3"
-      ],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.15,
-        "y_end": 0.22
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.1.1-provision2",
-      "type": "provision",
-      "section": "26.1.1",
-      "text": "Risk Category III and IV buildings and other structures, including the MWFRS and all C&C thereof, shall also be designed and constructed to resist tornado loads determined in accordance with Chapter 32, as applicable.",
-      "cross_references": [
-        "32"
-      ],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.19,
-        "y_end": 0.23
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.2-heading1",
-      "type": "body",
-      "section": "26.2",
-      "text": "26.2 DEFINITIONS",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.22,
-        "y_end": 0.25
-      },
-      "column": "right",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.1.1-body1",
-      "type": "body",
-      "section": "26.1.1",
-      "text": "The provisions of this chapter define basic wind parameters for use with other provisions contained in this standard.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.23,
-        "y_end": 0.25
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.1.1-user_note1",
-      "type": "user_note",
-      "section": "26.1.1",
-      "text": "User Note: A building or other structure designed for wind loads determined exclusively in accordance with Chapter 26 cannot be designated as a storm shelter without meeting additional critical requirements provided in the applicable building code and ICC 500, the ICC/NSSA Standard for the Design and Construction of Storm Shelters. See Commentary Section C26.1.1 for an in-depth discussion on Storm Shelters.",
-      "cross_references": [
-        "26",
-        "C26.1.1"
-      ],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.25,
-        "y_end": 0.35
+        "y_end": 0.2
       },
       "column": "left",
       "metadata": {
@@ -221,13 +160,54 @@
       "id": "ASCE7-22-26.2-body1",
       "type": "body",
       "section": "26.2",
+      "text": "26.2 DEFINITIONS",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.18,
+        "y_end": 0.2
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.1.1-B1",
+      "type": "body",
+      "section": "26.1.1",
+      "text": "Risk Category III and IV buildings and other structures, including the MWFRS and all C&C thereof, shall also be designed and constructed to resist tornado loads determined in accordance with Chapter 32, as applicable.",
+      "cross_references": [
+        "32"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.2,
+        "y_end": 0.26
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.2-body2",
+      "type": "body",
+      "section": "26.2",
       "text": "The following definitions apply to the provisions of Chapters 26 through 31.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.52,
         "x_end": 0.94,
-        "y_start": 0.25,
-        "y_end": 0.27
+        "y_start": 0.2,
+        "y_end": 0.22
       },
       "column": "right",
       "metadata": {
@@ -237,7 +217,7 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.2-definition1",
+      "id": "ASCE7-22-26.2-def1",
       "type": "definition",
       "section": "26.2",
       "text": "APPROVED: Acceptable to the Authority Having Jurisdiction.",
@@ -245,7 +225,64 @@
       "bbox": {
         "x_start": 0.52,
         "x_end": 0.94,
-        "y_start": 0.27,
+        "y_start": 0.22,
+        "y_end": 0.24
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.2-def2",
+      "type": "definition",
+      "section": "26.2",
+      "text": "ASCE WIND DESIGN GEODATABASE: The ASCE database (version 2022-1.0) of geocoded wind speed design data.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.24,
+        "y_end": 0.26
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.1.1-B2",
+      "type": "body",
+      "section": "26.1.1",
+      "text": "The provisions of this chapter de fi ne basic wind parameters for use with other provisions contained in this standard.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.26,
+        "y_end": 0.29
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.2-user_note1",
+      "type": "user_note",
+      "section": "26.2",
+      "text": "User Note: The ASCE Wind Design Geodatabase of geocoded wind speed design data is available at https://asce7hazardtool.online/.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.26,
         "y_end": 0.29
       },
       "column": "right",
@@ -256,29 +293,32 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.2-definition2",
-      "type": "definition",
-      "section": "26.2",
-      "text": "ASCE WIND DESIGN GEODATABASE: The ASCE database (version 2022-1.0) of geocoded wind speed design data.",
-      "cross_references": [],
+      "id": "ASCE7-22-26.1.1-UN1",
+      "type": "user_note",
+      "section": "26.1.1",
+      "text": "User Note: A building or other structure designed for wind loads determined exclusively in accordance with Chapter 26 cannot be designated as a storm shelter without meeting additional critical requirements provided in the applicable building code and ICC 500, the ICC/NSSA Standard for the Design and Construction of Storm Shelters . See Commentary Section C26.1.1 for an in-depth discussion on Storm Shelters.",
+      "cross_references": [
+        "26",
+        "C26.1.1"
+      ],
       "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.29,
-        "y_end": 0.32
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.3,
+        "y_end": 0.46
       },
-      "column": "right",
+      "column": "left",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
-      "_source": "right"
+      "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.2-user_note1",
-      "type": "user_note",
+      "id": "ASCE7-22-26.2-def3",
+      "type": "definition",
       "section": "26.2",
-      "text": "User Note: The ASCE Wind Design Geodatabase of geocoded wind speed design data is available at https://asce7hazardtool.online/.",
+      "text": "ATTACHED CANOPY: A horizontal (maximum slope of 2%) patio cover attached to the building wall at any height; it is different from an overhang, which is an extension of the roof surface.",
       "cross_references": [],
       "bbox": {
         "x_start": 0.52,
@@ -294,15 +334,37 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.2-definition3",
+      "id": "ASCE7-22-26.2-def4",
       "type": "definition",
       "section": "26.2",
-      "text": "ATTACHED CANOPY: A horizontal (maximum slope of 2%) patio cover attached to the building wall at any height; it is different from an overhang, which is an extension of the roof surface.",
-      "cross_references": [],
+      "text": "BASIC WIND SPEED, V: Three-second gust speed at 33 ft (10 m) above the ground in Exposure C (see Section 26.7.3) as determined in accordance with Section 26.5.1.",
+      "cross_references": [
+        "Section 26.7.3",
+        "Section 26.5.1"
+      ],
       "bbox": {
         "x_start": 0.52,
         "x_end": 0.94,
         "y_start": 0.35,
+        "y_end": 0.38
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.2-def5",
+      "type": "definition",
+      "section": "26.2",
+      "text": "BUILDING, ELEVATED: A building supported on structural elements where wind can pass beneath the building.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.38,
         "y_end": 0.4
       },
       "column": "right",
@@ -313,55 +375,11 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.1.2-heading3",
-      "type": "body",
-      "section": "26.1.2",
-      "text": "26.1.2 Permitted Procedures",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.36,
-        "y_end": 0.38
-      },
-      "column": "left",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.1.2-provision1",
-      "type": "provision",
-      "section": "26.1.2",
-      "text": "The design wind loads for buildings and other structures, including the MWFRS and C&C elements thereof, shall be determined using one of the procedures as specified in this section. An outline of the overall procedure for the determination of the wind loads, including design references, is provided in Figure 26.1-1.",
-      "cross_references": [
-        "Figure 26.1-1"
-      ],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.48,
-        "y_start": 0.38,
-        "y_end": 0.43
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "left"
-    },
-    {
-      "id": "ASCE7-22-26.2-definition4",
+      "id": "ASCE7-22-26.2-def6",
       "type": "definition",
       "section": "26.2",
-      "text": "BASIC WIND SPEED, V: Three-second gust speed at 33 ft (10 m) above the ground in Exposure C (see Section 26.7.3) as determined in accordance with Section 26.5.1.",
-      "cross_references": [
-        "Section 26.7.3",
-        "Section 26.5.1"
-      ],
+      "text": "BUILDING, ENCLOSED: A building that has the total area of openings in each wall that receives positive external pressure less than or equal to 4 ft² (0.37 m²) or 1% of the area of that wall, whichever is smaller. This condition is expressed for each wall by the following equation:",
+      "cross_references": [],
       "bbox": {
         "x_start": 0.52,
         "x_end": 0.94,
@@ -376,7 +394,92 @@
       "_source": "right"
     },
     {
-      "id": "ASCE7-22-26.1.2-body1",
+      "id": "ASCE7-22-26.2-formula1",
+      "type": "formula",
+      "section": "26.2",
+      "text": "Aₒᵢ < 0.01Aᵢ or 4 ft² (0.37 m²), whichever is smaller,",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.44,
+        "y_end": 0.46
+      },
+      "column": "right",
+      "expression": "A_{oi} < 0.01A_i \\text{ or } 4 \\text{ ft}^2 (0.37 \\text{ m}^2), \\text{ whichever is smaller}",
+      "parameters": [
+        "A_{oi} = area of openings in wall i",
+        "A_i = gross area of wall i",
+        "Aₒᵢ and Aᵢ are as defined for Open Buildings."
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.1.2-H3",
+      "type": "body",
+      "section": "26.1.2",
+      "text": "26.1.2 Permitted Procedures The design wind loads for buildings and other structures, including the MWFRS and C&C elements thereof, shall be determined using one of the procedures as speci fi ed in this section. An outline of the overall process for the determination of the wind loads, including section references, is provided in Figure 26.1-1.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.47,
+        "y_end": 0.56
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.1.2-H3-body",
+      "type": "body",
+      "section": "26.1.2",
+      "text": "loads for buildings and other structures, including the MWFRS and C&C elements thereof, shall be determined using one of the procedures as specified in this section. An outline of the overall procedure for the determination of the wind loads, including references, is provided in Figure 26.1-1.",
+      "cross_references": [
+        "26.1-1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.48,
+        "y_end": 0.56
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.2-def7",
+      "type": "definition",
+      "section": "26.2",
+      "text": "**BUILDING, LOW-RISE:** An enclosed, partially enclosed, or partially open building that complies with the following conditions:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.48,
+        "y_end": 0.5
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.1.2-B1",
       "type": "body",
       "section": "26.1.2",
       "text": "Additional outlines and User Notes are provided at the beginning of Chapters 27 through 31 for more detailed step-by-step procedures for determining the wind loads.",
@@ -390,8 +493,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.43,
-        "y_end": 0.46
+        "y_start": 0.56,
+        "y_end": 0.6
       },
       "column": "left",
       "metadata": {
@@ -401,35 +504,16 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.2-definition5",
-      "type": "definition",
-      "section": "26.2",
-      "text": "BUILDING, ELEVATED: A building supported on structural elements where wind can pass beneath the building.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.44,
-        "y_end": 0.47
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.1.2.1-heading4",
+      "id": "ASCE7-22-26.1.2.1-H4",
       "type": "body",
       "section": "26.1.2.1",
-      "text": "26.1.2.1 Main Wind Force Resisting System",
+      "text": "26.1.2.1 Main Wind Force Resisting System Wind loads for the MWFRS shall be determined using one of the following procedures:",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.46,
-        "y_end": 0.48
+        "y_start": 0.61,
+        "y_end": 0.65
       },
       "column": "left",
       "heading": true,
@@ -440,35 +524,16 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.2-definition6",
-      "type": "definition",
-      "section": "26.2",
-      "text": "BUILDING, ENCLOSED: A building that has the total area of openings in each wall that receives positive external pressure less than or equal to 4 ft² (0.37 m²) or 1% of the area of that wall, whichever is smaller. This condition is expressed for each wall by the following equation:",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.47,
-        "y_end": 0.53
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.1.2.1-provision1",
-      "type": "provision",
+      "id": "ASCE7-22-26.1.2.1-H4-body",
+      "type": "body",
       "section": "26.1.2.1",
-      "text": "Wind loads for the MWFRS shall be determined using one of the following procedures:",
+      "text": "loads for the MWFRS shall be determined using one of the following procedures:",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.48,
-        "y_end": 0.5
+        "y_start": 0.62,
+        "y_end": 0.65
       },
       "column": "left",
       "metadata": {
@@ -478,7 +543,7 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.1.2.1-body1",
+      "id": "ASCE7-22-26.1.2.1-B1",
       "type": "body",
       "section": "26.1.2.1",
       "text": "1. Directional Procedure for buildings of all heights as specified in Chapter 27 for buildings meeting the requirements specified therein;",
@@ -488,8 +553,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.5,
-        "y_end": 0.53
+        "y_start": 0.66,
+        "y_end": 0.69
       },
       "column": "left",
       "metadata": {
@@ -499,7 +564,7 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.1.2.1-body2",
+      "id": "ASCE7-22-26.1.2.1-B2",
       "type": "body",
       "section": "26.1.2.1",
       "text": "2. Envelope Procedure for low-rise buildings as specified in Chapter 28 for buildings meeting the requirements specified therein;",
@@ -509,8 +574,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.53,
-        "y_end": 0.56
+        "y_start": 0.7,
+        "y_end": 0.73
       },
       "column": "left",
       "metadata": {
@@ -520,43 +585,18 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.2-formula1",
-      "type": "formula",
-      "section": "26.2",
-      "text": "Ao < 0.01Ag or 4 ft² (0.37 m²), whichever is smaller,",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.53,
-        "y_end": 0.56
-      },
-      "column": "right",
-      "expression": "A_o < 0.01A_g \\text{ or } 4 \\text{ ft}^2 (0.37 \\text{ m}^2), \\text{ whichever is smaller}",
-      "parameters": [
-        "A_o = total area of openings in a wall that receives positive external pressure",
-        "A_g = gross area of that wall",
-        "Ao and Ag are as defined for Open Buildings."
-      ],
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.1.2.1-body3",
+      "id": "ASCE7-22-26.1.2.1-B3",
       "type": "body",
       "section": "26.1.2.1",
-      "text": "3. Directional Procedure for building appurtenances (rooftop structures and rooftop equipment) and other structures (such as solid freestanding walls and solid freestanding signs, chimneys, tanks, open signs, single-plane frames, and trussed towers) as specified in Chapter 29; or",
+      "text": "3. Directional Procedure for building appurtenances (rooftop structures and rooftop equipment) and other structures (such as solid freestanding walls and solid freestanding signs, chimneys, tanks, open signs, single-plane open frames, and trussed towers) as specified in Chapter 29; or",
       "cross_references": [
         "29"
       ],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.56,
-        "y_end": 0.62
+        "y_start": 0.74,
+        "y_end": 0.81
       },
       "column": "left",
       "metadata": {
@@ -566,26 +606,7 @@
       "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.2-definition7",
-      "type": "definition",
-      "section": "26.2",
-      "text": "**BUILDING, LOW-RISE:** An enclosed, partially enclosed, or partially open building that complies with the following conditions:",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.58,
-        "y_end": 0.62
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.1.2.1-body4",
+      "id": "ASCE7-22-26.1.2.1-B4",
       "type": "body",
       "section": "26.1.2.1",
       "text": "4. Wind Tunnel Procedure for all buildings and all other structures as specified in Chapter 31.",
@@ -595,8 +616,8 @@
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.48,
-        "y_start": 0.62,
-        "y_end": 0.64
+        "y_start": 0.82,
+        "y_end": 0.85
       },
       "column": "left",
       "metadata": {

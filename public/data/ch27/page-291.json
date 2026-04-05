@@ -1,0 +1,89 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 291,
+  "section_range": [
+    "27.3",
+    "27.3"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27-figure1",
+      "type": "figure",
+      "section": "27.3",
+      "text": "Figure 27.3-8. Main wind force resisting system, design wind load cases.\n\nThis figure illustrates four different design wind load cases for main wind force resisting systems in buildings. Each case shows plan view diagrams with different combinations and magnitudes of wind pressures and torsional moments applied to rectangular building structures.\n\n[Structured: {\"type\":\"diagram\",\"cases\":[{\"case\":\"Case 1\",\"description\":\"Full design pressure on projected wall area perpendicular to each principal axis, considered separately along each principal axis\",\"wind_pressures\":[\"pWx\",\"pLx\",\"pWy\",\"pLy\"],\"roof_pressures\":\"Full design pressure\",\"simultaneous\":false},{\"case\":\"Case 2\",\"description\":\"Three-quarters of design wind pressure with torsional moment\",\"wind_pressures\":[\"0.75pWx\",\"0.75pLx\",\"0.75pWy\",\"0.75pLy\"],\"roof_pressures\":\"75% of Case 1\",\"torsional_moment\":\"Mz = 0.75(pWx + pLx)Bx ex or Mz = 0.75(pWy + pLy)By ey\",\"eccentricity\":\"ex = ±0.15Bx, ey = ±0.15By\",\"simultaneous\":true},{\"case\":\"Case 3\",\"description\":\"Wall pressures are 75% of Case 1, all pressures act simultaneously\",\"wind_pressures\":[\"0.75pWx\",\"0.75pLx\",\"0.75pWy\",\"0.75pLy\"],\"roof_pressures\":\"See Note 2\",\"simultaneous\":true},{\"case\":\"Case 4\",\"description\":\"Wall pressures and torsional moment are 75% of Case 2 (wall pressures are 56.3% of Case 1)\",\"wind_pressures\":[\"0.563pWx\",\"0.563pLx\",\"0.563pWy\",\"0.563pLy\"],\"roof_pressures\":\"See Note 2\",\"torsional_moment\":\"Mz = 0.563(pWx + pLx)Bx ex + 0.563(pWy + pLy)By ey\",\"eccentricity\":\"ex = ±0.15Bx, ey = ±0.15By\",\"simultaneous\":true}],\"notation\":{\"pWx_pWy\":\"Windward wall design pressure acting in the x, y principal direction\",\"pLx_pLy\":\"Leeward wall design pressure acting in the x, y principal direction\",\"Bx_By\":\"Horizontal dimension of building normal to the wind in the x, y principal direction\",\"ex_ey\":\"Eccentricity from the x, y principal axis of the structure\",\"Mz\":\"Torsional moment per unit height acting about a vertical axis of the building\"}}]",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.11,
+        "y_end": 0.95
+      },
+      "column": "right",
+      "caption": "Figure 27.3-8. Main wind force resisting system, design wind load cases.",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right",
+      "image_url": "/figures/ch27/page-291-fig-0.png"
+    },
+    {
+      "id": "ASCE7-22-27-body1",
+      "type": "body",
+      "section": "27.3",
+      "text": "Diagrams",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.095,
+        "x_end": 0.16,
+        "y_start": 0.09,
+        "y_end": 0.105
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-body3",
+      "type": "body",
+      "section": "27.3",
+      "text": "291",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.775,
+        "x_end": 0.795,
+        "y_start": 0.87,
+        "y_end": 0.885
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27-body1",
+      "type": "body",
+      "section": "27.3",
+      "text": "Minimum Design Loads and Associated Criteria for Buildings and Other Structures                                291",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.87,
+        "y_end": 0.9
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    }
+  ]
+}

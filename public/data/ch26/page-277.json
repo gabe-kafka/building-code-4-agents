@@ -8,340 +8,16 @@
   ],
   "elements": [
     {
-      "id": "26.10-formula-1",
-      "type": "formula",
-      "section": "26.10",
-      "text": "qz = 0.00256Kz Kzt Kd V² [(lb/ft²); V, mi/h     (26.10-1)",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "expression": "qz = 0.00256 Kz Kzt Kd V²",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10-formula-2",
-      "type": "formula",
-      "section": "26.10",
-      "text": "qz = 0.613Kz Kzt Kd V² (N/m²); V, m/s     (26.10-1.SI)",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "expression": "qz = 0.613 Kz Kzt Kd V²",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10-definitions",
-      "type": "body",
-      "section": "26.10",
-      "text": "where\nKz = Velocity pressure exposure coefficient, see Section 26.10.1;\nKzt = Topographic factor, see Section 26.8.2;\nKd = Ground elevation factor, see Section 26.9;\nV = Basic wind speed, see Section 26.5; and\nqz = Velocity pressure at height z.",
-      "cross_references": [
-        "26.10.1",
-        "26.8.2",
-        "26.9",
-        "26.5"
-      ],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10-mean-roof-height",
-      "type": "body",
-      "section": "26.10",
-      "text": "The velocity pressure at mean roof height is computed as qh = qz evaluated from Equation (26.10-1) using Kz at mean roof height h.",
-      "cross_references": [
-        "26.10-1"
-      ],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10-basic-wind-speed",
-      "type": "provision",
-      "section": "26.10",
-      "text": "The basic wind speed, V, used in determination of design wind loads on rooftop structures, rooftop equipment, and other building appurtenances shall consider the Risk Category equal to the greater of the following:",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10-risk-category-1",
-      "type": "body",
-      "section": "26.10",
-      "text": "1. Risk category for the building on which the equipment or appurtenance is located, or",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10-risk-category-2",
-      "type": "body",
-      "section": "26.10",
-      "text": "2. Risk category for any building or other structure to which the equipment or appurtenance provides a necessary service.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11-heading",
-      "type": "body",
-      "section": "26.11",
-      "text": "**26.11 GUST EFFECTS**",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.1-heading",
-      "type": "body",
-      "section": "26.11.1",
-      "text": "**26.11.1 Gust-Effect Factor**",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.1-factor",
-      "type": "body",
-      "section": "26.11.1",
-      "text": "The gust-effect factor for a rigid building or other structure is permitted to be taken as 0.85.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.2-heading",
-      "type": "body",
-      "section": "26.11.2",
-      "text": "**26.11.2 Frequency Determination**",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.2-determination",
-      "type": "provision",
-      "section": "26.11.2",
-      "text": "To determine whether a building or other structure is rigid or flexible as defined in Section 26.2, the fundamental natural frequency, n1, shall be established using the structural properties and deformational characteristics of the resisting elements in a properly substantiated analysis. Low-rise buildings, as defined in Section 26.2, are considered rigid.",
-      "cross_references": [
-        "26.2"
-      ],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.2.1-heading",
-      "type": "body",
-      "section": "26.11.2.1",
-      "text": "**26.11.2.1 Limitations for Approximate Natural Frequency**",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "heading": true,
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.2.1-alternative",
-      "type": "provision",
-      "section": "26.11.2.1",
-      "text": "As an alternative to performing an analysis to determine n1, the approximate building natural frequency, na, shall be permitted to be calculated in accordance with Section 26.11.3 for structural steel, concrete, or masonry buildings meeting the following requirements:",
-      "cross_references": [
-        "26.11.3"
-      ],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.2.1-requirements",
-      "type": "body",
-      "section": "26.11.2.1",
-      "text": "1. The building height is less than or equal to 300 ft (91 m).\n2. The building height is less than four times its effective length, Leff.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.2.1-effective-length",
-      "type": "body",
-      "section": "26.11.2.1",
-      "text": "The effective length, Leff, in the direction under consideration shall be determined from the following equation:",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11-formula-1",
-      "type": "formula",
-      "section": "26.11",
-      "text": "Leff = (Σ(i=1 to n) hiLi) / (Σ(i=1 to n) hi)     (26.11-1)",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "left",
-      "expression": "Leff = (∑hiLi) / (∑hi)",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.10.1-table",
+      "id": "ASCE7-22-26.10-table1",
       "type": "table",
-      "section": "26.10.1",
-      "text": "Table 26.10-1. Velocity Pressure Exposure Coefficients, Kh and Kz.",
+      "section": "26.10-1",
+      "text": "Table 26.10-1. Velocity Pressure Exposure Coefficients, Kh and Kz .",
       "cross_references": [],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.02,
+        "y_end": 0.435
       },
       "column": "right",
       "columns": [
@@ -353,6 +29,7 @@
       ],
       "rows": [
         [
+          "",
           "ft",
           "m",
           "B",
@@ -517,179 +194,737 @@
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "26.11-summations",
-      "type": "body",
-      "section": "26.11",
-      "text": "The summations are over the height of the building, where hi is the height above grade of level i, and Li is the building length at level i parallel to the wind direction.",
+      "id": "ASCE7-22-26.10-F1",
+      "type": "formula",
+      "section": "26.10",
+      "text": "qz = 0.00256KzKztKdV^2(lb/ft^2); V, mi/h",
       "cross_references": [],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.07
+      },
+      "column": "left",
+      "expression": "q_z = 0.00256 K_z K_{zt} K_d V^2",
+      "parameters": [
+        "q_z = velocity pressure in lb/ft^2",
+        "K_z = velocity pressure exposure coefficient",
+        "K_{zt} = topographic factor",
+        "K_d = wind directionality factor",
+        "V = basic wind speed in mi/h"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.10-F2",
+      "type": "formula",
+      "section": "26.10",
+      "text": "qz = 0.613KzKztKdV^2(N/m^2); V, m/s",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.07,
+        "y_end": 0.09
+      },
+      "column": "left",
+      "expression": "q_z = 0.613 K_z K_{zt} K_d V^2",
+      "parameters": [
+        "q_z = velocity pressure in N/m^2",
+        "K_z = velocity pressure exposure coefficient, see Section 26.10.1",
+        "K_{zt} = topographic factor, see Section 26.8.2",
+        "K_d = ground elevation factor, see Section 26.9",
+        "V = basic wind speed, see Section 26.5",
+        "q_z = velocity pressure at height z"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.10-B3",
+      "type": "body",
+      "section": "26.10",
+      "text": "The velocity pressure at mean roof height is computed as qh = qz evaluated from Equation (26.10-1) using Kz at mean roof height h. The basic wind speed, V, used in determination of design wind loads on rooftop structures, rooftop equipment, and other building appurtenances shall consider the Risk Category equal to the greater of the following:",
+      "cross_references": [
+        "26.10.1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.1,
+        "y_end": 0.18
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.10-B4",
+      "type": "body",
+      "section": "26.10",
+      "text": "1. Risk category for the building on which the equipment or appurtenance is located, or\n2. Risk category for any building or other structure to which the equipment or appurtenance provides a necessary service.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.18,
+        "y_end": 0.22
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11-H1",
+      "type": "body",
+      "section": "26.11",
+      "text": "26.11 GUST EFFECTS",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.23,
+        "y_end": 0.25
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.1-H2",
+      "type": "body",
+      "section": "26.11.1",
+      "text": "26.11.1 Gust-Effect Factor The gust-effect factor for a rigid building or other structure is permitted to be taken as 0.85.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.25,
+        "y_end": 0.27
+      },
+      "column": "left",
+      "heading": false,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.2-H3",
+      "type": "body",
+      "section": "26.11.2",
+      "text": "26.11.2 Frequency Determination To determine whether a building or other structure is rigid or fl exible as de fi ned in Section 26.2, the fundamental natural frequency, n 1 , shall be established using the structural properties and deformational characteristics of the resisting elements in a properly substantiated analysis. Low-rise buildings, as de fi ned in Section 26.2, are permitted to be considered rigid.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.27,
+        "y_end": 0.32
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.2-H3-body",
+      "type": "body",
+      "section": "26.11.2",
+      "text": "whether a building or other structure is rigid or flexible as defined in Section 26.2, the fundamental natural frequency, n1, shall be established using the structural properties and deformational characteristics of the resisting elements in a properly substantiated analysis. Low-rise buildings, as defined in Section 26.2, are considered rigid.",
+      "cross_references": [
+        "26.2"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.28,
+        "y_end": 0.32
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.2.1-H4-body",
+      "type": "body",
+      "section": "26.11.2.1",
+      "text": "Frequency As an alternative to performing an analysis to determine n1, the approximate building natural frequency, na, shall be permitted to be calculated in accordance with Section 26.11.3 for structural steel, concrete, or masonry buildings meeting the following requirements:",
+      "cross_references": [
+        "26.11.3"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.33,
+        "y_end": 0.37
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.2.1-B5",
+      "type": "body",
+      "section": "26.11.2.1",
+      "text": "1. The building height is less than or equal to 300 ft (91 m).\n2. The building height is less than four times its effective length, Leff.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.37,
+        "y_end": 0.4
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.2.1-B6",
+      "type": "body",
+      "section": "26.11.2.1",
+      "text": "The effective length, Leff, in the direction under consideration shall be determined from the following equation:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.4,
+        "y_end": 0.42
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11-F3",
+      "type": "formula",
+      "section": "26.11",
+      "text": "Leff = Σ(hiLi)/Σhi",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.43,
+        "y_end": 0.46
+      },
+      "column": "left",
+      "expression": "L_{eff} = \\frac{\\sum_{i=1}^{n} h_i L_i}{\\sum_{i=1}^{n} h_i}",
+      "parameters": [
+        "L_{eff} = effective length in the direction under consideration",
+        "h_i = height above grade of level i",
+        "L_i = building length at level i parallel to the wind direction"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.10-note1",
+      "type": "body",
+      "section": "26.10",
+      "text": "ᵃ Use 0.70 in Chapter 28, Exposure B, when z < 30 ft (9.1 m).\nNotes:\n1. Velocity pressure exposure coefficient Kz may be determined from the following formula:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.435,
+        "y_end": 0.488
       },
       "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "26.11.3-heading",
+      "id": "ASCE7-22-26.11.2.1-B7",
       "type": "body",
-      "section": "26.11.3",
-      "text": "**26.11.3 Approximate Natural Frequency**",
+      "section": "26.11.2.1",
+      "text": "The summations are over the height of the building, where hi is the height above grade of level i , and Li is the building length at level i parallel to the wind direction.",
       "cross_references": [],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.47,
+        "y_end": 0.5
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11-formula1",
+      "type": "formula",
+      "section": "26.11",
+      "text": "For z < 15 ft\nKz = 2.41 (15/zg)^{2/α}\nFor z < 4.6 m\nKz = 2.41 (4.6/zg)^{2/α}\nFor 15 ft (4.6 m) ≤ z ≤ zg\nKz = 2.41 (z/zg)^{2/α}\nFor z > ≤ 3,280 ft (1,000 m)\nKz = 2.41",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.488,
+        "y_end": 0.575
+      },
+      "column": "right",
+      "expression": "K_z = 2.41 \\left(\\frac{z}{z_g}\\right)^{2/\\alpha}",
+      "parameters": [
+        "K_z = velocity pressure exposure coefficient",
+        "z = height above ground level",
+        "z_g = gradient height from Table 26.11-1",
+        "\\alpha = power law exponent from Table 26.11-1"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-H5",
+      "type": "body",
+      "section": "26.11.3",
+      "text": "26.11.3 Approximate Natural Frequency The approximate lower bound natural frequency ( na ), in Hz, of concrete or structural steel buildings meeting the conditions of",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.51,
+        "y_end": 0.56
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-H5-body",
+      "type": "body",
+      "section": "26.11.3",
+      "text": "approximate lower bound natural frequency (na), in Hz, of concrete or structural steel buildings meeting the conditions of Section 26.11.2.1 is permitted to be determined from one of the following equations. For structural steel moment-resisting frame buildings,",
+      "cross_references": [
+        "26.11.2.1"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.52,
+        "y_end": 0.56
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-F4",
+      "type": "formula",
+      "section": "26.11.3",
+      "text": "na = 22.2/h^0.8",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.56,
+        "y_end": 0.58
+      },
+      "column": "left",
+      "expression": "n_a = \\frac{22.2}{h^{0.8}}",
+      "parameters": [
+        "n_a = approximate natural frequency in Hz",
+        "h = height of structure in ft"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11-note1",
+      "type": "body",
+      "section": "26.11",
+      "text": "2. α and zg are tabulated in Table 26.11-1.\n3. Linear interpolation for intermediate values of height z is acceptable.\n4. Exposure categories are defined in Section 26.7.",
+      "cross_references": [
+        "26.11-1",
+        "26.7"
+      ],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.575,
+        "y_end": 0.608
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-F5",
+      "type": "formula",
+      "section": "26.11.3",
+      "text": "na = 8.58/h^0.8",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.58,
+        "y_end": 0.6
+      },
+      "column": "left",
+      "expression": "n_a = \\frac{8.58}{h^{0.8}}",
+      "parameters": [
+        "n_a = approximate natural frequency in Hz",
+        "h = height of structure in m"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-B8",
+      "type": "body",
+      "section": "26.11.3",
+      "text": "For concrete moment-resisting frame buildings,",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.6,
+        "y_end": 0.62
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-F6",
+      "type": "formula",
+      "section": "26.11.3",
+      "text": "na = 43.5/h^0.9",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.62,
+        "y_end": 0.64
+      },
+      "column": "left",
+      "expression": "n_a = \\frac{43.5}{h^{0.9}}",
+      "parameters": [
+        "n_a = approximate natural frequency in Hz",
+        "h = height of structure in ft"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.10-body2",
+      "type": "body",
+      "section": "26.10",
+      "text": "The basic wind speed, V, used in determination of design wind loads on rooftop structures, rooftop equipment, and other building appurtenances shall consider the Risk Category equal to the greater of the following:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.628,
+        "y_end": 0.668
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.3-F7",
+      "type": "formula",
+      "section": "26.11.3",
+      "text": "na = 14.93/h^0.9",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.64,
+        "y_end": 0.66
+      },
+      "column": "left",
+      "expression": "n_a = \\frac{14.93}{h^{0.9}}",
+      "parameters": [
+        "n_a = approximate natural frequency in Hz",
+        "h = height of structure in m"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-26.11-heading1",
+      "type": "body",
+      "section": "26.11",
+      "text": "**26.11 GUST EFFECTS**",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.708,
+        "y_end": 0.728
       },
       "column": "right",
       "heading": true,
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "26.10.1-table-notes",
+      "id": "ASCE7-22-26.11.1-heading1",
       "type": "body",
-      "section": "26.10.1",
-      "text": "ᵃ Use 0.70 in Chapter 28, Exposure B, when z < 30 ft (9.1 m).\nNotes:\n1. Velocity pressure exposure coefficient Kz may be determined from the following formula:\n\nFor z < 15 ft     Kz = 2.01(15/zg)²/ᵅ\nFor z < 4.6 m     Kz = 2.01(4.6/zg)²/ᵅ\nFor 15 ft (4.6 m) ≤ z ≤ zg     Kz = 2.01(z/zg)²/ᵅ\nFor z > zg ≤ 3,280 ft (1,000 m)     Kz = 2.01\n\n2. α and zg are tabulated in Table 26.11-1.\n3. Linear interpolation for intermediate values of height z is acceptable.\n4. Exposure categories are defined in Section 26.7.",
-      "cross_references": [
-        "26.7",
-        "26.11-1"
-      ],
+      "section": "26.11.1",
+      "text": "26.11.1 Gust-Effect Factor The gust-effect factor for a rigid building or other structure is permitted to be taken as 0.85.",
+      "cross_references": [],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.728,
+        "y_end": 0.748
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.1-heading1-body",
+      "type": "body",
+      "section": "26.11.1",
+      "text": "The gust-effect factor for a rigid building or other structure is permitted to be taken as 0.85.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.738,
+        "y_end": 0.748
       },
       "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "26.11.3-frequency-determination",
+      "id": "ASCE7-22-26.11.2-heading1",
       "type": "body",
-      "section": "26.11.3",
-      "text": "The approximate lower bound natural frequency (na), in Hz, of concrete or structural steel buildings meeting the conditions of Section 26.11.2.1 is permitted to be determined from one of the following equations.\nFor structural steel moment-resisting frame buildings,",
+      "section": "26.11.2",
+      "text": "26.11.2 Frequency Determination To determine whether a building or other structure is rigid or fl exible as de fi ned in Section 26.2, the fundamental natural frequency, n 1 , shall be established using the structural properties and deformational characteristics of the resisting elements in a properly substantiated analysis. Low-rise buildings, as de fi ned in Section 26.2, are permitted to be considered rigid.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.748,
+        "y_end": 0.798
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.2-heading1-body",
+      "type": "body",
+      "section": "26.11.2",
+      "text": "To determine whether a building or other structure is rigid or flexible as defined in Section 26.2, the fundamental natural frequency, n1, shall be established using the structural properties and deformational characteristics of the resisting elements in a properly substantiated analysis. Low-rise buildings, as defined in Section 26.2, are considered rigid.",
+      "cross_references": [
+        "26.2"
+      ],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.758,
+        "y_end": 0.798
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.2.1-heading1",
+      "type": "body",
+      "section": "26.11.2.1",
+      "text": "26.11.2.1 Limitations for Approximate Natural Frequency As an alternative to performing an analysis to determine n 1 , the approximate building natural frequency, na , shall be permitted to be calculated in accordance with Section 26.11.3 for structural steel, concrete, or masonry buildings meeting the following requirements:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.798,
+        "y_end": 0.848
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11.2.1-heading1-body",
+      "type": "body",
+      "section": "26.11.2.1",
+      "text": "As an alternative to performing an analysis to determine n1, the approximate building natural frequency, na, shall be permitted to be calculated in accordance with Section 26.11.3 for structural steel, concrete, or masonry buildings meeting the following requirements:",
+      "cross_references": [
+        "26.11.3"
+      ],
+      "bbox": {
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.808,
+        "y_end": 0.848
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.11-formula2",
+      "type": "formula",
+      "section": "26.11",
+      "text": "Section 26.11.2.1 is permitted to be determined from one of the following equations.\nFor structural steel moment-resisting frame buildings,",
       "cross_references": [
         "26.11.2.1"
       ],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.898,
+        "y_end": 0.925
       },
       "column": "right",
+      "expression": "L_{eff} = \\frac{\\sum_{i=1}^{n} h_i L_i}{\\sum_{i=1}^{n} h_i}",
+      "parameters": [
+        "L_{eff} = effective length in direction under consideration",
+        "h_i = height above grade of level i",
+        "L_i = building length at level i parallel to wind direction",
+        "n = number of levels"
+      ],
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11-formula-2",
-      "type": "formula",
-      "section": "26.11",
-      "text": "na = 22.2/h⁰·⁸     (26.11-2)",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
       },
-      "column": "right",
-      "expression": "na = 22.2/h^0.8",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
+      "_source": "right"
     },
     {
-      "id": "26.11-formula-3",
-      "type": "formula",
-      "section": "26.11",
-      "text": "na = 8.58/h⁰·⁸     (26.11-2.SI)",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
-      },
-      "column": "right",
-      "expression": "na = 8.58/h^0.8",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11.3-concrete-buildings",
+      "id": "ASCE7-22-26.11.3-heading1",
       "type": "body",
       "section": "26.11.3",
-      "text": "For concrete moment-resisting frame buildings,",
+      "text": "26.11.3 Approximate Natural Frequency The approximate lower bound natural frequency ( na ), in Hz, of concrete or structural steel buildings meeting the conditions of",
       "cross_references": [],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.948,
+        "y_end": 0.968
       },
       "column": "right",
+      "heading": true,
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
+      },
+      "_source": "right"
     },
     {
-      "id": "26.11-formula-4",
-      "type": "formula",
-      "section": "26.11",
-      "text": "na = 43.5/h⁰·⁹     (26.11-3)",
+      "id": "ASCE7-22-26.11.3-heading1-body",
+      "type": "body",
+      "section": "26.11.3",
+      "text": "26.11.3 Approximate Natural Frequency The approximate lowest-bound natural frequency (na), in Hz, of concrete or structural steel buildings meeting the conditions of",
       "cross_references": [],
       "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
+        "x_start": 0.532,
+        "x_end": 0.938,
+        "y_start": 0.958,
+        "y_end": 0.968
       },
       "column": "right",
-      "expression": "na = 43.5/h^0.9",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
-      }
-    },
-    {
-      "id": "26.11-formula-5",
-      "type": "formula",
-      "section": "26.11",
-      "text": "na = 14.93/h⁰·⁹     (26.11-3.SI)",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0,
-        "x_end": 1,
-        "y_start": 0,
-        "y_end": 1
       },
-      "column": "right",
-      "expression": "na = 14.93/h^0.9",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      }
+      "_source": "right"
     }
   ]
 }

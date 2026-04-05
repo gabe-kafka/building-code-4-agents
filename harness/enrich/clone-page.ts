@@ -5,6 +5,49 @@ import { sendMessage } from '../lib/api.ts'
 import type { Page, PageElement, BBox, ColumnPlacement, ElementType } from '../../src/types.ts'
 
 /**
+ * Attempt to repair truncated JSON from model output.
+ * Closes unclosed strings, arrays, and objects.
+ */
+function repairJson(raw: string): string {
+  try {
+    JSON.parse(raw)
+    return raw
+  } catch { /* needs repair */ }
+
+  let s = raw
+
+  // Close unclosed string
+  let inString = false
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '"' && s[i - 1] !== '\\') inString = !inString
+  }
+  if (inString) s += '"'
+
+  // Stack-based: track nesting order so closers come out right
+  const stack: string[] = []
+  inString = false
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i]
+    if (c === '"' && s[i - 1] !== '\\') { inString = !inString; continue }
+    if (inString) continue
+    if (c === '{' || c === '[') stack.push(c)
+    if (c === '}' && stack[stack.length - 1] === '{') stack.pop()
+    if (c === ']' && stack[stack.length - 1] === '[') stack.pop()
+  }
+
+  // Strip trailing comma
+  s = s.replace(/,\s*$/, '')
+
+  // Close in reverse nesting order
+  while (stack.length > 0) {
+    const open = stack.pop()
+    s += open === '{' ? '}' : ']'
+  }
+
+  return s
+}
+
+/**
  * Clone a single PDF page into a fully structured V2 Page JSON.
  * One vision call that produces everything: elements, figures described per protocol,
  * tables with full data, correct columns and bboxes.
@@ -49,17 +92,17 @@ RULES:
 - Numbers are sacred. Extract them exactly as printed.
 
 ELEMENT TYPES:
-- "provision": Mandatory requirements containing "shall"
 - "definition": Terms in ALL-CAPS followed by definition text
 - "formula": Equations with expression and parameter definitions
 - "table": Structured data with columns and rows — extract ALL rows and columns completely
+- "procedure": Step-by-step procedures (e.g., "Steps to Determine MWFRS Wind Loads") — use columns ["Step", "Description"] and rows for each step
 - "figure": Diagrams, flowcharts, maps, charts — describe per protocol below
-- "exception": Provisions starting with "Exception:" or "EXCEPTION:"
+- "exception": Text starting with "Exception:" or "EXCEPTION:"
 - "user_note": Text starting with "User Note:"
-- "body": All other text (headings, commentary, general text)
+- "body": All other text (headings, commentary, provisions, general text)
 
 FIGURE / DIAGRAM PROTOCOL:
-Figures are ATOMIC. A figure is ONE element — the image, the caption, and a structured description. NEVER extract text that is INSIDE a diagram as separate body/provision/definition elements. If text is visually part of a figure (inside a box, inside a flowchart node, on a map, in a chart), it belongs in the figure's description, NOT as a standalone element.
+Figures are ATOMIC. A figure is ONE element — the image, the caption, and a structured description. NEVER extract text that is INSIDE a diagram as separate body/definition elements. If text is visually part of a figure (inside a box, inside a flowchart node, on a map, in a chart), it belongs in the figure's description, NOT as a standalone element.
 
 How to identify figure boundaries: A figure includes everything from the top of the diagram to the caption line below it (e.g., "Figure 26.1-1. Outline of process..."). Any "Note:" line directly below the caption is a separate user_note element, not part of the figure.
 
@@ -93,7 +136,7 @@ BOLD TEXT AND HEADINGS:
   - "**BASIC WIND SPEED, V:** Three-second gust speed at 33 ft (10 m)..."
   - "**Exception:** The wind tunnel procedure specified in Chapter 31..."
   - "**User Note:** A building or other structure designed for wind loads..."
-- EVERY bold word or phrase in the PDF that is not a section heading must be wrapped in ** markers. This includes defined terms, "Exception:", "User Note:", bold labels in provisions, and any other bold text.
+- EVERY bold word or phrase in the PDF that is not a section heading must be wrapped in ** markers. This includes defined terms, "Exception:", "User Note:", bold labels in body text, and any other bold text.
 
 TABLE EXTRACTION:
 - Extract the COMPLETE table: every column header, every row, every cell value
@@ -110,7 +153,7 @@ Return ONLY valid JSON with this structure:
   "elements": [
     {
       "id": "ASCE7-22-SECTION-TYPE_PREFIX-N",
-      "type": "provision|definition|formula|table|figure|exception|user_note|body",
+      "type": "definition|formula|table|procedure|figure|exception|user_note|body",
       "section": "26.X.Y",
       "text": "Full text content...",
       "cross_references": ["ASCE7-22-27", ...],
@@ -136,7 +179,7 @@ Return ONLY valid JSON with this structure:
 }
 
 ID FORMAT: ASCE7-22-{section}-{type_prefix}{N}
-Type prefixes: P=provision, D=definition, E=equation, T=table, F=figure, X=exception, N=user_note, TB=body, H=heading
+Type prefixes: D=definition, E=equation, T=table, PR=procedure, F=figure, X=exception, N=user_note, B=body, H=heading
 ${hintsBlock}`,
           },
         ],
@@ -149,7 +192,7 @@ ${hintsBlock}`,
     throw new Error(`Failed to parse clone response for page ${pageNum}: ${text.slice(0, 200)}`)
   }
 
-  const raw = JSON.parse(jsonMatch[0])
+  const raw = JSON.parse(repairJson(jsonMatch[0]))
 
   // Normalize the response into proper V2 Page format
   return normalizePage(raw, pageNum, chapter, standard)
@@ -316,7 +359,7 @@ export function fixFormulas(elements: PageElement[]): void {
   // Merge "where" blocks into preceding formula
   for (let i = elements.length - 1; i >= 0; i--) {
     const el = elements[i]
-    if (el.type !== 'body' && el.type !== 'provision') continue
+    if (el.type !== 'body') continue
     const text = el.text.toLowerCase().trim()
     if (!text.startsWith('where ') && !text.startsWith('where:')) continue
 
@@ -355,6 +398,57 @@ export function fixFormulas(elements: PageElement[]): void {
 }
 
 /**
+ * Merge colon-header groups: a short label element ("Notes:", "Conditions:")
+ * followed by numbered items gets merged into a single element.
+ */
+export function fixColonHeaders(elements: PageElement[]): void {
+  for (let i = elements.length - 1; i >= 0; i--) {
+    const el = elements[i]
+    const text = el.text.trim()
+
+    if (text.length > 40 || !text.match(/^(Notes?|Conditions?|Requirements?):?\s*$/i)) continue
+
+    // Collect following numbered items — allow column mismatch (full↔left/right)
+    const toMerge: number[] = []
+    for (let j = i + 1; j < elements.length; j++) {
+      const next = elements[j]
+      if (next.heading || next.type === 'figure' || next.type === 'table' || next.type === 'formula') break
+      if (next.section !== el.section) break
+      const nextText = next.text.trim()
+      if (/^\d+[.)]/.test(nextText)) {
+        toMerge.push(j)
+      } else if (toMerge.length > 0 && !nextText.match(/^(Notes?|Conditions?|Requirements?):?\s*$/i)) {
+        toMerge.push(j)
+      } else {
+        break
+      }
+    }
+
+    if (toMerge.length === 0) continue
+
+    const mergedRefs = new Set(el.cross_references)
+    let mergedText = text
+    let yEnd = el.bbox.y_end
+
+    for (const idx of toMerge) {
+      const item = elements[idx]
+      mergedText += '\n' + item.text
+      for (const ref of item.cross_references) mergedRefs.add(ref)
+      if (item.bbox.y_end > yEnd) yEnd = item.bbox.y_end
+    }
+
+    el.text = mergedText
+    el.type = 'body'  // notes are always body, even if items contain "shall"
+    el.cross_references = [...mergedRefs]
+    el.bbox.y_end = yEnd
+
+    for (let k = toMerge.length - 1; k >= 0; k--) {
+      elements.splice(toMerge[k], 1)
+    }
+  }
+}
+
+/**
  * Fix bold markers and heading flags. Returns extra elements to insert
  * (when a heading+body element needs to be split into two).
  */
@@ -364,7 +458,7 @@ export function fixBoldMarkers(el: PageElement): PageElement[] {
   if (!el.text.includes('**') && !el.heading) return extraElements
 
   // CASE 1: heading:true with body text after the bold heading
-  // Split into: heading element + body/provision element
+  // Split into: heading element + body element
   if (el.heading && el.text.includes('**')) {
     const match = el.text.match(/^\*\*([^*]+)\*\*\s*(.+)/s)
     if (match && match[2].length > 20) {
@@ -374,7 +468,7 @@ export function fixBoldMarkers(el: PageElement): PageElement[] {
 
       const bodyEl: PageElement = {
         id: el.id + '-body',
-        type: el.type === 'provision' || match[2].toLowerCase().includes('shall') ? 'provision' : 'body',
+        type: 'body',
         section: el.section,
         text: match[2],
         cross_references: el.cross_references,
@@ -397,7 +491,7 @@ export function fixBoldMarkers(el: PageElement): PageElement[] {
       el.text = secMatch[1]
       const bodyEl: PageElement = {
         id: el.id + '-body',
-        type: secMatch[2].toLowerCase().includes('shall') ? 'provision' : 'body',
+        type: 'body',
         section: el.section,
         text: secMatch[2],
         cross_references: el.cross_references,
@@ -437,10 +531,11 @@ export function fixBoldMarkers(el: PageElement): PageElement[] {
 
 function normalizeType(t: string): ElementType {
   const map: Record<string, ElementType> = {
-    provision: 'provision',
+    provision: 'body',
     definition: 'definition',
     formula: 'formula',
     table: 'table',
+    procedure: 'procedure',
     figure: 'figure',
     exception: 'exception',
     user_note: 'user_note',
@@ -481,12 +576,17 @@ export async function cloneColumn(
   chapter: number,
   standard: string,
   column: 'left' | 'right',
-  v1TextHints?: string[]
+  v1TextHints?: string[],
+  corrections?: string[]
 ): Promise<PageElement[]> {
   const imageData = readFileSync(pagePngPath).toString('base64')
 
   const hintsBlock = v1TextHints && v1TextHints.length > 0
     ? `\n\nV1 TEXT HINTS (exact characters — use for accuracy):\n${v1TextHints.map((t, i) => `[${i}] ${t}`).join('\n')}`
+    : ''
+
+  const correctionsBlock = corrections && corrections.length > 0
+    ? `\n\nCORRECTIONS FROM PREVIOUS ATTEMPT — you MUST fix these issues:\n${corrections.map((c, i) => `${i + 1}. ${c}`).join('\n')}\n\nThese are the specific problems found in the last extraction. Pay extra attention to extracting COMPLETE text — every word, every character, no mid-word truncation.`
     : ''
 
   const colDesc = column === 'left'
@@ -522,10 +622,8 @@ RULES:
 - Numbers are sacred. Extract exactly as printed.
 
 TYPE CLASSIFICATION — be precise:
-- "provision": Text containing "shall", "shall be", "shall be permitted", "must", "is required" — these are MANDATORY requirements
 - "definition": ALL-CAPS term followed by colon and definition text (e.g., "BASIC WIND SPEED, V: Three-second...")
-- "body": Descriptive text, commentary, lists, notes that are NOT mandatory requirements
-- Do NOT classify provisions as body. If it says "shall", it's a provision.
+- "body": All other text — requirements, commentary, lists, notes, provisions containing "shall"
 
 BOLD TEXT:
 - Section headings (26.X.Y Title) → set "heading": true
@@ -533,10 +631,10 @@ BOLD TEXT:
 - EVERY bold word/phrase must be marked with ** or heading:true
 
 ELEMENT TYPES:
-- "provision": Requirements containing "shall", "shall be", "shall be permitted", "must", "is required"
 - "definition": ALL-CAPS terms followed by definition text
 - "formula": Equations with expression and parameters — see FORMULA RULES below
 - "table": ANY structured data with columns and rows — see TABLE RULES below
+- "procedure": Step-by-step procedures (e.g., "Steps to Determine...") — use columns ["Step", "Description"] and rows
 - "figure": Diagrams/charts/maps — see FIGURE RULES below
 - "exception": Starting with "Exception:"
 - "user_note": Starting with "User Note:"
@@ -611,7 +709,7 @@ Return ONLY valid JSON:
     }
   ]
 }
-${hintsBlock}`,
+${hintsBlock}${correctionsBlock}`,
           },
         ],
       },
@@ -623,7 +721,7 @@ ${hintsBlock}`,
     throw new Error(`Failed to parse ${column} column response for page ${pageNum}`)
   }
 
-  const raw = JSON.parse(jsonMatch[0])
+  const raw = JSON.parse(repairJson(jsonMatch[0]))
   const rawElements = (raw.elements ?? []) as Array<Record<string, unknown>>
 
   // Normalize each element, forcing the correct column
@@ -866,7 +964,8 @@ If no structured content or tables, use: "content": null, "embedded_tables": []`
 export async function clonePageFull(
   chapter: number,
   pageNum: number,
-  v1TextHints?: string[]
+  v1TextHints?: string[],
+  corrections?: string[]
 ): Promise<Page> {
   const offset = chapterOffsets[chapter] ?? 260
   const pngIndex = pageNum - offset
@@ -880,20 +979,13 @@ export async function clonePageFull(
 
   console.log(`  Cloning page ${pageNum} from ${pngFile}...`)
 
-  // Clone each column separately
-  console.log(`    Left column...`)
-  const leftElements = await cloneColumn(pngPath, pageNum, chapter, 'ASCE 7-22', 'left', v1TextHints)
-  console.log(`    ${leftElements.length} elements`)
-
-  console.log(`    Right column...`)
-  const rightElements = await cloneColumn(pngPath, pageNum, chapter, 'ASCE 7-22', 'right', v1TextHints)
-  console.log(`    ${rightElements.length} elements`)
-
-  // Merge columns with aggressive deduplication
-  const fullFromLeft = leftElements.filter(e => e.column === 'full')
-  const fullFromRight = rightElements.filter(e => e.column === 'full')
-  const leftOnly = leftElements.filter(e => e.column === 'left')
-  const rightOnly = rightElements.filter(e => e.column === 'right')
+  // Clone both columns in parallel
+  console.log(`    Cloning left + right columns in parallel...`)
+  const [leftElements, rightElements] = await Promise.all([
+    cloneColumn(pngPath, pageNum, chapter, 'ASCE 7-22', 'left', v1TextHints, corrections),
+    cloneColumn(pngPath, pageNum, chapter, 'ASCE 7-22', 'right', v1TextHints, corrections),
+  ])
+  console.log(`    ${leftElements.length}L + ${rightElements.length}R`)
 
   // Global dedup: collect ALL elements, deduplicate by text prefix.
   // When duplicates exist, prefer: full > left/right, and longer text > shorter.
@@ -938,7 +1030,8 @@ export async function clonePageFull(
   const allElements = [...dedupedLeft, ...dedupedRight, ...dedupedFull]
   allElements.sort((a, b) => a.bbox.y_start - b.bbox.y_start)
 
-  // Merge "where" blocks into preceding formulas
+  // Post-process: merge structural groups
+  fixColonHeaders(allElements)
   fixFormulas(allElements)
 
   const sections = [...new Set(allElements.map(e => e.section))].filter(Boolean).sort()
@@ -1042,16 +1135,19 @@ export async function clonePageFull(
     }
   }
 
-  // Fix truncated elements — detect and complete them with a targeted vision call
+  // Fix truncated elements — first try V1 text hints (free), then vision fallback
+  // Use full V1 text (not truncated hints) for completion
+  const v1Full = getV1TextFull(chapter, pageNum)
+  completeFromV1Hints(allElements, v1Full)
+
   const truncated = allElements.filter(e => {
     const t = e.text.trim()
     if (t.length < 30) return false
-    // Doesn't end with sentence-ending punctuation
     return !t.match(/[.,:;!?)}\]"']$/) && !t.match(/\d$/)
   })
 
   if (truncated.length > 0) {
-    console.log(`    Completing ${truncated.length} truncated elements...`)
+    console.log(`    Completing ${truncated.length} truncated elements via vision...`)
     try {
       const completions = await completeTruncatedElements(pngPath, truncated)
       for (const comp of completions) {
@@ -1089,9 +1185,51 @@ export async function clonePageFull(
 }
 
 /**
+ * Complete truncated elements using V1 text hints.
+ * Matches by text prefix — if a V1 hint starts with the same text as a
+ * truncated element but is longer, replace with the V1 version.
+ */
+function completeFromV1Hints(elements: PageElement[], hints: string[]): void {
+  if (hints.length === 0) return
+  let fixed = 0
+
+  for (const el of elements) {
+    const text = el.text.trim()
+    if (text.length < 15) continue
+
+    const lines = text.split('\n')
+    let changed = false
+    for (let li = 0; li < lines.length; li++) {
+      const line = lines[li].trim()
+      if (line.length < 15) continue
+
+      const prefix = line.slice(0, Math.min(25, line.length))
+      for (const hint of hints) {
+        if (hint.startsWith(prefix) && hint.length > line.length) {
+          lines[li] = hint
+          changed = true
+          break
+        }
+      }
+    }
+    if (changed) {
+      el.text = lines.join('\n')
+      fixed++
+    }
+  }
+
+  if (fixed > 0) console.log(`    V1 completed ${fixed} elements`)
+}
+
+/**
  * Get V1 text hints for a page (exact text from Docling extraction).
  */
 export function getV1TextHints(chapter: number, pageNum: number): string[] {
+  return getV1TextFull(chapter, pageNum).map(t => t.slice(0, 200))
+}
+
+/** Full V1 text for a page — used for completing truncated extractions. */
+export function getV1TextFull(chapter: number, pageNum: number): string[] {
   const offset = chapterOffsets[chapter] ?? 260
   const v1Page = pageNum - offset
   const v1Path = resolve(paths.v1Root, 'output', 'runs', `asce722-ch${chapter}-hybrid.json`)
@@ -1106,9 +1244,6 @@ export function getV1TextHints(chapter: number, pageNum: number): string[] {
 
   return elements
     .filter((e) => e.source.page === v1Page)
-    .map((e) => {
-      const text = String(e.data?.rule ?? e.data?.definition ?? e.data?.term ?? e.title ?? '')
-      return text.slice(0, 200)
-    })
+    .map((e) => String(e.data?.rule ?? e.data?.definition ?? e.data?.term ?? e.title ?? ''))
     .filter((t) => t.length > 10)
 }

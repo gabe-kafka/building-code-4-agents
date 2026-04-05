@@ -3,23 +3,23 @@
   "chapter": 26,
   "page": 266,
   "section_range": [
-    "26.14",
+    "26.5",
     "26.5"
   ],
   "elements": [
     {
-      "id": "ASCE7-22-26.5-fig1a",
+      "id": "ASCE7-22-26-figure1",
       "type": "figure",
       "section": "26.5",
-      "text": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.\n\nThis figure shows a map of the continental United States with wind speed contours indicating basic wind speeds for Risk Category I buildings and other structures. The map displays contour lines with values ranging from 85 mph to 150 mph, with corresponding metric values in parentheses, used for structural design purposes.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States including parts of Alaska\",\"parameter\":\"Basic wind speeds in mph (m/s) at 33 ft (10 m) above ground for Exposure Category C\",\"contour_values\":[{\"value\":\"85\",\"metric\":\"38\",\"unit\":\"mph (m/s)\"},{\"value\":\"90\",\"metric\":\"40\",\"unit\":\"mph (m/s)\"},{\"value\":\"95\",\"metric\":\"42\",\"unit\":\"mph (m/s)\"},{\"value\":\"100\",\"metric\":\"45\",\"unit\":\"mph (m/s)\"},{\"value\":\"105\",\"metric\":\"47\",\"unit\":\"mph (m/s)\"},{\"value\":\"110\",\"metric\":\"49\",\"unit\":\"mph (m/s)\"},{\"value\":\"120\",\"metric\":\"54\",\"unit\":\"mph (m/s)\"},{\"value\":\"130\",\"metric\":\"58\",\"unit\":\"mph (m/s)\"},{\"value\":\"140\",\"metric\":\"63\",\"unit\":\"mph (m/s)\"},{\"value\":\"150\",\"metric\":\"67\",\"unit\":\"mph (m/s)\"}],\"special_features\":[\"Hatched areas indicating special wind regions\",\"Higher wind speeds along coastal areas, particularly Gulf Coast and Atlantic Coast\",\"Lower wind speeds in interior regions\",\"Special high-wind zones in Alaska\"]}]",
+      "text": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.\n\nThis figure shows basic wind speeds for Risk Category I buildings and other structures across the United States. It displays contour lines indicating 3-second gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C, with values ranging from 85 mph in some western areas to 150+ mph in hurricane-prone coastal regions.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States, Alaska, Hawaii, and Pacific territories\",\"parameter\":\"3-second gust wind speeds at 33 ft (10 m) above ground for Exposure Category C\",\"contour_values\":[\"85(38)\",\"90(40)\",\"95(42)\",\"100(45)\",\"105(47)\",\"110(49)\",\"120(54)\",\"130(58)\",\"140(63)\",\"150(67)\"],\"special_regions\":\"Hatched areas indicate special wind regions requiring location-specific determination using ASCE Wind Design Geodatabase\"}]",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.05,
-        "y_end": 0.95
+        "y_start": 0.02,
+        "y_end": 0.97
       },
-      "column": "right",
+      "column": "full",
       "caption": "Figure 26.5-1A. Basic wind speeds for Risk Category I buildings and other structures.",
       "metadata": {
         "extracted_by": "vision-clone",
@@ -35,17 +35,17 @@
       "text": "1. Values are 3 s gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C.",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.52,
+        "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.76,
-        "y_end": 0.78
+        "y_start": 0.82,
+        "y_end": 0.84
       },
-      "column": "right",
+      "column": "full",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
-      "_source": "right"
+      "_source": "left"
     },
     {
       "id": "ASCE7-22-26.5-note2",
@@ -54,17 +54,17 @@
       "text": "2. Linear interpolation is permitted between contours. Point values are provided to aid with interpolation.",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.52,
+        "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.78,
-        "y_end": 0.8
+        "y_start": 0.84,
+        "y_end": 0.86
       },
-      "column": "right",
+      "column": "full",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
-      "_source": "right"
+      "_source": "left"
     },
     {
       "id": "ASCE7-22-26.5-note3",
@@ -73,60 +73,20 @@
       "text": "3. Islands, coastal areas, and land boundaries outside the last contour shall use the last wind speed contour.",
       "cross_references": [],
       "bbox": {
-        "x_start": 0.52,
+        "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.8,
-        "y_end": 0.82
+        "y_start": 0.86,
+        "y_end": 0.88
       },
-      "column": "right",
+      "column": "full",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"
       },
-      "_source": "right"
+      "_source": "left"
     },
     {
-      "id": "ASCE7-22-26.5-note4",
-      "type": "provision",
-      "section": "26.5",
-      "text": "4. Location-specific basic wind speeds shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.82,
-        "y_end": 0.84
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26.14-ref1",
-      "type": "body",
-      "section": "26.14",
-      "text": "Figure in Section 26.14",
-      "cross_references": [
-        "26.14"
-      ],
-      "bbox": {
-        "x_start": 0.52,
-        "x_end": 0.94,
-        "y_start": 0.85,
-        "y_end": 0.87
-      },
-      "column": "right",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26-body01",
+      "id": "ASCE7-22-26-notes1",
       "type": "body",
       "section": "26.5",
       "text": "Notes:\n\n1. Values are 3 s gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C.\n\n2. Linear interpolation is permitted between contours. Point values are provided to aid with interpolation.\n\n3. Islands, coastal areas, and land boundaries outside the last contour shall use the last wind speed contour.\n\n4. Location-specific basic wind speeds shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
@@ -136,6 +96,25 @@
         "x_end": 0.94,
         "y_start": 0.86,
         "y_end": 0.95
+      },
+      "column": "full",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-26.5-note4",
+      "type": "body",
+      "section": "26.5",
+      "text": "4. Location-specific basic wind speeds shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.94,
+        "y_start": 0.88,
+        "y_end": 0.9
       },
       "column": "full",
       "metadata": {

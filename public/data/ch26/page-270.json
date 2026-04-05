@@ -3,20 +3,20 @@
   "chapter": 26,
   "page": 270,
   "section_range": [
-    "26",
+    "26.5",
     "26.5"
   ],
   "elements": [
     {
-      "id": "ASCE7-22-26.5-fig1",
+      "id": "ASCE7-22-26.5-fig1C",
       "type": "figure",
       "section": "26.5",
-      "text": "Figure 26.5-1C. Basic wind speeds for Risk Category III buildings and other structures.\n\nThis figure shows a wind speed map of the western United States displaying basic wind speeds for Risk Category III buildings and other structures. The map uses contour lines and numerical values to indicate 3-second gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Western United States including California, Nevada, Utah, Colorado, Arizona, New Mexico, Wyoming, Montana, Idaho, Washington, Oregon, and parts of surrounding states\",\"parameter\":\"Basic wind speeds - 3-second gust wind speeds at 33 ft (10 m) above ground for Exposure Category C\",\"contour_values\":[\"95(42)\",\"100(45)\",\"105(47)\",\"110(49)\",\"111(50)\",\"115(51)\",\"120(54)\",\"130(58)\",\"140(63)\",\"150(67)\",\"160(72)\",\"170(76)\"],\"special_features\":[\"Hatched/crosshatched areas indicating special wind regions\",\"Point values provided for interpolation aid\",\"Linear interpolation permitted between contours\"]}]",
+      "text": "Figure 26.5-1C. Basic wind speeds for Risk Category III buildings and other structures.\n\nThis figure shows a wind speed map of the United States displaying basic wind speeds for Risk Category III buildings and other structures. The map uses contour lines and shaded regions to indicate different wind speed zones, with values given in both mph and m/s (in parentheses) for 3-second gust wind speeds at 33 ft above ground for Exposure Category C.\n\n[Structured: {\"type\":\"map\",\"geography\":\"Continental United States including Alaska and Hawaii\",\"parameter\":\"Basic wind speeds for Risk Category III buildings (3-second gust wind speeds at 33 ft above ground for Exposure Category C)\",\"contour_values\":[{\"value\":\"95\",\"unit\":\"mph\",\"metric\":\"42 m/s\"},{\"value\":\"100\",\"unit\":\"mph\",\"metric\":\"45 m/s\"},{\"value\":\"105\",\"unit\":\"mph\",\"metric\":\"47 m/s\"},{\"value\":\"110\",\"unit\":\"mph\",\"metric\":\"49 m/s\"},{\"value\":\"111\",\"unit\":\"mph\",\"metric\":\"50 m/s\"},{\"value\":\"115\",\"unit\":\"mph\",\"metric\":\"51 m/s\"},{\"value\":\"120\",\"unit\":\"mph\",\"metric\":\"54 m/s\"},{\"value\":\"130\",\"unit\":\"mph\",\"metric\":\"58 m/s\"},{\"value\":\"140\",\"unit\":\"mph\",\"metric\":\"63 m/s\"},{\"value\":\"150\",\"unit\":\"mph\",\"metric\":\"67 m/s\"},{\"value\":\"160\",\"unit\":\"mph\",\"metric\":\"72 m/s\"},{\"value\":\"170\",\"unit\":\"mph\",\"metric\":\"76 m/s\"}],\"special_regions\":\"Crosshatched areas indicate special wind regions where location-specific wind speeds should be determined using the ASCE Wind Design Geodatabase\"}]",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
         "x_end": 0.94,
-        "y_start": 0.02,
+        "y_start": 0.05,
         "y_end": 0.97
       },
       "column": "full",
@@ -29,96 +29,18 @@
       "image_url": "/figures/ch26/page-270-fig-0.png"
     },
     {
-      "id": "ASCE7-22-26-note1",
+      "id": "ASCE7-22-26.5-body01",
       "type": "body",
       "section": "26.5",
-      "text": "1. Values are 3 s gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C.",
+      "text": "Notes:\n1. Values are 3 s gust wind speeds in mi/h (m/s) at 33 ft (10 m) above ground for Exposure Category C.\n2. Linear interpolation is permitted between contours. Point values are provided to aid with interpolation.\n3. Islands, coastal areas, and land boundaries outside the last contour shall use the last wind speed contour.\n4. Location-specific basic wind speeds shall be permitted to be determined using the ASCE Wind Design Geodatabase.\n270\nSTANDARD ASCE/SEI 7-22",
       "cross_references": [],
       "bbox": {
         "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.83,
-        "y_end": 0.85
+        "x_end": 0.12,
+        "y_start": 0.84,
+        "y_end": 0.98
       },
-      "column": "full",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26-note2",
-      "type": "body",
-      "section": "26.5",
-      "text": "2. Linear interpolation is permitted between contours. Point values are provided to aid with interpolation.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.85,
-        "y_end": 0.87
-      },
-      "column": "full",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26-note3",
-      "type": "provision",
-      "section": "26.5",
-      "text": "3. Islands, coastal areas, and land boundaries outside the last contour shall use the last wind speed contour.",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.87,
-        "y_end": 0.89
-      },
-      "column": "full",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26-note4",
-      "type": "provision",
-      "section": "26.5",
-      "text": "4. Location-specific basic wind speeds shall be permitted to be determined using the ASCE Wind Design Geodatabase.",
-      "cross_references": [
-        "ASCE Wind Design Geodatabase"
-      ],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.89,
-        "y_end": 0.91
-      },
-      "column": "full",
-      "metadata": {
-        "extracted_by": "vision-clone",
-        "qc_status": "pending"
-      },
-      "_source": "right"
-    },
-    {
-      "id": "ASCE7-22-26-page-footer",
-      "type": "body",
-      "section": "26",
-      "text": "270                                                                                                                    STANDARD ASCE/SEI 7-22",
-      "cross_references": [],
-      "bbox": {
-        "x_start": 0.06,
-        "x_end": 0.94,
-        "y_start": 0.94,
-        "y_end": 0.96
-      },
-      "column": "full",
+      "column": "right",
       "metadata": {
         "extracted_by": "vision-clone",
         "qc_status": "pending"

@@ -14,9 +14,9 @@ interface IndexEntry {
 // Type priority for ranking (lower = higher rank)
 const TYPE_RANK: Record<ElementType, number> = {
   definition: 0,
-  provision: 1,
-  formula: 2,
-  table: 3,
+  formula: 1,
+  table: 2,
+  procedure: 3,
   exception: 4,
   figure: 5,
   user_note: 6,

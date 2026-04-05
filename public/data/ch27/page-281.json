@@ -1,0 +1,489 @@
+{
+  "standard": "ASCE 7-22",
+  "chapter": 27,
+  "page": 281,
+  "section_range": [
+    "27",
+    "27.3.1"
+  ],
+  "elements": [
+    {
+      "id": "ASCE7-22-27.2-G1",
+      "type": "body",
+      "section": "27.2",
+      "text": "27.2 GENERAL REQUIREMENTS",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.04,
+        "y_end": 0.06
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27-heading1",
+      "type": "body",
+      "section": "27",
+      "text": "CHAPTER 27\nWIND LOADS ON BUILDINGS: MAIN WIND FORCE RESISTING SYSTEM\n(DIRECTIONAL PROCEDURE)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.05,
+        "y_end": 0.12
+      },
+      "column": "left",
+      "heading": false,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.2-UN1",
+      "type": "user_note",
+      "section": "27.2",
+      "text": "User Note: Use Chapter 27 to determine wind pressures on the MWFRS of buildings with any general plan shape, building height, or roof geometry that matches the figures provided. These provisions use the traditional \"all heights\" method (Directional Procedure) by calculating wind pressures using specific wind pressure equations applicable to each building surface.",
+      "cross_references": [
+        "Chapter 27"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.07,
+        "y_end": 0.2
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.1-heading1",
+      "type": "body",
+      "section": "27.1",
+      "text": "27.1 SCOPE",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.15,
+        "y_end": 0.17
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.1.1-heading1",
+      "type": "body",
+      "section": "27.1.1",
+      "text": "27.1.1 Building Types",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.18,
+        "y_end": 0.19
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.1.1-body1",
+      "type": "body",
+      "section": "27.1.1",
+      "text": "This chapter applies to the determination of Main Wind Force Resisting System (MWFRS) wind loads on enclosed, partially enclosed, partially open, and open buildings of all heights using the Directional Procedure, in which it is necessary to separate applied wind loads onto the windward, leeward, and sidewalls of the building to properly assess the internal forces in the MWFRS members.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.2,
+        "y_end": 0.28
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.2-B1",
+      "type": "body",
+      "section": "27.2",
+      "text": "The steps to determine the wind loads on the MWFRS for enclosed, partially enclosed, partially open, and open buildings of all heights are provided in Table 27.2-1.",
+      "cross_references": [
+        "Table 27.2-1"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.21,
+        "y_end": 0.25
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.2.1-P1",
+      "type": "body",
+      "section": "27.2.1",
+      "text": "27.2.1 Wind Load Parameters Specified in Chapter 26 The following wind load parameters shall be determined in accordance with Chapter 26:\n• Basic wind speed, V (Section 26.5);\n• Wind directionality factor, Kd (Section 26.6);\n• Exposure category (Section 26.7);\n• Topographic factor, Kzt (Section 26.8);\n• Ground elevation factor, Ke (Section 26.9);\n• Gust-effect factor (Section 26.11);\n• Enclosure classification (Section 26.12); and\n• Internal pressure coefficient, (GCpi) (Section 26.13).",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.26,
+        "y_end": 0.3
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.2.1-P1-body",
+      "type": "body",
+      "section": "27.2.1",
+      "text": "26 The following wind load parameters shall be determined in accordance with Chapter 26:",
+      "cross_references": [
+        "Chapter 26"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.27,
+        "y_end": 0.3
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.1.2-heading1",
+      "type": "body",
+      "section": "27.1.2",
+      "text": "27.1.2 Conditions",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.29,
+        "y_end": 0.31
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.1.2-provision1",
+      "type": "body",
+      "section": "27.1.2",
+      "text": "A building that has design wind loads determined in accordance with this chapter shall comply with both of the following conditions:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.31,
+        "y_end": 0.34
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.2.1-B1",
+      "type": "body",
+      "section": "27.2.1",
+      "text": "• Basic wind speed, V (Section 26.5);\n• Wind directionality factor, Kd (Section 26.6);\n• Exposure category (Section 26.7);\n• Topographic factor, Kzt (Section 26.8);\n• Ground elevation factor, Ke (Section 26.9);\n• Gust-effect factor (Section 26.11);\n• Enclosure classification (Section 26.12); and\n• Internal pressure coefficient, (GCpi) (Section 26.13).",
+      "cross_references": [
+        "Section 26.5",
+        "Section 26.6",
+        "Section 26.7",
+        "Section 26.8",
+        "Section 26.9",
+        "Section 26.11",
+        "Section 26.12",
+        "Section 26.13"
+      ],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.31,
+        "y_end": 0.43
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.1.2-body1",
+      "type": "body",
+      "section": "27.1.2",
+      "text": "1. The building is a regular-shaped building as defined in Section 26.2; and\n2. The building does not have response characteristics that make it subject to across-wind loading, vortex shedding, or instability caused by galloping or flutter; nor does it have a site location for which channeling effects or buffeting, in the wake of upwind obstructions, warrant special consideration.",
+      "cross_references": [
+        "26.2"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.35,
+        "y_end": 0.43
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.1.3-heading1",
+      "type": "body",
+      "section": "27.1.3",
+      "text": "27.1.3 Limitations",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.44,
+        "y_end": 0.46
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3-P1",
+      "type": "body",
+      "section": "27.3",
+      "text": "27.3 WIND LOADS: MAIN WIND FORCE RESISTING SYSTEM",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.44,
+        "y_end": 0.46
+      },
+      "column": "right",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.1.3-body1",
+      "type": "body",
+      "section": "27.1.3",
+      "text": "The provisions of this chapter take into consideration the load magnification effect caused by gusts, in resonance with along-wind vibrations of flexible buildings. Buildings that do not meet the requirements of Section 27.1.2 or that have unusual shapes or response characteristics shall be designed using the literature documenting such wind load effects, or shall use the Wind Tunnel Procedure specified in Chapter 31.",
+      "cross_references": [
+        "27.1.2",
+        "31"
+      ],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.46,
+        "y_end": 0.53
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1-P1",
+      "type": "body",
+      "section": "27.3.1",
+      "text": "27.3.1 Enclosed, Partially Enclosed, and Partially Open Rigid and Flexible Buildings Design wind pressures for the MWFRS of buildings of all heights in lbf/ft² (N/m²), shall be determined by the following equation:",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.47,
+        "y_end": 0.52
+      },
+      "column": "right",
+      "heading": false,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.3.1-F1",
+      "type": "formula",
+      "section": "27.3.1",
+      "text": "p = qKzGCp - qi Kz(GCpi)",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.53,
+        "y_end": 0.55
+      },
+      "column": "right",
+      "expression": "p = qK_zGC_p - q_i K_z(GC_{pi})",
+      "parameters": [
+        "p = design wind pressure",
+        "q = q_{z} for windward walls evaluated at height z above the ground",
+        "qi = q_{h} for leeward walls, sidewalls, and roofs evaluated at height h",
+        "K_{z} = velocity pressure exposure coefficient",
+        "G = gust effect factor",
+        "Cp = external pressure coefficient",
+        "GC_{pi} = internal pressure coefficient"
+      ],
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.1.4-heading1",
+      "type": "body",
+      "section": "27.1.4",
+      "text": "27.1.4 Shielding",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.54,
+        "y_end": 0.56
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.1.4-provision1",
+      "type": "body",
+      "section": "27.1.4",
+      "text": "There shall be no reductions in velocity pressure caused by apparent shielding afforded by buildings and other structures or terrain features.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.56,
+        "y_end": 0.59
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.3.1-B1",
+      "type": "body",
+      "section": "27.3.1",
+      "text": "where\n\nq = qz For windward walls evaluated at height z above the ground;\nq = qh For leeward walls, sidewalls, and roofs evaluated at height h;",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.52,
+        "x_end": 0.94,
+        "y_start": 0.56,
+        "y_end": 0.62
+      },
+      "column": "right",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "right"
+    },
+    {
+      "id": "ASCE7-22-27.1.5-heading1",
+      "type": "body",
+      "section": "27.1.5",
+      "text": "27.1.5 Minimum Design Wind Loads The wind pressure to be used in the design of the MWFRS for an enclosed, or partially enclosed, building shall not be less than 16 lb/ft² (0.77 kN/m²) multiplied by the wall area of the building, and 8 lb/ft² (0.38 kN/m²) multiplied by the roof area of the building, projected onto a vertical plane normal to the assumed wind direction. Wall and roof loads shall be applied simultaneously. The design wind force for open buildings shall be not less than 16 lb/ft² (0.77 kN/m²) multiplied by the area, Af.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.6,
+        "y_end": 0.62
+      },
+      "column": "left",
+      "heading": true,
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    },
+    {
+      "id": "ASCE7-22-27.1.5-provision1",
+      "type": "body",
+      "section": "27.1.5",
+      "text": "The wind pressure to be used in the design of the MWFRS for an enclosed, or partially enclosed, building shall not be less than 16 lb/ft² (0.77 kN/m²) multiplied by the wall area of the building, and 8 lb/ft² (0.38 kN/m²) multiplied by the roof area of the building, projected onto a vertical plane normal to the assumed wind direction. Wall and roof loads shall be applied simultaneously. The design wind force for open buildings shall be not less than 16 lb/ft² (0.77 kN/m²) multiplied by the area, Af.",
+      "cross_references": [],
+      "bbox": {
+        "x_start": 0.06,
+        "x_end": 0.48,
+        "y_start": 0.62,
+        "y_end": 0.75
+      },
+      "column": "left",
+      "metadata": {
+        "extracted_by": "vision-clone",
+        "qc_status": "pending"
+      },
+      "_source": "left"
+    }
+  ]
+}

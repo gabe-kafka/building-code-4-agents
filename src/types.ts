@@ -1,8 +1,8 @@
 export type ElementType =
-  | 'provision'
   | 'definition'
   | 'formula'
   | 'table'
+  | 'procedure'
   | 'figure'
   | 'exception'
   | 'user_note'
@@ -30,7 +30,7 @@ export interface PageElement {
   // formula
   expression?: string
   parameters?: string[]
-  // table
+  // table / procedure
   columns?: string[]
   rows?: string[][]
   // figure

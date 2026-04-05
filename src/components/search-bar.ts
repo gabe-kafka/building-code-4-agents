@@ -4,7 +4,7 @@ import { state, setFilterType, setPage, highlightEl, setSearchResults, on } from
 import type { SearchEngine } from '../lib/search.ts'
 
 const TYPES: (ElementType | 'ALL')[] = [
-  'ALL', 'provision', 'definition', 'formula', 'table', 'figure', 'exception', 'user_note', 'body',
+  'ALL', 'definition', 'formula', 'table', 'procedure', 'figure', 'exception', 'user_note', 'body',
 ]
 
 let searchEngine: SearchEngine | null = null

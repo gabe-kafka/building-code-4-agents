@@ -2,7 +2,9 @@ import { resolve } from 'path'
 
 // --- Paths ---
 const ROOT = resolve(import.meta.dirname, '..')
-const V1_ROOT = resolve(ROOT, '..', 'bldg-code-2-json')
+const V1_ROOT = process.env.HARNESS_V1_ROOT
+  ? resolve(process.env.HARNESS_V1_ROOT)
+  : resolve(ROOT, '..', 'bldg-code-2-json')
 
 export const paths = {
   root: ROOT,
@@ -18,7 +20,7 @@ export const paths = {
 // ASCE absolute page = source.page + offset
 export const chapterOffsets: Record<number, number> = {
   26: 260,  // page 1 in V1 = ASCE page 261
-  27: 310,  // TODO: verify with actual PDF
+  27: 280,  // page 1 in V1 = ASCE page 281
   28: 346,
   29: 368,
   30: 388,
@@ -49,6 +51,6 @@ export const thresholds = {
 
 // --- Model config ---
 export const models = {
-  enrichment: 'claude-sonnet-4-20250514',
-  comparison: 'claude-sonnet-4-20250514',
+  enrichment: process.env.HARNESS_MODEL_ENRICHMENT ?? 'claude-sonnet-4-20250514',
+  comparison: process.env.HARNESS_MODEL_COMPARISON ?? 'claude-sonnet-4-20250514',
 }

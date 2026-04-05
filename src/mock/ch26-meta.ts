@@ -35,14 +35,14 @@ export const chapter26Meta: ChapterMeta = {
     { number: '26.14', title: 'Consensus Standards', page: 280, depth: 1 },
   ],
   element_counts: {
-    provision: 80,
     definition: 120,
     formula: 30,
     table: 10,
+    procedure: 0,
     figure: 8,
     exception: 8,
     user_note: 10,
-    body: 140,
+    body: 220,
   },
   extraction_score: 85,
 }
@@ -51,22 +51,25 @@ export const chapter27Meta: ChapterMeta = {
   standard: 'ASCE 7-22',
   title: 'Wind Loads on Buildings — MWFRS (Directional Procedure)',
   chapter: 27,
-  page_range: { start: 311, end: 346 },
+  page_range: { start: 281, end: 292 },
   sections: [
-    { number: '27.1', title: 'Scope', page: 311, depth: 1 },
-    { number: '27.1.1', title: 'Building Types', page: 311, depth: 2 },
-    { number: '27.1.2', title: 'Conditions', page: 311, depth: 2 },
-    { number: '27.2', title: 'General Requirements', page: 312, depth: 1 },
-    { number: '27.3', title: 'Velocity Pressure', page: 313, depth: 1 },
-    { number: '27.4', title: 'Design Wind Loads', page: 323, depth: 1 },
-    { number: '27.5', title: 'Parapets', page: 333, depth: 1 },
-    { number: '27.6', title: 'Roof Overhangs', page: 338, depth: 1 },
+    { number: '27.1', title: 'Scope', page: 281, depth: 1 },
+    { number: '27.1.1', title: 'Building Types', page: 281, depth: 2 },
+    { number: '27.1.2', title: 'Conditions', page: 281, depth: 2 },
+    { number: '27.1.3', title: 'Limitations', page: 281, depth: 2 },
+    { number: '27.1.4', title: 'Shielding', page: 281, depth: 2 },
+    { number: '27.1.5', title: 'Minimum Design Wind Loads', page: 281, depth: 2 },
+    { number: '27.2', title: 'General Requirements', page: 281, depth: 1 },
+    { number: '27.3', title: 'Wind Loads: Main Wind Force Resisting System', page: 282, depth: 1 },
+    { number: '27.3.1', title: 'Enclosed, Partially Enclosed, and Partially Open', page: 282, depth: 2 },
+    { number: '27.4', title: 'Parapets', page: 289, depth: 1 },
+    { number: '27.5', title: 'Roof Overhangs', page: 290, depth: 1 },
   ],
   element_counts: {
-    provision: 0, definition: 0, formula: 0, table: 0,
+    definition: 0, formula: 0, table: 0, procedure: 0,
     figure: 0, exception: 0, user_note: 0, body: 0,
   },
-  extraction_score: 0,
+  extraction_score: 1,  // enabled — counts update as pages are cloned
 }
 
 export const asce722Meta: StandardMeta = {

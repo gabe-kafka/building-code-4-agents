@@ -1,11 +1,12 @@
 {
-  "name": "building-code-digital-twin",
+  "name": "bldg-code-digital-twin",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "mcp": "npx tsx server/mcp-server.ts"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
@@ -17,6 +18,7 @@
     "vite": "^6.0.0"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
     "katex": "^0.16.44"
   }
 }
